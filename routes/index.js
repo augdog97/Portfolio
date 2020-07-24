@@ -1,11 +1,12 @@
 var express = require('express');
-const app = require('../app');
 var router = express.Router();
 
 
+router.use(express.static('public'));
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'portfolio' });
+  res.sendFile('/Users/AugustShah 1/Documents/Coding-Tools/Projects/portfolio/portfolio/html-files/index.html');
 });
 
 module.exports = router;
