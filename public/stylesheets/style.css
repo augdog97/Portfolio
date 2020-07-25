@@ -108,7 +108,7 @@ html{
 #testimonials .header-half-bar {
     height: 10px;
     width: 50px;
-    background: #1a2d4e;
+    background: #1a2d4e;    
 }
 
  /* Nav bar */
@@ -329,6 +329,18 @@ div.services-content {
 }
 #about {
     margin-top: 15%;
+}
+#me-chevron {
+    position: relative;
+    top: 130px;
+   
+
+}
+#me {
+    position: relative;
+    top: 120px;
+    right: 30px; 
+    font-size: 30px;
 }
 /*FOOTER-------------------*/
 footer .col-md-12 {

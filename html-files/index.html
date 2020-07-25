@@ -9,9 +9,11 @@
   <!-- Services Icon link-->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- CSS Link-->
-  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <!-- Font Awesome Link-->
   <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +42,7 @@
               <a class="dropdown-item disabled" href="about.html">About</a>
               <a class="dropdown-item dropdown-submenu"  href="time.html"> Aviation</a>
               <a class="dropdown-item" href="portfolio.html">Web Development</a>
-              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="contact.html#contact">Contact</a>
             </div>
           </div>
         </div>
@@ -59,7 +61,7 @@
       </div>
     </div>
   </section>
-      <div id="chevron">
+      <div data-aos="fade-down" id="chevron">
         <h5 id="see">See More!</h5>
         <a href="#services">
         <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="chevron-color"></i> 
@@ -110,20 +112,26 @@
       </div>
     </div>
   </section>
+  
 
+    </div>
   <section id="spacing">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 col-lg-12">
-
+          <div id="chevron">
+            <h5 id="me">About Me!</h5>
+            <a href="#about">
+            <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="me-chevron"></i> 
+          </a>
+        
         </div>
       </div>
     </div>
   </section>
 
 
-  
-
+ 
   <section id="about">
     <div class="container">
       <div class="row">
@@ -183,9 +191,12 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">
     AOS.init({
       duration: 1500
