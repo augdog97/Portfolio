@@ -23,7 +23,9 @@ app.use('/time.html/', timeRouter);
 app.use(express.urlencoded({extended: true}));
 
 
-
+app.get('*',(req,res) => { 
+  res.sendStatus(404);
+})
 
 
 

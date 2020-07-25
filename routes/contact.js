@@ -1,16 +1,20 @@
 
 
 var express = require('express');
-var contact = express.Router();
+const contact = express.Router();
+var path = require('path');
 
 
 contact.use(express.static('public'));
 
 contact.get('/contact.html/',  (req,res,next) => {
-    res.sendFile('/Users/AugustShah 1/Documents/Coding-Tools/Projects/portfolio/portfolio/html-files/contact.html');
+    res.sendFile(path.resolve(__dirname, 'contact.html'));
     console.log('this works');
 });
 
+contact.post('/contact.html/', (req,res,next) => {
+    console.log(req.body.data);
+})
 
 
 
