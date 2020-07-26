@@ -5,22 +5,24 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser');
-
 const indexRouter = require('./routes/index');
 const contactRouter = require('./routes/contact');
 const timeRouter = require('./routes/time');
-
+const portRouter = require('./routes/portfolio');
 var app = express();
 
 
 
-app.use('/contact.html/', contactRouter);
 app.use('/', indexRouter);
-app.use('/time.html/', timeRouter);
-
-
+app.use('/html-files/portfolio.html/', portRouter);
+app.use('/html-files/time.html/', timeRouter);
+app.use('/html-files/contact.html', contactRouter);
 
 app.use(express.urlencoded({extended: true}));
+
+
+
+
 
 
 app.get('*',(req,res) => { 
