@@ -14,8 +14,6 @@ var app = express();
 
 app.use(express.static( 'public'));
 
-
-
 app.use('/', indexRouter);
 app.use('/', portRouter);
 app.use('/', timeRouter);
