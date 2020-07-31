@@ -62,39 +62,46 @@
                   <div class="header-half-bar"></div>
                 </div>
 
-                <form action="/contact.html/" method="POST">
+                <form action="/contact"  id="contact">
                   <div class="form-group">
-                    <label>Name </label>
+                    <label for="name">Name </label>
                     <br>
-                    <input type="text" name="name">
+                    <input type="text" name="name" id="name">
                   </div>
                   <div class="form-group">
-                    <label> Email </label>
+                    <label for="email"> Email </label>
                     <br>
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="email">
                   </div>
                   <div class="form-group">
-                    <label> Messages </label> 
+                    <label for="message"> Messages </label> 
                     <br>
-                    <textarea rows="3" name="message"></textarea>
+                    <textarea rows="3" name="message" id="message"></textarea>
                   </div>
-                  <input type="button" value="Send" class="btn" name="send">
+                  <input type="button" value="Send" class="btn"  id="submit">
                 </form>
                 <h4>You may contact us if you have questions or clarifications about our services.</h4>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <div>
+      <ul id="new-email"></ul>
+      
+    </div>
   </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="javascripts/script.js"></script>
 </body>
 
 </html>

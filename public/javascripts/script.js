@@ -1,28 +1,26 @@
 
 
-$('form').on('send', (e) => {
+$('submit').on('click', function(e) {
     e.preventDefault(); 
-    const name = $("#name")
-        .val()
-        .trim();
-const email = $("#email")
-        .val()
-        .trim();
-const message = $("#message")
-        .val()
-        .trim();
 
-$.post("/email", data)
-    .then(() => {
-  window.location.href = "/email/sent";
-    })
-.catch(() => {
-      window.location.href = "/error";
+    const $name = $("#name").val();
+    const $email = $("#email").val();
+    const $message = $("#message").val();
+    
+    var $form = $( this ),
+    url = $form.attr( "action" );
+
+    const data = {
+        name: $name, 
+        email: $email,
+        message: $message
+    };
+    
+ $.post(url, {data} );
+
+
+
+
+
 });
 
-const data = {
-    name, 
-    email,
-    message
-};
-})

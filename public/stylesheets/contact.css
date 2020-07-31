@@ -53,7 +53,7 @@ html{
           width: inherit !important;
     }
     #home .jumbotron {
-          padding: 0px !inherit;
+          padding: 0px
     }
     #home .jumbotron h1,
     #home .jumbotron h2 {
@@ -181,7 +181,6 @@ header .menu nav ul li a:hover {
     height: 600px;
     overflow: hidden;
     position: relative;
-    z-index: -1;
 }
 #contact form input,
 #contact form textarea {
