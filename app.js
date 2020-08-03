@@ -1,5 +1,4 @@
 /* Imports */
-var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -23,6 +22,8 @@ app.use('/', timeRouter);
 app.use('/', contactRouter);
 
 app.use(express.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
 
 app.get('*',(req,res) => { 
   res.sendStatus(404);  
