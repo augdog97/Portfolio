@@ -12,8 +12,8 @@ $('#submit').on('click', function(e) {
     const email = $("#email").val();
     const message = $("#message").val();
     
-    var $form = $( this ),
-    url = $form.attr( "action", "/contact");
+    /*var $form = $( this ),
+    url = $form.attr( "action", "/contact"); */
 
     const data = {
         name: name, 
@@ -25,12 +25,13 @@ $('#submit').on('click', function(e) {
         type: "POST", // HTTP method POST or GET
         url: "/contact", //Where to make Ajax calls
         dataType: "json", // Data type, HTML, json etc.
+        contentType: "application/json",
         data: JSON.stringify(data), //Form variables
-        success: function() {
+        success: function(success) {
              alert("Your Email has been sent");
         },
-        error: function() {
-            alert("Your Email has not sent. Try Again. ");
+        error: function(error) {
+            alert("Your Email has not sent. Please try again :) ");
         }
     
     })
