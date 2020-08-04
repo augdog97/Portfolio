@@ -12,21 +12,32 @@ contact.get('/contact',  (req,res,next) => {
   console.log('this works');
 });
 
+
+
 contact.post('/contact', (req,res) => {
-  var data = req.body.data;
+
+
+
+  /*const data = req.body.data;
+const from = data.email;
+const text = data.message;*/
+
+
+JSON.stringify(req.body.data);
+
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'augustshah@02pilot.com',
-      pass: 'iryabylfsklfpcfg'
+      pass: 'hgahalzecelxdxis'
     }
   });
   
   var mailOptions = {
-    from: data.email,
+    from: this.email,
     to: 'augustshah@02pilot.com',
     subject: 'Quote',
-    text: data.message
+    text: this.message
   };
   
   transporter.sendMail(mailOptions, function(error, info){

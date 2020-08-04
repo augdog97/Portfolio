@@ -25,7 +25,7 @@ $('#submit').on('click', function(e) {
         type: "POST", // HTTP method POST or GET
         url: "/contact", //Where to make Ajax calls
         dataType: "json", // Data type, HTML, json etc.
-        data: data, //Form variables
+        data: JSON.stringify(data), //Form variables
         success: function() {
             return alert("Your Email has been sent");
         },
