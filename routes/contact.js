@@ -3,6 +3,7 @@ const contact = express.Router();
 var path = require('path');
 const bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+const { TooManyRequests } = require('http-errors');
 
 contact.use(bodyParser.json() );
 contact.use(express.static(__dirname + 'portfolio'));
@@ -23,8 +24,6 @@ const from = data.email;
 const text = data.message;*/
 
 
-JSON.stringify(req.body.data);
-
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -34,10 +33,10 @@ JSON.stringify(req.body.data);
   });
   
   var mailOptions = {
-    from: this.email,
+    from: req.body.email,
     to: 'augustshah@02pilot.com',
     subject: 'Quote',
-    text: this.message
+    text: req.body.message
   };
   
   transporter.sendMail(mailOptions, function(error, info){

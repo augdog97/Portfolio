@@ -27,7 +27,7 @@ $('#submit').on('click', function(e) {
         dataType: "json", // Data type, HTML, json etc.
         data: JSON.stringify(data), //Form variables
         success: function() {
-            return alert("Your Email has been sent");
+             alert("Your Email has been sent");
         },
         error: function() {
             alert("Your Email has not sent. Try Again. ");
