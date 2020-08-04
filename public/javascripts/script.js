@@ -1,6 +1,10 @@
-//const { json } =  require("body-parser");
-//var requirejs = require('requirejs');
-//const { json } = require("body-parser");
+/*
+Jquery Ajax walk through
+1. on click of submit button
+2. take ids of inputs and save value to variables
+3. put variables in object for easy access
+4. make an ajax post request 
+*/
 
 
 
@@ -12,8 +16,7 @@ $('#submit').on('click', function(e) {
     const email = $("#email").val();
     const message = $("#message").val();
     
-    /*var $form = $( this ),
-    url = $form.attr( "action", "/contact"); */
+    
 
     const data = {
         name: name, 
@@ -25,16 +28,12 @@ $('#submit').on('click', function(e) {
         type: "POST", // HTTP method POST or GET
         url: "/contact", //Where to make Ajax calls
         dataType: "json", // Data type, HTML, json etc.
-        contentType: "application/json",
+        contentType: "application/json", // Need this to send proper data to server
         data: JSON.stringify(data), //Form variables
-        success: function(success) {
-             alert("Your Email has been sent");
-        },
-        error: function(error) {
-            alert("Your Email has not sent. Please try again :) ");
+        success: function(sucess) {
+            alert("Email has sent");
         }
-    
-    })
+    });
 
     
 }); 
