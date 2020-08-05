@@ -57,6 +57,7 @@ contact.post('/contact', (req,res,next) => {
   };
 
 
+
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
@@ -64,8 +65,11 @@ contact.post('/contact', (req,res,next) => {
       console.log('Email sent: ' + info.response);
     }
   });
-  res.end('Success');
+  
+
 });
+
+
 
 
 
