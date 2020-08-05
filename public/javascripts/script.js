@@ -32,8 +32,9 @@ $('#submit').on('click', function(e) {
         data: JSON.stringify(data), //Form variables
         success: function(sucess) {
             alert("Email has sent");
+           
         }
     });
-
-    
+    /* redirects user to link after the form submits */ 
+    window.location.assign('/contact:success');
 }); 
