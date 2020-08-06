@@ -56,7 +56,7 @@ html{
           width: inherit !important;
     }
     #home .jumbotron {
-          padding: 0px !inherit;
+          padding: 0px;
     }
     #home .jumbotron h1,
     #home .jumbotron h2 {
@@ -162,7 +162,7 @@ header .menu nav ul li a {
     color: white;
     padding: 22px 25px;
     font-size: 20px;
-    background: ;
+ 
     border-bottom: 2px solid white;
     text-decoration: none;
     padding-top: 27px;
@@ -198,35 +198,46 @@ header .menu nav ul li a:hover {
 }
 #chevron {
     position: absolute;
-    left: 45%;
-    bottom: 55%; 
+    left: 46%;
+    bottom: 48%; 
     zoom: .9; 
 }
 
 #chevron-color {
+    position: relative;
     margin-top: 20%;
     margin-left: 5%;
+    left: 23%;
 
 }
 #see {
     position: relative; 
-    right: 30px; 
     margin-top: auto;
     font-size: 30px;
     align-text: center; 
+   font-family: 'Lora', serif;
+
+
 }
 
 #august {
     margin-bottom: 20px;
     position: relative;
     bottom: 60px;
-    right: 35px;
+    left: px;
+   font-family: 'Lora', serif;
+
+  
+
 }
 #august2 {
     margin-bottom: 30px;
    position: relative;
    bottom: 70px;
-   right: 20px;
+   left: 22px;
+  font-family: 'Lora', serif;
+
+  
 }
 
 
@@ -273,9 +284,12 @@ header .menu nav ul li a:hover {
 }
 #services {
     margin-top: 13%;
+    position: relative; 
+    bottom: 44px;
+    font-family: 'Lora', serif;
 }
 #services-description {
-    font-size: 22px;
+    font-size: 17px;
 }
 div.services-content {
     padding-left: 20px;
@@ -329,24 +343,30 @@ div.services-content {
 }
 #about {
     margin-top: 15%;
+    position: relative;
+    top: 170px;
 }
+
 #me-chevron {
     position: relative;
-    top: 130px;
+    top: 223px;
+    left: 45%;
    
 
 }
 #me {
     position: relative;
-    top: 120px;
-    right: 30px; 
+    top: 200px;
+    left: 19%; 
     font-size: 30px;
+    font-family: 'Lora', serif;
+
 }
+
 /*FOOTER-------------------*/
 footer .col-md-12 {
     height: inherit;
     background: #1a2d4e;
-    overflow: hidden;
 }
 footer h5 {
     color: white;
@@ -355,7 +375,9 @@ footer h6 {
     color: white;
     text-align: center;
 }
- 
+footer {
+    background: #1a2d4e;
+}
      
     /* About me */ 
     #figure {

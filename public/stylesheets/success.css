@@ -213,10 +213,11 @@ body{
   #success {
     position: fixed;
     top: 60%;
-    left: 10%;
+    left: 33%;
+
   }
-  #check {
-    position: fixed; 
-    left: 48%;
-    top: 40%
+  #svg {
+    position: relative;
+    top: 450px;
+    left: 53%;
   }

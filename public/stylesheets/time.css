@@ -184,7 +184,7 @@ header .menu nav ul li a {
     color: white;
     padding: 22px 25px;
     font-size: 20px;
-    background: ;
+
     border-bottom: 2px solid white;
     text-decoration: none;
     padding-top: 27px;
@@ -197,26 +197,30 @@ header .menu nav ul li a:hover {
 
 /* chevron */
 #chevron {
-    position: absolute;
-    left: 45%;
-    bottom: 55%; 
-    zoom: .9; 
-    height: 20%;
+  position: absolute;
+  left: 47%;
+  bottom: 45%; 
+  zoom: .9; 
+  height: 20%;
+
 }
 
 #chevron-color {
-    margin-top: 7%;
-    margin-left: 14%;
+  margin-top: 7%;
+  margin-left: 14%;
+  position: relative; 
+  right: 20px;
+  top: 50px;
 
 }
 #see {
-    font-weight: bold;
-    color: white; 
-    font-size: 30px; 
-    position: relative;
-    right: 30%;
-  }
-
+  font-weight: bold;
+  color: white; 
+  font-size: 30px; 
+  position: relative;
+  right: 33%;
+  top: 40px;
+}
 
   #time-div {
     position: relative; 
