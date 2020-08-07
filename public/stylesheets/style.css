@@ -116,6 +116,7 @@ html{
  #nav {
     zoom: 1.7;
     position: fixed;
+    z-index: 5;
 }
 #dropdown {
     position: fixed;
@@ -250,7 +251,7 @@ header .menu nav ul li a:hover {
 }
 #services .col-md-4 .services-content {
     height: 400px;
-    width: 280px;
+    width: 300px;
     margin-top: 50px;
     border-radius: 5px;
     box-shadow: 0px 3px 2px 1px lightgrey;
@@ -294,6 +295,20 @@ header .menu nav ul li a:hover {
 div.services-content {
     padding-left: 20px;
 }
+#services-2 {
+    position: absolute;
+   bottom: 80px;
+   right: 400px;     
+}
+#services-3 {
+    position: relative;
+   bottom: 559px;
+   left: 900px;     
+}
+#services-3-description {
+    font-size: 14px;
+    }
+
 
 /*ABOUT-----------------------*/
 #about .col-md-12 {
@@ -344,24 +359,25 @@ div.services-content {
 #about {
     margin-top: 15%;
     position: relative;
-    top: 170px;
+    bottom: 170px;
 }
 
 #me-chevron {
     position: relative;
-    top: 223px;
+    bottom: 380px;
     left: 45%;
    
 
 }
 #me {
     position: relative;
-    top: 200px;
+    bottom: 400px;
     left: 19%; 
     font-size: 30px;
     font-family: 'Lora', serif;
 
 }
+
 
 /*FOOTER-------------------*/
 footer .col-md-12 {

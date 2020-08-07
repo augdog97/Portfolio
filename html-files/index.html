@@ -12,10 +12,8 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <!-- Font Awesome Link-->
   <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
-
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- Google Font Link -->
-   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 
@@ -40,7 +38,7 @@
           <div class="dropdown" id="nav">
               <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               </i>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-aos="fade-down" id="dropdown">
               <a class="dropdown-item" href="/">Home</a>
               <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
               <a class="dropdown-item" href="/portfolio">Web Development</a>
@@ -90,7 +88,7 @@
             <div class="header-bar">
               <div class="header-half-bar"></div>
             </div>
-            <div class="row text-center item" data-aos="fade-up">
+            <div class="row text-center item" data-aos="fade-up" data-aos-duration="3000">
             
               </div>
               <div class="col-md-4 col-lg-4">
@@ -109,6 +107,38 @@
               </div>
             </div>
            
+            <div class="row text-center item" data-aos="fade-up"  data-aos-duration="3000" data-aos-delay="300">
+              <div class="col-md-4 col-lg-4" id="services-2">
+                <div class="services-content">
+                  <div class="ion-android-desktop"></div>
+                  <div class="ion-android-globe"></div>
+                  <div class="description">
+                    <h3>WordPress Development</h3>
+                    <hr>
+                    <h4 id="services-description">Are you in need of a reliable, functional, and secure WordPress site? Then look no further. Please use the Contact Page for more information. </h4>
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
+  
+              <div class="row text-center item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">
+                <div class="col-md-4 col-lg-4" id="services-3">
+                  <div class="services-content">
+                    <div class="ion-android-desktop"></div>
+                    <div class="ion-android-globe"></div>
+                    <div class="description">
+                      <h3>Consulting</h3>
+                      <hr>
+                      <h4 id="services-3-description">Do you need to mdoernize your website? Do you need help setting up a domain and server for your site? Do you need technical support?I am avaible for consulting work. Providing quality product and customer service is my top priority. If interested please use the Contact page.</h4>
+                    </div>
+                  </div>
+                </div>
+    
+                  </div>
+                </div>
+              </div>
+
           </div>
         </div>
       </div>
@@ -123,7 +153,7 @@
         <div class="col-md-12 col-lg-12">
           <div id="chevron">
             <h5 id="me">About Me!</h5>
-            <a href="#about">
+            <a href="#about-chevron">
             <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="me-chevron"></i> 
           </a>
         
@@ -132,7 +162,7 @@
     </div>
   </section>
 
-
+  <div id="about-chevron"></div>
  
   <section id="about">
     <div class="container">
@@ -190,18 +220,17 @@
     </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<script src="javascripts/external.js"></script>
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">
     AOS.init({
       duration: 1500
     });
-  </script>
+  </script> 
 </body>
 
 </html>

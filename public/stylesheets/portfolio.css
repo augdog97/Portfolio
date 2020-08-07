@@ -52,7 +52,7 @@ html{
           width: inherit !important;
     }
     #home .jumbotron {
-          padding: 0px !inherit;
+          padding: 0px;
     }
     #home .jumbotron h1,
     #home .jumbotron h2 {
@@ -130,7 +130,6 @@ header .menu nav ul li a {
     color: white;
     padding: 22px 25px;
     font-size: 20px;
-    background: ;
     border-bottom: 2px solid white;
     text-decoration: none;
     padding-top: 27px;
@@ -223,10 +222,26 @@ header .menu nav ul li a:hover {
 }
 @media only screen and (min-width: 420px) and (max-width: 530px) {
     #portfolio .pheader-bar {
-          width: 210px !inherit;
+          width: 210px;
     }
     #portfolio .row-content {
           width: 290px !important;
     }
 }
 
+#portfolio-one {
+    position: fixed;
+    top: 22%;
+    left: 40%;
+    }
+    #portfolio-two {
+         position: fixed;
+    top: 22%;
+    left: 70%;
+    }
+    h1 {
+        position: relative;
+        bottom: 50px;
+        left: 600px;
+        z-index: -1; 
+    }
