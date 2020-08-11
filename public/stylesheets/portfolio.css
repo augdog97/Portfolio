@@ -164,8 +164,7 @@ header .menu nav ul li a:hover {
 
 /*PORTFOLIO--------------------*/
 #portfolio .col-md-12 {
-    background: url("https://www.informdirect.co.uk/wp-content/uploads/2014/02/home-page-banner@2x-1024x432.jpg")
-          no-repeat center;
+
     background-size: cover;
     height: inherit;
     overflow: hidden;
@@ -230,18 +229,98 @@ header .menu nav ul li a:hover {
 }
 
 #portfolio-one {
-    position: fixed;
-    top: 22%;
-    left: 40%;
+    position: relative;
+    bottom: 228px;
+    left: 43%;
     }
     #portfolio-two {
-         position: fixed;
-    top: 22%;
-    left: 70%;
+    position: relative;
+    bottom: 210px;
+    left: 43%;
     }
+    #portfolio-three {
+    position: relative; 
+    bottom: 192px;
+    left: 43%;
+    }
+    #portfolio-four {
+    position: relative; 
+    bottom: 170px;
+    left: 43%;
+    }
+   
+
+    #portfolio-five {
+    position: relative; 
+    bottom: 152px;
+    left: 43%;
+    }
+
+    #portfolio-six {
+    position: relative; 
+    bottom: 134px;
+    left: 43%;
+    }
+    
+
+    #portfolio-seven {
+    position: relative; 
+    bottom: 116px;
+    left: 43%;
+    }
+
+    #portfolio-eight {
+    position: relative; 
+    bottom: 98px;
+    left: 43%;
+    }
+
+    #portfolio-nine {
+    position: relative; 
+    bottom: 80px;
+    left: 43%;
+    }
+
+    #portfolio-ten{
+    position: relative; 
+    bottom: 70px;
+    left: 43%;
+    }
+
+    #portfolio-eleven {
+    position: relative; 
+    bottom: 52px;
+    left: 43%;
+    }
+.round{
+        border-radius: 20px;
+    }
+
+
     h1 {
         position: relative;
         bottom: 50px;
         left: 600px;
         z-index: -1; 
     }
+    /*FOOTER-------------------*/
+footer .col-md-12 {
+    height: inherit;
+    background: #1a2d4e;
+}
+footer h5 {
+    color: white;
+}
+footer h6 {
+    color: white;
+    text-align: center;
+}
+footer {
+    background: #1a2d4e;
+}
+     
+    /* About me */ 
+    #figure {
+        display: inline;
+    }
+   

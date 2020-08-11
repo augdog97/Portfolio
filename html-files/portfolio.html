@@ -13,6 +13,8 @@
      <link rel="stylesheet" href="stylesheets/portfolio.css">
      <!-- Font Awesome Link-->
      <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+     <!-- AOS Link-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      
 </head>
 
@@ -47,43 +49,112 @@
     </div>
       </header>
 
-<section id="portfolio">
-      <div class="container-fluid">
-            <div class="row">
-                  <div class="col-md-12 col-lg-12">
-                         <div class="container">
-                              <div class="row row-content">
-                                    <h1 class="text-center">Portfolio</h1>
-                                          <div class="pheader-bar">
-                                          <div class="pheader-half-bar">
-                                                </div>   
-                                                      </div>
-                                          
+      <section id="portfolio">
+            <div class="container-fluid">
+                  <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                               <div class="container">
+                                    <div class="row row-content">
+                                          <h1 class="text-center">Portfolio</h1>
+                                                <div class="pheader-bar">
+                                                <div class="pheader-half-bar">
+                                                      </div>   
+                                                            </div>
                                                 
-
-                                          
-
+                                                      
+      
+                                                
+      
+                                          </div>
                                     </div>
                               </div>
                         </div>
                   </div>
+                  <!-- Add all portfolio links and images to web app-->
+                  <div data-aos="fade-right" data-aos-duration="1000" id="portfolio-one">
+                        <a href="https://www.02pilot.com" target="_blank">
+                              <img src="../images/02pilot.png" alt="first portfolio picture" height="200" width="400" class="round" id="portfolio-one-image">
+                        </a>
+                   </div>
+      
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" id="portfolio-two">
+                        <a href="/travel" target="_blank">
+                              <img src="../images/travels.jpg" alt="second portfolio picture" height="200" width="400" class="round" id="portfolio-two-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="450" id="portfolio-three">
+                        <a href="/chore" target="_blank">
+                              <img src="../images/chore-door.jpg" alt="third portfolio picture" height="200" width="400" class="round" id="portfolio-three-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" id="portfolio-four">
+                        <a href="/tea" target="_blank">
+                              <img src="../images/tea.jpg" alt="fourth portfolio picture" height="200" width="400" class="round" id="portfolio-four-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="550" id="portfolio-five">
+                        <a href="/wine" target="_blank">
+                              <img src="../images/wine.jpg" alt="fifth portfolio picture" height="200" width="400" class="round" id="portfolio-five-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" id="portfolio-six">
+                        <a href="/survey" target="_blank">
+                              <img src="../images/survey.jpg" alt="sixth portfolio picture" height="200" width="400" class="round" id="portfolio-six-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="650" id="portfolio-seven">
+                        <a href="/broadway" target="_blank">
+                              <img src="../images/broadway.jpg" alt="seventh portfolio picture" height="200" width="400" class="round" id="portfolio-seven-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700" id="portfolio-eight">
+                        <a href="/coffee" target="_blank">
+                              <img src="../images/coffee.jpg" alt="eigth portfolio picture" height="200" width="400" class="round" id="portfolio-eight-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="750" id="portfolio-nine">
+                        <a href="/davie" target="_blank">
+                              <img src="../images/davie-burger.jpg" alt="nineth portfolio picture" height="200" width="400" class="round" id="portfolio-nine-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800" id="portfolio-ten">
+                        <a href="/story" target="_blank">
+                              <img src="../images/story.jpg" alt="tenth portfolio picture" height="200" width="400" class="round" id="portfolio-ten-image">
+                        </a>
+                   </div>
+                   <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="850" id="portfolio-eleven">
+                        <a href="/todo" target="_blank">
+                              <img src="../images/todo.jpg" alt="eleventh portfolio picture" height="200" width="400" class="round" id="portfolio-eleven-image">
+                        </a>
+                   </div>
+            </section>
+      <footer>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <div class="footer-content" id="footer-content">
+                    <h5 class="text-center">Copyright &copy; 2020 02Pilot LLC.</h5>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="1000" id="portfolio-one">
-                  <a href="https://www.02pilot.com" target="_blank">
-                        <img src="images/02pilot.png" alt="first portfolio picture" height="200" width="400" id="portfolio-one-image">
-                  </a>
-             </div>
-      </section>
+          </footer>
                                           <!-- jQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                                           <!-- AOS-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript">
+      AOS.init({
+        duration: 1500
+      });
+    </script> 
                                           <!-- JQUERY -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                                           <!-- Popper-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                                           <!-- Bootstrap-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
