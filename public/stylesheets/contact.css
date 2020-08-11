@@ -223,3 +223,26 @@ header .menu nav ul li a:hover {
     margin-top: 20px;
 }
 
+/*FOOTER-------------------*/
+footer .col-md-12 {
+    height: inherit;
+    background: #1a2d4e;
+}
+footer h5 {
+    color: white;
+}
+footer h6 {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background: #1a2d4e;
+    margin-top: 9.6%;
+}
+   
+     
+    /* About me */ 
+    #figure {
+        display: inline;
+    }

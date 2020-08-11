@@ -12,6 +12,8 @@
      scroll-behavior: smooth;
  }
  body {
+   position: relative;
+   top: 2px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     line-height: 1.42em;
@@ -237,4 +239,29 @@ header .menu nav ul li a:hover {
   }
 
   /* second half color change */ 
+ 
+
+  /*FOOTER-------------------*/
+footer .col-md-12 {
+  height: inherit;
+  background: #1a2d4e;
+}
+footer h5 {
+  color: white;
+}
+footer h6 {
+  color: white;
+  text-align: center;
+}
+footer {
+  position: relative; 
+  top: 1020px; 
+  background: #1a2d4e;
+}
+   
+   
+  /* About me */ 
+  #figure {
+      display: inline;
+  }
  
