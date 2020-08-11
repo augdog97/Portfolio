@@ -173,6 +173,9 @@ header .menu nav ul li a:hover {
     transition: 0.4s ease-in;
     color: #00a4b8;
 }
+header {
+    font-family: 'Lora', serif;
+}
 /*HOME-----------------------*/
 #home .col-md-12 {
     background: url("https://www.gep.com/sites/default/files/images/banner/banner/procurement-leaderinsight-squaredhome-page-banner.jpg")
@@ -216,8 +219,7 @@ header .menu nav ul li a:hover {
     margin-top: auto;
     font-size: 30px;
     align-text: center; 
-   font-family: 'Lora', serif;
-
+   font-family: 'Playfair Display', serif;
 
 }
 
@@ -226,8 +228,7 @@ header .menu nav ul li a:hover {
     position: relative;
     bottom: 60px;
     left: px;
-   font-family: 'Lora', serif;
-
+   font-family: 'Playfair Display', serif;
   
 
 }
@@ -236,8 +237,7 @@ header .menu nav ul li a:hover {
    position: relative;
    bottom: 70px;
    left: 22px;
-  font-family: 'Lora', serif;
-
+  font-family: 'Playfair Display', serif;
   
 }
 
@@ -287,7 +287,7 @@ header .menu nav ul li a:hover {
     margin-top: 13%;
     position: relative; 
     bottom: 44px;
-    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
 }
 #services-description {
     font-size: 17px;
@@ -374,7 +374,7 @@ div.services-content {
     bottom: 400px;
     left: 19%; 
     font-size: 30px;
-    font-family: 'Lora', serif;
+    font-family:'Playfair Display', serif;
 
 }
 
