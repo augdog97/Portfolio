@@ -219,7 +219,8 @@ header {
     margin-top: auto;
     font-size: 30px;
     align-text: center; 
-   font-family: 'Playfair Display', serif;
+   font-family: 'Lora', serif;
+
 
 }
 
@@ -228,7 +229,8 @@ header {
     position: relative;
     bottom: 60px;
     left: px;
-   font-family: 'Playfair Display', serif;
+   font-family: 'Lora', serif;
+
   
 
 }
@@ -237,7 +239,8 @@ header {
    position: relative;
    bottom: 70px;
    left: 22px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
+
   
 }
 
@@ -287,23 +290,23 @@ header {
     margin-top: 13%;
     position: relative; 
     bottom: 44px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
 }
 #services-description {
-    font-size: 17px;
+    font-size: 14px;
 }
 div.services-content {
     padding-left: 20px;
 }
 #services-2 {
     position: absolute;
-   bottom: 80px;
-   right: 400px;     
+   top: 14%;
+   right: 720px;     
 }
 #services-3 {
     position: relative;
-   bottom: 559px;
-   left: 900px;     
+   bottom: 480px;
+   left: 700px;     
 }
 #services-3-description {
     font-size: 14px;
@@ -364,20 +367,19 @@ div.services-content {
 
 #me-chevron {
     position: relative;
-    bottom: 380px;
+    bottom: 280px;
     left: 45%;
    
 
 }
 #me {
     position: relative;
-    bottom: 400px;
+    bottom: 300px;
     left: 19%; 
     font-size: 30px;
-    font-family:'Playfair Display', serif;
+    font-family: 'Lora', serif;
 
 }
-
 
 /*FOOTER-------------------*/
 footer .col-md-12 {
