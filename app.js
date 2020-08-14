@@ -43,7 +43,7 @@ app.use('/', broadwayRouter);
 app.use('/', choreRouter);
 app.use('/', coffeeRouter);
 app.use('/', davieRouter);
-//app.use('/'. storyRouter);
+app.use('/', storyRouter); 
 app.use('/', surveyRouter);
 app.use('/', teaRouter);
 app.use('/', todoRouter);
