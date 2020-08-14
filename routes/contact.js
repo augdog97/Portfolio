@@ -36,7 +36,7 @@ contact.post('/contact', (req,res,next) => {
     service: 'gmail',
     auth: {
       user: 'augustshah@02pilot.com',
-      pass: 'hgahalzecelxdxis'
+      pass: ''
     }
   });
  
