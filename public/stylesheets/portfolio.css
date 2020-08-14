@@ -1,6 +1,13 @@
 html{
     scroll-behavior: smooth;
 }
+body {
+    background: url('../images/portfolio-background.jpg') no-repeat center;
+    background-size: cover;
+     background-attachment: fixed;
+}
+
+
 @media only screen and (min-width: 500px) and (max-width: 720px) {
     header .menu {
           height: 100px !important;
@@ -164,7 +171,6 @@ header .menu nav ul li a:hover {
 
 /*PORTFOLIO--------------------*/
 #portfolio .col-md-12 {
-
     background-size: cover;
     height: inherit;
     overflow: hidden;
@@ -188,7 +194,7 @@ header .menu nav ul li a:hover {
     margin-bottom: 200px;
 }
 #portfolio .row-content h1 {
-    color: white;
+    color: black;
 }
 #portfolio .row-content a {
     text-decoration: none;
@@ -221,13 +227,13 @@ header .menu nav ul li a:hover {
 }
 @media only screen and (min-width: 420px) and (max-width: 530px) {
     #portfolio .pheader-bar {
-          width: 210px;
+          width: 210px 
     }
     #portfolio .row-content {
           width: 290px !important;
     }
 }
-
+ /* Add all portfolio CSS to web app */
 #portfolio-one {
     position: relative;
     bottom: 228px;

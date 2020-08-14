@@ -176,9 +176,6 @@ header .menu nav ul li a:hover {
     }
 }
 #contact .col-md-12 {
-    background: url("https://www.informdirect.co.uk/wp-content/uploads/2014/02/home-page-banner@2x-1024x432.jpg")
-          no-repeat center;
-    background-size: cover;
     height: 600px;
     overflow: hidden;
     position: relative;
@@ -191,7 +188,7 @@ header .menu nav ul li a:hover {
     text-align: center;
 }
 #contact form label {
-    color: white;
+    color: black;
 }
 #contact form .btn {
     background: skyblue;
@@ -215,14 +212,25 @@ header .menu nav ul li a:hover {
     background: #1a2d4e;
 }
 #contact h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 #contact .col-md-7 h4 {
     color: white;
     margin-top: 20px;
 }
+.form {
+    background: white;
+    position: absolute; 
+    top: 70%;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(242, 243, 245);
+}
 
+#name, #email, #message, #submit {
+    border-radius: 20px; 
+}
 /*FOOTER-------------------*/
 footer .col-md-12 {
     height: inherit;
