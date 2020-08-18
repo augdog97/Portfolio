@@ -135,8 +135,7 @@ header {
 /*HEADER-----------------*/
 header .logo-and-contact {
     height: 50px;
-    background: #1a2d4e;
-    color: white;
+    color: black;
 }
 header .logo-and-contact .company-logo {
     float: left;
@@ -178,11 +177,14 @@ header {
 }
 /*HOME-----------------------*/
 #home .col-md-12 {
-    background: url("https://www.gep.com/sites/default/files/images/banner/banner/procurement-leaderinsight-squaredhome-page-banner.jpg")
-          no-repeat center;
-    background-size: cover;
+
     height: 500px;
     overflow: hidden;
+}
+body {
+    background: url('../images/landing-background.jpg') no-repeat center;
+  background-size: cover;
+   background-attachment: fixed;
 }
 #home .jumbotron {
     margin-top: 15px;
@@ -229,8 +231,8 @@ header {
     position: relative;
     bottom: 60px;
     left: px;
-   font-family: 'Lora', serif;
-
+    font-family: 'Playfair Display', serif;
+    color: black;
   
 
 }
@@ -239,7 +241,8 @@ header {
    position: relative;
    bottom: 70px;
    left: 22px;
-  font-family: 'Lora', serif;
+   font-family: 'Playfair Display', serif;
+   color: black;
 
   
 }
@@ -274,7 +277,8 @@ header {
     color: #00a4b8;
 }
 #services .col-md-4 .services-content .ion-android-phone-portrait,
-#services .col-md-4 .services-content .ion-android-desktop,
+#services .col-md-4 .services-content,
+#ion-icon-globe, #ion-icon-desktop, #ion-icon-people,
 #services .col-md-4 .services-content .ion-android-checkbox-outline,
 #services .col-md-4 .services-content .ion-paintbrush,
 #services .col-md-4 .services-content .ion-edit {
@@ -282,7 +286,7 @@ header {
     display: inline-block;
     color: #00a4b8;
 }
-#services .services-content .description {
+#services .services-content .description, #services-2-description {
     width: 250px;
     margin: 0 auto;
 }
@@ -292,7 +296,7 @@ header {
     bottom: 44px;
     font-family: 'Lora', serif;
 }
-#services-description {
+#services-1-description, #services-2-description {
     font-size: 14px;
 }
 div.services-content {
@@ -300,18 +304,43 @@ div.services-content {
 }
 #services-2 {
     position: absolute;
-   top: 14%;
+   top: 11%;
    right: 720px;     
+}
+#services-2-description {
+    position: absolute; 
+    left: 14%;
+}
+#wordpress {
+    position: relative; 
+   left: 15%;
 }
 #services-3 {
     position: relative;
-   bottom: 480px;
+   bottom: 477px;
    left: 700px;     
 }
 #services-3-description {
     font-size: 14px;
     }
+    #consulting {
+        position: relative; 
+        left: 8%;
+    }
 
+
+    .description {
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        top: 20%;
+     }
+     #ion-icon-globe, #ion-icon-people, #ion-icon-desktop {
+        zoom: .2; 
+    }
+    h3, h4 {
+        color: black;
+    }
 
 /*ABOUT-----------------------*/
 #about .col-md-12 {
@@ -364,22 +393,32 @@ div.services-content {
     position: relative;
     bottom: 170px;
 }
-
 #me-chevron {
     position: relative;
-    bottom: 280px;
+    bottom: 420px;
     left: 45%;
    
 
 }
 #me {
     position: relative;
-    bottom: 300px;
+    bottom: 450px;
     left: 19%; 
     font-size: 30px;
     font-family: 'Lora', serif;
 
 }
+h1 {
+    font-family: 'Lobster', cursive;
+    padding-top: 10px;
+}
+.description {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    left: 15%;  
+}
+
 
 /*FOOTER-------------------*/
 footer .col-md-12 {

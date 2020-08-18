@@ -96,6 +96,7 @@ body {
 #nav {
     zoom: 1.7;
     position: fixed;
+    color: white;
 }
 #dropdown {
     position: fixed;
@@ -109,8 +110,8 @@ body {
 /*HEADER-----------------*/
 header .logo-and-contact {
     height: 50px;
-    background: #1a2d4e;
     color: white;
+    font-family: 'Lora', serif;
 }
 header .logo-and-contact .company-logo {
     float: left;
@@ -194,7 +195,7 @@ header .menu nav ul li a:hover {
     margin-bottom: 200px;
 }
 #portfolio .row-content h1 {
-    color: black;
+    color: whitesmoke;
 }
 #portfolio .row-content a {
     text-decoration: none;
@@ -233,7 +234,15 @@ header .menu nav ul li a:hover {
           width: 290px !important;
     }
 }
- /* Add all portfolio CSS to web app */
+ 
+#port {
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    width: 100%;
+    left: 7%; 
+ 
+}
+
 #portfolio-one {
     position: relative;
     bottom: 228px;

@@ -12,14 +12,15 @@
      scroll-behavior: smooth;
  }
  body {
+  background: url('../images/aviation-background.jpg') no-repeat center;
+  background-size: cover;
+   background-attachment: fixed;
    position: relative;
    top: 2px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     line-height: 1.42em;
-    color:#A7A1AE;
-  background: url("https://www.gep.com/sites/default/files/images/banner/banner/procurement-leaderinsight-squaredhome-page-banner.jpg")
-  no-repeat center;  
+ 
   }
   
  h1 {
@@ -94,7 +95,7 @@
        background-color: #1F2739;
  }
  
- .container td:first-child { color: #FB667A; }
+ .container td:first-child { color: white; }
  
  .container tr:hover {
     background-color: #464A52;
@@ -153,13 +154,14 @@ h1#ratings {
 #nav {
     zoom: 1.7;
     position: fixed;
+    color: whitesmoke;
 }
 
 /*header*/
 header .logo-and-contact {
     height: 50px;
-    background: #1a2d4e;
     color: white;
+    font-family: 'Lora', serif;
 }
 header .logo-and-contact .company-logo {
     float: left;
@@ -208,20 +210,24 @@ header .menu nav ul li a:hover {
 }
 
 #chevron-color {
+  width: auto;
+  height: auto;
   margin-top: 7%;
   margin-left: 14%;
-  position: relative; 
-  right: 20px;
-  top: 50px;
+  position: relative;
+  right: 15px;  
+  bottom: 60px;
 
 }
 #see {
   font-weight: bold;
-  color: white; 
+  color: whitesmoke; 
   font-size: 30px; 
   position: relative;
   right: 33%;
-  top: 40px;
+  bottom: 40%;
+  font-family: 'Abril Fatface', cursive;
+
 }
 
   #time-div {
