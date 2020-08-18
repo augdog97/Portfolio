@@ -23,6 +23,11 @@ const teaRouter          =               require('./routes/tea');
 const todoRouter         =               require('./routes/todo');
 const travelRouter       =               require('./routes/travel');
 const wineRotuer         =               require('./routes/wine');
+/* User Account Routers */
+const signinRouter       =               require('./routes/signin');
+const signupRouter       =               require('./routes/signup');
+const userRouter         =               require('./routes/logged-in');
+
 
 
 
@@ -49,6 +54,12 @@ app.use('/', teaRouter);
 app.use('/', todoRouter);
 app.use('/', travelRouter);
 app.use('/', wineRotuer);
+
+/*User Account Router Uses */ 
+   app.use('/', signinRouter);
+  // app.use('/', signupRouter);
+  // app.use('/', userRouter); 
+
 
 
 app.use(express.urlencoded({extended: true}));
