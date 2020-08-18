@@ -9,6 +9,8 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  <!-- Services Icon link-->
  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- AOS Link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <!-- CSS Link-->
  <link rel="stylesheet" href="stylesheets/contact.css">
  <!-- Font Awesome Link-->
@@ -22,30 +24,29 @@
         <div class="col-md-12 col-lg-12 logo-and-contact">
           <div class="company-logo"><img src="" />August Shah</div>
           <div class="company-contact">
-            <h5>443-681-9485| augustshah@02pilot.com</h5>
+            <h5>443-681-9485 | augustshah@02pilot.com</h5>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 menu">
-          <div class="dropdown" id="nav">
-            <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            </i>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown">
-            <a class="dropdown-item" href="/">Home</a>
-            <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
-            <a class="dropdown-item" href="/portfolio">Web Development</a>
-            <a class="dropdown-item" href="/contact">Contact</a>
-            
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
+    <div class="dropdown" id="nav">
+      <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      </i>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown">
+      <a class="dropdown-item" href="/">Home</a>
+      <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
+      <a class="dropdown-item" href="/portfolio">Web Development</a>
+      <a class="dropdown-item" href="/contact">Contact</a>
+      
     </div>
+  </div>  
   </header>
+
+  <div id="half" data-aos="fade-right">
+    <video autoplay loop muted id="video">
+      <source src="../images/contact-video.mp4" type="video/mp4">
+    </video>
+  </div> 
 
   <section id="contact">
     <div class="container-fluid">
@@ -56,37 +57,30 @@
               <div class="col-md-5 col-lg-5">
               </div>
               
-              <!-- get div below to fit to left of contact page, contact form needs to be redeisgned with new font and colors-->
-              <!--<div id="contact-background">
-                <img src="images/portfolio-background.jpg" alt="scenic">
-              </div> --> 
+           
 
-              <div class="col-md-7 col-lg-7">
-                <h1>Contact</h1>
-                <div class="header-bar">
-                  <div class="header-half-bar"></div>
-                </div>
-                <div class="form">
+              <div class="col-md-7 col-lg-7" class="contact">
+                <div class="form" data-aos="fade-right" data-aos-delay="600">
+                  <h1>Contact Us!</h1>
                 <form method="POST" action="/contact"  id="contact">
                   <div class="form-group">
                     <label for="name">Name </label>
                     <br>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                   </div>
                   <div class="form-group">
                     <label for="email"> Email </label>
                     <br>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                   </div>
                   <div class="form-group">
                     <label for="message"> Messages </label> 
                     <br>
-                    <textarea rows="3" name="message" id="message"></textarea>
+                    <textarea rows="3" name="message" id="message" required></textarea>
                   </div>
                   <input type="button" value="Send" class="btn"  id="submit">
                 </form>
                 </div>
-                <h4>You may contact us if you have questions or clarifications about our services.</h4>
               </div>
             </div>
           </div>
@@ -95,8 +89,10 @@
     </div>
     <br>
     <br>
-
   </section>
+  <div id="questions">
+    <h4>You may contact us if you have questions or clarifications about our services.</h4>
+  </div>
   <footer>
     <div class="container-fluid">
       <div class="row">
@@ -117,6 +113,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
                                    <!-- Bootstrap-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1500
+    });
+  </script>
                   <!-- AJAX POST LINK-->
 <script src="javascripts/ajax.js"></script>
 </body>

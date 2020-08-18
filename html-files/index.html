@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap Link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- Services Icon link-->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
   <!-- CSS Link-->
   <link rel="stylesheet" href="stylesheets/style.css">
-  <!-- Font Awesome Link-->
-  <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
   <!-- AOS Link-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- Google Font Link -->
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -34,22 +35,16 @@
     
 
     
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 menu" id="box">
-          <div class="dropdown" id="nav">
-              <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              </i>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-aos="fade-down" id="dropdown">
-              <a class="dropdown-item" href="/">Home</a>
-              <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
-              <a class="dropdown-item" href="/portfolio">Web Development</a>
-              <a class="dropdown-item" href="/contact">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="dropdown" id="nav">
+      <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      </i>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-aos="fade-down" id="dropdown">
+      <a class="dropdown-item" href="/">Home</a>
+      <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
+      <a class="dropdown-item" href="/portfolio">Web Development</a>
+      <a class="dropdown-item" href="/contact">Contact</a>
     </div>
+  </div>
   </header>
 
   <section id="home">
@@ -87,18 +82,17 @@
         <div class="col-md-12 col-lg-12">
           <div class="services">
             <h1 class="text-center">Services</h1>
-            <div class="header-bar">
-              <div class="header-half-bar"></div>
-            </div>
+         
             <div class="row text-center item" data-aos="fade-up" data-aos-duration="3000">
               <div class="col-md-4 col-lg-4" id="services-1">
                 <div class="services-content">
-                  <div class="ion-android-desktop"></div>
-                  <div class="ion-android-globe"></div>
+                  <div class="ion-globe"> 
+                    <ion-icon name="globe-outline" id="ion-icon-globe"></ion-icon>
+                  </div>
                   <div class="description">
                     <h3>Web Development</h3>
                     <hr>
-                    <h4 id="services-description">We provide a web Development service to deliver a product that is coded using the latest technologies. This is to ensure the quality and security of your site.</h4>
+                    <h4 id="services-1-description">We provide a web Development service to deliver a product that is coded using the latest technologies. This is to ensure the quality and security of your site.</h4>
                   </div>
                 </div>
               </div>
@@ -110,12 +104,14 @@
             <div class="row text-center item" data-aos="fade-up"  data-aos-duration="3000" data-aos-delay="200">
               <div class="col-md-4 col-lg-4" id="services-2">
                 <div class="services-content">
-                  <div class="ion-android-desktop"></div>
-                  <div class="ion-android-globe"></div>
+                  <div class="ion-desktop">
+                    <ion-icon name="logo-wordpress" id="ion-icon-desktop"></ion-icon>
+                  </div>
+                  
                   <div class="description">
-                    <h3>WordPress Development</h3>
+                    <h3 id="wordpress">WordPress Development</h3>
                     <hr>
-                    <h4 id="services-description">Are you in need of a reliable, functional, and secure WordPress site? Then look no further. Please use the Contact Page for more information. </h4>
+                    <h4 id="services-2-description">Are you in need of a reliable, functional, and secure WordPress site? Then look no further. Please use the Contact Page for more information. </h4>
                   </div>
                 </div>
               </div>
@@ -125,10 +121,11 @@
               <div class="row text-center item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                 <div class="col-md-4 col-lg-4" id="services-3">
                   <div class="services-content">
-                    <div class="ion-android-desktop"></div>
-                    <div class="ion-android-globe"></div>
+                    <div class="ion-people">
+                      <ion-icon name="people-circle-outline" id="ion-icon-people"></ion-icon>
+                    </div>
                     <div class="description">
-                      <h3>Consulting</h3>
+                      <h3 id="consulting">Consulting</h3>
                       <hr>
                       <h4 id="services-3-description">Do you need to modernize your website? Do you need help setting up a domain and server for your site? Do you need technical support?I am avaible for consulting work. Providing quality product and customer service is my top priority. If interested please use the Contact page.</h4>
                     </div>
@@ -144,9 +141,6 @@
       </div>
     </div>
   </section>
-  
-
-    </div>
   <section id="spacing">
     <div class="container-fluid">
       <div class="row">
@@ -237,6 +231,10 @@
       duration: 1500
     });
   </script> 
+    <!-- Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+      <!-- Services Icon link-->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>
