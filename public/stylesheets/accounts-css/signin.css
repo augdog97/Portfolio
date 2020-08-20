@@ -160,18 +160,38 @@ footer h6 {
 footer {
     background: #1a2d4e;
     position: relative;
-    top: 840px;
+    top: 120px;
 }
-   
      
 body {
     background: black; 
 }
+
+/* Signin Background */
 .container {
     width: auto; 
     height: auto;
+    position: relative;
+    top: 120px;
 }
 #background {
     content: url('../../images/signin-background.jpeg');
-  
+    position: relative;
+    right: 350px; 
+    width: 161%; 
+  border-radius: 20px;
+}
+
+/* Signin Form */ 
+.signin-container {
+    background: white;
+    padding-left: 20px;
+    padding-top: 15px; 
+    position: relative;
+    bottom: 1100px;
+    left: 1100px;
+    z-index: 1; 
+    width: 15%;
+    height: 544px;
+    border-radius: 25px;
 }
