@@ -144,6 +144,203 @@ header .menu nav ul li a:hover {
     color: #00a4b8;
 }
 
+
+/* Signin Background */
+.container {
+    width: auto; 
+    height: auto;
+    position: relative;
+    top: 120px;
+}
+#background {
+  content: url('../../images/signin-background.jpeg');
+    position: relative;
+    bottom: 130px;
+    right: 350px; 
+    width: 170%;
+    height: 1200px;
+  border-radius: 20px;
+}
+
+/* Signin Form */ 
+.signin-container {
+    background: white;
+    padding-left: 20px;
+    padding-top: 15px; 
+    position: relative;
+    bottom: 1100px;
+    left: 1300px;
+    z-index: 1; 
+    width: 15%;
+    height: 544px;
+    border-radius: 25px;
+}
+
+label, .signup{
+    font-family: 'Staatliches', cursive;
+}
+
+.first-name {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    font-size: 22px;
+}
+#first-name {
+background: lightgrey;
+border-radius: 15px;
+border: none;
+zoom: 1.1;
+padding-left: 20px;
+width: 70%;
+position: absolute;
+top: 12%;
+}
+
+.last-name {
+    position: absolute; 
+    top: 20%;
+    left: 15%;
+    font-size: 22px; 
+}
+#last-name {
+background: lightgrey;
+border-radius: 15px;
+border: none;
+padding-left: 15px;
+zoom: 1.1;
+width: 70%;
+position: absolute;
+top: 27%;
+}
+
+
+#welcome-button {
+    position: absolute;
+    top: 37%;
+    left: 25%;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.forgot {
+    position: absolute; 
+    top: 50%;
+    left: 25%;
+}
+#forgot-button {
+    position: absolute;
+    top: 56%;
+    left: 25%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.signup {
+    position: absolute;
+    bottom: 20%;
+}
+#register {
+    position: absolute;
+    bottom: 21.7%;
+    left: 44%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+  width: 80%;
+  zoom: 1.0;
+  position: relative;
+  bottom: 1800px;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.0s;
+  animation-name: fade;
+  animation-duration: 4.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /*FOOTER-------------------*/
 footer .col-md-12 {
     height: inherit;
@@ -165,33 +362,4 @@ footer {
      
 body {
     background: black; 
-}
-
-/* Signin Background */
-.container {
-    width: auto; 
-    height: auto;
-    position: relative;
-    top: 120px;
-}
-#background {
-    content: url('../../images/signin-background.jpeg');
-    position: relative;
-    right: 350px; 
-    width: 161%; 
-  border-radius: 20px;
-}
-
-/* Signin Form */ 
-.signin-container {
-    background: white;
-    padding-left: 20px;
-    padding-top: 15px; 
-    position: relative;
-    bottom: 1100px;
-    left: 1100px;
-    z-index: 1; 
-    width: 15%;
-    height: 544px;
-    border-radius: 25px;
 }
