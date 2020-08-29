@@ -304,7 +304,7 @@ div.services-content {
 }
 #services-2 {
     position: absolute;
-   top: 11%;
+   top: 13%;
    right: 720px;     
 }
 #services-2-description {
@@ -341,6 +341,10 @@ div.services-content {
     h3, h4 {
         color: black;
     }
+    h1.services-text {
+    position: relative; 
+    right: 35px;
+}
 
 /*ABOUT-----------------------*/
 #about .col-md-12 {
@@ -396,14 +400,13 @@ div.services-content {
 #me-chevron {
     position: relative;
     bottom: 420px;
-    left: 45%;
+    left: 30%;
    
 
 }
 #me {
     position: relative;
     bottom: 450px;
-    left: 19%; 
     font-size: 30px;
     font-family: 'Lora', serif;
 

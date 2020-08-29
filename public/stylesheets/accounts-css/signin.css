@@ -249,6 +249,7 @@ top: 27%;
 * {box-sizing:border-box}
 
 /* Slideshow container */
+{
   width: 80%;
   zoom: 1.0;
   position: relative;

@@ -239,7 +239,7 @@ header .menu nav ul li a:hover {
     font-family: 'Cinzel', serif;
     font-weight: bolder;
     width: 100%;
-    left: 7%; 
+    left: 2%; 
  
 }
 
@@ -318,6 +318,10 @@ header .menu nav ul li a:hover {
         left: 600px;
         z-index: -1; 
     }
+    .portfolio-move {
+    position: relative !important; 
+    left: 650px !important;
+}
     /*FOOTER-------------------*/
 footer .col-md-12 {
     height: inherit;
