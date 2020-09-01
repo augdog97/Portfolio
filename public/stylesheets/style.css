@@ -90,7 +90,7 @@ html{
 
 
 /*GLOBAL STYLE------------------*/
-#spacing .col-md-12 {
+#spacing .col-md-12, .web-dev, .wordpress, .consulting {
     height: 100px;
 }
 .services .header-bar,
@@ -202,20 +202,23 @@ body {
     transition: 0.3s ease-out;
     margin-bottom: 10px;
 }
+
 #chevron {
     position: absolute;
-    left: 46%;
-    bottom: 48%; 
-    zoom: .9; 
+    left: 47%;
+    bottom: 50%; 
+    zoom: .9;
+    z-index: 10; 
 }
 
 #chevron-color {
     position: relative;
     margin-top: 20%;
     margin-left: 5%;
-    left: 23%;
+    left: 27%;
 
 }
+
 #see {
     position: relative; 
     margin-top: auto;
@@ -229,8 +232,8 @@ body {
 #august {
     margin-bottom: 20px;
     position: relative;
-    bottom: 60px;
-    left: px;
+    bottom: 40px;
+    left: 10px;
     font-family: 'Playfair Display', serif;
     color: black;
   
@@ -239,17 +242,21 @@ body {
 #august2 {
     margin-bottom: 30px;
    position: relative;
-   bottom: 70px;
-   left: 22px;
+   bottom: 40px;
+   left: 30px;
    font-family: 'Playfair Display', serif;
    color: black;
 
   
 }
+ #home {
+     position: absolute; 
+     left: 19%;
+ }
 
 
 /*SERVICES-------------------*/
-#services .col-md-12 {
+#services .col-md-12, .web-dev, .wordpress, .consulting {
     height: inherit;
 }
 #services .row {
@@ -271,7 +278,7 @@ body {
 #services .col-md-4 .services-content .ion-android-globe,
 #services .col-md-4 .services-content .ion-clipboard,
 #services .col-md-4 .services-content .ion-images,
-#services .col-md-4 .services-content .ion-film-marker {
+#services .col-md-4 .services-content .ion-film-marker, #services-1 {
     font-size: 7em;
     display: inline-block;
     color: #00a4b8;
@@ -281,7 +288,7 @@ body {
 #ion-icon-globe, #ion-icon-desktop, #ion-icon-people,
 #services .col-md-4 .services-content .ion-android-checkbox-outline,
 #services .col-md-4 .services-content .ion-paintbrush,
-#services .col-md-4 .services-content .ion-edit {
+#services .col-md-4 .services-content .ion-edit, #services-1 {
     font-size: 4em;
     display: inline-block;
     color: #00a4b8;
@@ -293,7 +300,7 @@ body {
 #services {
     margin-top: 13%;
     position: relative; 
-    bottom: 44px;
+    top: 600px;
     font-family: 'Lora', serif;
 }
 #services-1-description, #services-2-description {
@@ -347,7 +354,7 @@ div.services-content {
 }
 
 /*ABOUT-----------------------*/
-#about .col-md-12 {
+#about .col-md-12, .web-dev, .wordpress, .consulting{
     height: inherit;
     box-shadow: 0px 3px 2px 1px lightgrey;
     border-radius: 5px;
@@ -394,23 +401,26 @@ div.services-content {
 }
 #about {
     margin-top: 15%;
-    position: relative;
-    bottom: 170px;
+    position: absolute;
+    top: 200%;
+    left: 23%;
+    width: 60%;
 }
-#me-chevron {
-    position: relative;
-    bottom: 420px;
-    left: 30%;
-   
 
-}
 #me {
     position: relative;
-    bottom: 450px;
+    top: 1200px;
     font-size: 30px;
     font-family: 'Lora', serif;
 
 }
+
+#me-chevron {
+    position: absolute;
+    top: 2900%;
+    left: 30%;
+}
+
 h1 {
     font-family: 'Lobster', cursive;
     padding-top: 10px;
@@ -437,7 +447,11 @@ footer h6 {
 }
 footer {
     background: #1a2d4e;
+    position: absolute; 
+    top: 300%;
+    width: 100%;
 }
+  
      
     /* About me */ 
     #figure {
@@ -445,4 +459,94 @@ footer {
     }
    
 
- 
+   /* test CSS */ 
+   .services-text {
+     position: absolute;
+     left: 110%;
+ }
+   .web-dev {
+     position: absolute; 
+     width: 80%; 
+     height: 300px; 
+     top: 150%;
+ }
+
+#ion-icon-globe {
+    position: absolute;
+    top: 2%; 
+    left: 43%;
+    zoom: .6; 
+}
+ #web-text {
+     position: absolute;
+     top: 20%;
+     left: 15%;
+     font-size: 25px;
+ }
+
+#services-1-description {
+    position: absolute;
+    top: 35%;
+    line-height: 150%;
+}
+
+
+.wordpress {
+    position: absolute;
+    left: 200%;
+    top: 40px;
+    height: 300px;
+    width: 1000%;
+}
+
+#ion-icon-desktop {
+    position: absolute;
+    top: 2%;
+    left: 43%;
+    zoom: .6; 
+}
+
+#wordpress {
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+#services-2-description {
+    padding-left: 20px;
+    line-height: 150%;
+    width: 100%; 
+    zoom: 1;
+    position: absolute !important;
+    top: 35%;
+    left: 2px;
+}
+
+.consulting {
+    position: absolute !important;  
+    top: 40px;
+    left: 1400% !important;
+    width: 950% !important;
+    height: 300px;
+}
+
+#ion-icon-people {
+    position: absolute;
+    left: 43%;
+    top: 2%;
+    zoom: .6;
+}
+
+#consulting {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+#services-3-description {
+    position: absolute; 
+    top: 35%;
+    line-height: 150%;
+    zoom: 1.06;
+}
