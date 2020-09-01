@@ -97,6 +97,7 @@ body {
     zoom: 1.7;
     position: fixed;
     color: white;
+    z-index: 5;
 }
 #dropdown {
     position: fixed;
@@ -239,7 +240,8 @@ header .menu nav ul li a:hover {
     font-family: 'Cinzel', serif;
     font-weight: bolder;
     width: 100%;
-    left: 2%; 
+    left: 3%; 
+    color: whitesmoke;
  
 }
 
@@ -320,7 +322,10 @@ header .menu nav ul li a:hover {
     }
     .portfolio-move {
     position: relative !important; 
-    left: 650px !important;
+    bottom: 20px !important;
+    left: 500px !important;
+    zoom: .9;
+    padding-bottom: 20px;
 }
     /*FOOTER-------------------*/
 footer .col-md-12 {
