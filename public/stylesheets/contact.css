@@ -223,14 +223,15 @@ header .menu nav ul li a:hover {
     margin-top: 20px;
 }
 #questions {
-    position: relative;
-    bottom: 600px;
-    left:  350px;
+    position: absolute;
+    bottom: 100%;
+    left:  18%;
     width: 70%;
     z-index: 2; 
     zoom: 1.1;
 
 }
+
 h4 {
     position: absolute; 
     top: 650px;
@@ -240,8 +241,8 @@ h4 {
 .form {
     background: white;
     position: absolute; 
-    top: 60px;
-    left: 35%; 
+    top: 30px;
+    left: 104%; 
     padding: 30px;
     border-radius: 20px;
     border: 2px solid rgb(242, 243, 245);
@@ -257,7 +258,7 @@ h4 {
 }
 #half {
   
-    width: 50%;
+    width: 70%;
     position: absolute; 
     left: 50%; 
     top: 10%;
@@ -265,6 +266,18 @@ h4 {
     z-index: 1;
     opacity: .4;
 }
+
+h1 {
+    font-family: 'Adamina', serif;
+
+}
+
+h4 {
+    font-family: 'EB Garamond', serif;
+    width: 60%;
+
+}
+
 /*FOOTER-------------------*/
 footer .col-md-12 {
     height: inherit;

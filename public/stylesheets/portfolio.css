@@ -172,69 +172,6 @@ header .menu nav ul li a:hover {
 
 
 /*PORTFOLIO--------------------*/
-#portfolio .col-md-12 {
-    background-size: cover;
-    height: inherit;
-    overflow: hidden;
-    position: relative;
-    z-index: -1;
-}
-#portfolio .pheader-bar {
-    height: 10px;
-    width: 500px;
-    background: #00a4b8;
-    margin: 0 auto;
-}
-#portfolio .pheader-half-bar {
-    height: 10px;
-    width: 50px;
-    background: #1a2d4e;
-}
-#portfolio .row-content {
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 200px;
-}
-#portfolio .row-content h1 {
-    color: whitesmoke;
-}
-#portfolio .row-content a {
-    text-decoration: none;
-    color: white;
-}
-#portfolio .row-content a:hover {
-    opacity: 0.9;
-}
-#portfolio .row-content .content a .ion-gear-a {
-    font-size: 12em;
-}
-#portfolio .row-content .workcontent {
-    background: #00a4b8;
-    border-radius: 5px;
-}
-#portfolio .row-content .content {
-    margin-top: 50px;
-    opacity: 0.8;
-}
-@media only screen and (min-width: 0px) and (max-width: 330px) {
-    #portfolio .pheader-bar {
-          width: 200px !important;
-    }
-    #portfolio .row-content {
-          width: 280px !important;
-    }
-    .logo-and-contact {
-          font-size: 10px !important;
-    }
-}
-@media only screen and (min-width: 420px) and (max-width: 530px) {
-    #portfolio .pheader-bar {
-          width: 210px 
-    }
-    #portfolio .row-content {
-          width: 290px !important;
-    }
-}
  
 #port {
     font-family: 'Cinzel', serif;
