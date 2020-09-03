@@ -214,14 +214,14 @@ body {
     position: relative;
     margin-top: 20%;
     margin-left: 5%;
-    right: 150%;
+    right: 130%;
     top: 80px;
 
 }
 
 #see {
     position: relative;
-    left: 20px; 
+    left: 30px; 
     margin-top: auto;
     font-size: 30px;
    font-family: 'Lora', serif !important;
@@ -231,7 +231,7 @@ body {
 #august {
     position: absolute;
     bottom: 80%;
-    left: 40%;
+    left: 42%;
     font-family: 'Playfair Display', serif;
     color: black;
 }
@@ -239,17 +239,16 @@ body {
 #august2 {
    position: relative;
    bottom: 10px;
-   left: 70px;
+   left: 90px;
    font-family: 'Playfair Display', serif;
    color: black;
 
-  
 }
 
 
  #home {
      position: absolute; 
-     left: 19%;
+     left: 21%;
      z-index: 9;
  }
 
@@ -402,6 +401,10 @@ h1 {
     font-family: 'Abril Fatface', cursive;
     padding-top: 10px;
 }
+.about-description {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
 
 
 
@@ -430,8 +433,7 @@ footer {
         display: inline;
     }
    
-
-   /* test CSS */ 
+    /* test CSS */ 
    .services-text {
      position: absolute;
      left: 110%;
@@ -526,4 +528,9 @@ footer {
     top: 35%;
     line-height: 140%;
     zoom: .6;
+}
+
+/* Hide signin page for user*/
+.signin {
+    display: none;
 }
