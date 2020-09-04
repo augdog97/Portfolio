@@ -3,6 +3,8 @@ const contact = express.Router();
 var path = require('path');
 const bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+const nodemailerSendgrid = require('nodemailer-sendgrid');
+require('dotenv').config();
 
 /* 1. using the body parser to get JSOn
    2. I am getting the absolute path to the web app portfolio and serving the static files
@@ -32,14 +34,47 @@ contact.get('/contact',  (req,res,next) => {
 
 contact.post('/contact', (req,res,next) => {
 
-  var transporter = nodemailer.createTransport({
+   /* var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'augustshah@02pilot.com',
       pass: ''
     }
-  });
- 
+  }); */
+  const transporter = nodemailer.createTransport(
+    nodemailerSendgrid({
+      apiKey: process.env.sengrid_api
+    })
+  );
+
+
+  transporter
+    .sendMail({
+      from: 'augustshah@02pilot.com',
+      to: 'augustshah@02pilot.com',
+      subject: `${req.body.name}: Quote`,
+      html: `Contact Email: ${req.body.email}
+      <br>
+      ${ req.body.message }`
+    })
+    .then(([res]) => {
+      console.log('Message delivered with code %s %s', res.statusCode, res.statusMessage);
+    })
+    .catch(err => {
+      console.log('Errors occurred, failed to deliver message');
+
+      if (err.response && err.response.body && err.response.body.errors) {
+        err.response.body.errors.forEach(error => console.log('%s: %s', error.field, error.message));
+      } else {
+        console.log(err);
+      }
+    });
+
+
+
+
+
+/*
   transporter.verify(function(error, success) {
     if (error) {
       console.log(error);
@@ -66,7 +101,7 @@ contact.post('/contact', (req,res,next) => {
     }
   });
   
-
+*/
 });
 
 
