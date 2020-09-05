@@ -175,6 +175,10 @@ header .menu nav ul li a:hover {
 header {
     font-family: 'Lora', serif;
 }
+.company-logo, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+}
 /*HOME-----------------------*/
 #home .col-md-12 {
 

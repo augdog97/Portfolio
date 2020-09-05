@@ -198,6 +198,11 @@ header .menu nav ul li a:hover {
     transition: 0.4s ease-in;
     color: #00a4b8;
 }
+.company-logo, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+}
+
 
 /* chevron */
 #chevron {
