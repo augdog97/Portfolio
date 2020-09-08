@@ -148,6 +148,16 @@ header .menu nav ul li a:hover {
     font-size: 17px;
 }
 
+ .company-logo {
+    position: absolute; 
+    left: 1.5%;
+}
+.company-contact {
+    position: absolute; 
+    left: 76%;
+    top: 10%;
+}
+
 /*GLOBAL STYLE------------------*/
 #spacing .col-md-12 {
     height: 100px;
@@ -280,7 +290,16 @@ h1 {
 h4 {
     font-family: 'EB Garamond', serif;
     width: 60%;
+}
 
+#video {
+    width: 80%;
+    position: relative;
+    left: 50px;
+    border-radius: 20px;
+}
+body {
+    background: black;
 }
 
 /*FOOTER-------------------*/
@@ -299,21 +318,10 @@ footer h6 {
 footer {
     background: #1a2d4e;
     position: relative;
-    top: 560px;
+    top: 166px;
     z-index: 3;
 }
    
+   
      
-    /* About me */ 
-    #figure {
-        display: inline;
-    }
-#video {
-    width: 80%;
-    position: relative;
-    left: 50px;
-    border-radius: 20px;
-}
-body {
-    background: black;
-}
+  

@@ -153,6 +153,16 @@ header .menu nav ul li a:hover {
     font-size: 17px;
 }
 
+.company-logo {
+    position: absolute; 
+    left: 3%;
+}
+.company-contact {
+    position: absolute; 
+    left: 75%;
+    top: 10%;
+}
+
 /*GLOBAL STYLE------------------*/
 #spacing .col-md-12 {
     height: 100px;
@@ -283,7 +293,11 @@ footer h6 {
 }
 footer {
     background: #1a2d4e;
+       position: absolute;
+       left: 3%;
+       width: 100%;
 }
+ 
      
     /* About me */ 
     #figure {

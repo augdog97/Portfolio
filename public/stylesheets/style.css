@@ -179,6 +179,7 @@ header {
     font-family: 'Merriweather', serif;
     font-size: 17px;
 }
+
 /*HOME-----------------------*/
 #home .col-md-12 {
 
@@ -427,14 +428,18 @@ footer {
     background: #1a2d4e;
     position: absolute; 
     top: 300%;
+    left: 2%;
     width: 100%;
 }
   
      
     /* About me */ 
-    #figure {
-        display: inline;
-    }
+   #about-image {
+    zoom: .1;
+    position: relative; 
+    bottom: 10%;
+    left: 20%; 
+}
    
     /* test CSS */ 
    .services-text {
@@ -506,7 +511,7 @@ footer {
 .consulting {
     position: absolute !important;  
     top: 40px;
-    left: 1400% !important;
+    left: 1470%;
     width: 950% !important;
     height: 300px;
 }

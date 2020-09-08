@@ -123,25 +123,6 @@
  .container th:nth-child(4) { display: none; }
  }
 
- #spacing-1 {
-     margin-top: 10%;
- }
- #spacing-1 {
-    margin-top: 3%;
-}
-h1#ratings {
-    font-size: 25px; 
-}
-#responsive {
-    position: relative; 
-    top: 1000px; 
-    right: 20px; 
-    width: 40%;
-  }
-  #time-responsive {
-    position: relative;
-    top: 900px; 
-  }
 
   /* nav */
   #dropdown {
@@ -202,7 +183,15 @@ header .menu nav ul li a:hover {
     font-family: 'Merriweather', serif;
     font-size: 17px;
 }
-
+ .company-logo {
+    position: absolute; 
+    left: 1.5%;
+}
+.company-contact {
+    position: absolute; 
+    left: 76%;
+    top: 10%;
+}
 
 /* chevron */
 #chevron {
@@ -234,20 +223,39 @@ header .menu nav ul li a:hover {
   font-family: 'Abril Fatface', cursive;
 
 }
+  /* Time Table */
+ #spacing-1 {
+     margin-top: 10%;
+ }
+ #spacing-1 {
+    margin-top: 3%;
+}
+h1#ratings {
+    font-size: 25px; 
+}
+#responsive {
+    position: relative; 
+    top: 1000px; 
+    right: 20px; 
+    width: 40%;
+  }
+  #time-responsive {
+    position: relative;
+    top: 900px; 
+  }
+    #table-div {
+   position: absolute ;
+   bottom: 80%;
+   left: 4%;
+   width: 100%; 
+ }
 
-  #time-div {
-    position: relative; 
-    top: 800px; 
-  }
-  #time-header, #time-header-2 {
-    display: inline; 
-    position: relative; 
-    left: 650px; 
-    top: 70px;
-  }
-  #time-header-2 {
-    color: #185875; 
-  }
+ #table-div-2 {
+   position: relative;
+   left: 3%;
+ }
+
+
 
   /* second half color change */ 
  
@@ -271,8 +279,3 @@ footer {
 }
    
    
-  /* About me */ 
-  #figure {
-      display: inline;
-  }
- 
