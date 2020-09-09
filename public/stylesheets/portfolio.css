@@ -187,12 +187,12 @@ header .menu nav ul li a:hover {
 
 
 /*PORTFOLIO--------------------*/
- 
+
 #port {
     font-family: 'Cinzel', serif;
     font-weight: bolder;
     width: 100%;
-    left: 3%; 
+    left: 2%; 
     color: whitesmoke;
  
 }
@@ -275,7 +275,7 @@ header .menu nav ul li a:hover {
     .portfolio-move {
     position: relative !important; 
     bottom: 20px !important;
-    left: 500px !important;
+    left: 467px !important;
     zoom: .9;
     padding-bottom: 20px;
 }

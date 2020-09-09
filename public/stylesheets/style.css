@@ -219,14 +219,13 @@ body {
     position: relative;
     margin-top: 20%;
     margin-left: 5%;
-    right: 145%;
+    right: 185%;
     top: 80px;
 
 }
 
 #see {
     position: relative;
-    left: 20px; 
     margin-top: auto;
     font-size: 30px;
    font-family: 'Lora', serif !important;
@@ -236,7 +235,7 @@ body {
 #august {
     position: absolute;
     bottom: 80%;
-    left: 42%;
+    left: 40%;
     font-family: 'Playfair Display', serif;
     color: black;
 }
@@ -244,11 +243,12 @@ body {
 #august2 {
    position: relative;
    bottom: 10px;
-   left: 60px;
+   left: 20px;
    font-family: 'Playfair Display', serif;
    color: black;
 
 }
+
 
  #home {
      position: absolute; 
