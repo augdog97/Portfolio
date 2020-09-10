@@ -129,15 +129,16 @@
     position: fixed;
     margin-top: 45%;
    margin-left: 31%;
-   border-radius: 10px; 
+   border-radius: 10px;
+   z-index: 21; 
     zoom: .5;
 }
 #nav {
     zoom: 1.7;
     position: fixed;
     color: whitesmoke;
+    z-index: 20; 
 }
-
 /*header*/
 header .logo-and-contact {
     height: 50px;
