@@ -8,9 +8,9 @@
  @charset "UTF-8";
  @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
  
- html {
-     scroll-behavior: smooth;
- }
+html{
+    scroll-behavior: smooth;
+}
  body {
   background: url('../images/aviation-background.jpg') no-repeat center;
   background-size: cover;
@@ -23,6 +23,129 @@
  
   }
   
+
+
+
+  /* nav */
+
+.dropdown {
+    right: 94%;
+    top: 11%;
+    zoom: 1.7;
+    color: white;
+}
+
+.dropdown-menu {
+    top: 35% !important; 
+    left: 25% !important;
+    zoom: .6;
+}
+
+header {
+    font-family: 'Lora', serif;
+}
+
+
+
+
+/*HEADER-----------------*/
+
+header .logo-and-contact .company-logo {
+    float: left;
+    margin-top: 13px;
+}
+header .logo-and-contact .company-contact {
+    float: right;
+    margin-top: 8px;
+}
+
+header .menu nav ul li a:hover {
+    background: #1a2d4e;
+    transition: 0.4s ease-in;
+    color: #00a4b8;
+}
+
+.company-logo, h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+}
+
+
+.company-col {
+        position: relative;
+        top: 13px;
+        right: 15%;
+        zoom: 1;
+}
+
+
+.company-logo, .company-contact {
+  color: white;
+}
+
+.title-content {
+  position: relative;
+  left: 5%;
+}
+
+
+/* chevron */
+
+.click-row {
+  position: relative;
+  top: 60px;
+  left: 40%;
+}
+
+
+
+#click-col-id {
+  zoom: .9; 
+  z-index: 10;
+}
+
+#see {
+  color: whitesmoke; 
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+.table-link {
+  position: relative;
+  top: 30px;
+  left: 9%;
+}
+
+/* Tables */
+  /* Time Table */
+
+
+
+
+
+  /* Ratings Table */
+
+.rating-row {
+  position: relative;
+  top: 100px;
+  left: 5%;
+  width: 90%;
+}
+
+
+h1#ratings {
+    font-size: 25px; 
+}
+
+
+/*Globale Table Settings */
+
+#table-section {
+  position: relative;
+  top: 900px;
+}
+
  h1 {
    font-size:3em; 
    font-weight: 300;
@@ -66,7 +189,7 @@
              box-shadow: 0 2px 2px -2px #0E1119;
  }
  
- .container {
+ .time-container, .rating-container {
        text-align: left;
        overflow: hidden;
        width: 80%;
@@ -123,160 +246,32 @@
  .container th:nth-child(4) { display: none; }
  }
 
-
-  /* nav */
-  #dropdown {
-    position: fixed;
-    margin-top: 45%;
-   margin-left: 31%;
-   border-radius: 10px;
-   z-index: 21; 
-    zoom: .5;
-}
-#nav {
-    zoom: 1.7;
-    position: fixed;
-    color: whitesmoke;
-    z-index: 20; 
-}
-/*header*/
-header .logo-and-contact {
-    height: 50px;
-    color: white;
-    font-family: 'Lora', serif;
-}
-header .logo-and-contact .company-logo {
-    float: left;
-    margin-top: 13px;
-}
-header .logo-and-contact .company-contact {
-    float: right;
-    margin-top: 8px;
-}
-header .menu {
-    height: 70px;
-    background: #00a4b8;
-
-}
-header .menu nav {
-    text-align: center;
-    margin-right: 30px;
-    width: auto;
-}
-header .menu nav ul li {
-    display: inline-block;
-}
-header .menu nav ul li a {
-    color: white;
-    padding: 22px 25px;
-    font-size: 20px;
-
-    border-bottom: 2px solid white;
-    text-decoration: none;
-    padding-top: 27px;
-}
-header .menu nav ul li a:hover {
-    background: #1a2d4e;
-    transition: 0.4s ease-in;
-    color: #00a4b8;
-}
-.company-logo, h5 {
-    font-family: 'Merriweather', serif;
-    font-size: 17px;
-}
- .company-logo {
-    position: absolute; 
-    left: 1.5%;
-}
-.company-contact {
-    position: absolute; 
-    left: 76%;
-    top: 10%;
-}
-
-/* chevron */
-#chevron {
-  position: absolute;
-  left: 47%;
-  bottom: 45%; 
-  zoom: .9; 
-  height: 20%;
-
-}
-
-#chevron-color {
-  width: auto;
-  height: auto;
-  margin-top: 7%;
-  margin-left: 14%;
-  position: relative;
-  right: 15px;  
-  bottom: 60px;
-
-}
-#see {
-  font-weight: bold;
-  color: whitesmoke; 
-  font-size: 30px; 
-  position: relative;
-  right: 33%;
-  bottom: 40%;
-  font-family: 'Abril Fatface', cursive;
-
-}
-  /* Time Table */
- #spacing-1 {
-     margin-top: 10%;
- }
- #spacing-1 {
-    margin-top: 3%;
-}
-h1#ratings {
-    font-size: 25px; 
-}
-#responsive {
-    position: relative; 
-    top: 1000px; 
-    right: 20px; 
-    width: 40%;
-  }
-  #time-responsive {
-    position: relative;
-    top: 900px; 
-  }
-    #table-div {
-   position: absolute ;
-   bottom: 80%;
-   left: 4%;
-   width: 100%; 
- }
-
- #table-div-2 {
-   position: relative;
-   left: 3%;
- }
-
-
-
-  /* second half color change */ 
  
-
-  /*FOOTER-------------------*/
-footer .col-md-12 {
-  height: inherit;
-  background: #1a2d4e;
-}
+/*FOOTER-------------------*/
 footer h5 {
-  color: white;
-}
-footer h6 {
-  color: white;
-  text-align: center;
+    color: white;
 }
 footer {
-  position: relative; 
-  top: 1020px; 
-  background: #1a2d4e;
+    background: #1a2d4e;
+    position: relative;
+    top: 1200px;
+    right: 20%;
+    width: 200%;
 }
+
+.footer-content {
+  position: relative;
+  right: 10%;
+}
+
+
+
+
+/* Hide signin page for user*/
+.signin {
+    display: none;
+}
+
+  
    
    

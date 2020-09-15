@@ -1,234 +1,217 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap Link -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- CSS Link-->
   <link rel="stylesheet" href="stylesheets/style.css">
   <!-- AOS Link-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <!-- Google Font Link -->
+  <!-- Google Font Link -->
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <!-- Logo Icon -->
-    <link rel="icon" href="../images/logo-site.png">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <!-- Logo Icon -->
+  <link rel="icon" href="../images/logo-site.png">
 </head>
 
-<body>
+<body class="container" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0" style="">
   <header>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 col-lg-12 logo-and-contact">
-          <div class="company-logo"><img src="" />August Shah</div>
-          <div class="company-contact"> 
-            <h5>443-681-9485 || augustshah@02pilot.com</h5>
-          </div>
+        <div class="col-sm col-md col-lg company-col">
+          <h5 class="company-logo">August Shah</h5>
+          <h5 class="company-contact">443-681-9485 || augustshah@02pilot.com</h5>
+        </div>
+      </div>
+      <div class="row position-fixed dropdown">
+        <i class=" col-sm col-md col-lg fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </i>
+        <div class="dropdown-menu" id="dropdown-id" aria-labelledby="dropdownMenuButton" data-aos="fade-down"
+          id="dropdown">
+          <a class="dropdown-item" href="/">Home</a>
+          <a class="dropdown-item" href="/portfolio">Web Development</a>
+          <a class="dropdown-item dropdown-submenu" href="/time"> Aviation</a>
+          <a class="dropdown-item" href="/contact">Contact</a>
+          <a class="dropdown-item signin" href="/signin">Signin/Signup</a>
         </div>
       </div>
     </div>
-    
-
-    
-    <div class="dropdown" id="nav">
-      <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      </i>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-aos="fade-down" id="dropdown">
-      <a class="dropdown-item" href="/">Home</a>
-      <a class="dropdown-item" href="/portfolio">Web Development</a>
-      <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
-      <a class="dropdown-item" href="/contact">Contact</a>
-      <a class="dropdown-item signin" href="/signin">Signin/Signup</a>
-    </div>
-  </div>
   </header>
 
+
   <section id="home">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="jumbotron text-center item hello" data-aos="fade-up" >
-            <h1 id="august">August Shah</h1>
-              <br>
-            <h2 id="august2">This site serves as a web based portfolio and resume.</h2>
-            <div class="row" data-aos="fade-down" id="chevron">
-              <h5 id="see">See More</h5>
-              <a href="#services">
-                <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="chevron-color"></i>
-              </a>
-            
+    <div class="title-container">
+      <div class="row title-row">
+        <div class="col-md-12 col-lg-12 title-col">
+          <div data-aos="fade-up" class="jumbotron text-center aos-init aos-animate">
+            <div class="august-1">
+              <h1 id="august-2">August Shah</h1>
             </div>
-      </div>
-    </div>
-  </section>
-     
-
-
-  <section  id="services">
-            <div class="container">
-              <div class="row"data-aos="fade-up" data-aos-duration="3000">
-                <div class="col-4">
-                <div class="services-test">
-                <h1 class="text-center services-text">Services</h1>
-            <div class="container-sm test-1">
-          <div class="web-dev services-content description" id="services-1-1" data-aos="fade-up"
-            data-aos-duration="3000">
-            <div class="ion-globe" id="services-1-1-1">
-              <ion-icon name="globe-outline" id="ion-icon-globe"></ion-icon>
-                <h3 id="web-text">Web Development</h3>
-                <h4 id="services-1-description">I provide web development service to deliver a product that is programmed using
-        the latest technologies. This is to ensure the quality and security of your site.</h4>
-
+            <div class="august-3">
+              <h2 id="august-4">This site serves as a web based portfolio and resume.</h2>
             </div>
 
-          </div>
-            </div>
-   
-          </div> 
-          </div>
-          <div class="row">
-            <div class="col-4">
-              <div class="test">
-                <div class="container-sm">
-                
-                  <div class=" wordpress services-content description" id="services-2-2" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="200">
-                    <div>
-                      <div class="ion-desktop">
-                        <ion-icon name="logo-wordpress" id="ion-icon-desktop"></ion-icon>
-                        <h3 id="wordpress">WordPress Development</h3>
-                        <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress site, please use the "Contact" page to request a quote. </h4>
-                      </div>
-                    </div>
-                  </div>
-                
-                </div>
+            <div id="more-chevron" data-aos="fade-down" class="row aos-init aos-animate">
+              <div class="col-sm-6 col-md-6 col-lg-6  pr-sm-1 see-col">
+                <h5 id="see">See More</h5>
+                <a id="see-id" href="#services">
+                  <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="chevron-color"
+                    aria-hidden="true"></i>
+                </a>
               </div>
             </div>
-  
           </div>
-            
-            <div class="row">
-              <div class="col-4 col-sm-4">
-                <div class="consulting-div">
-                  <div class="container-sm">
-                    <div class="consulting services-content description " id="services-3" data-aos="fade-up"
-                      data-aos-duration="3000" data-aos-delay="300">
-                      <div class="ion-people">
-                        <ion-icon name="people-circle-outline" id="ion-icon-people"></ion-icon>
-                      </div>
-                      <h3 id="consulting">Consulting</h3>
-                      <h4 id="services-3-description">If you are in need of  technical support for your site, need to modernize your companys website, or need help to set up a domain for your site.  I am available for consulting work, providing quality product and customer service is my top priority. If interested please use the "Contact" page.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="aos-init aos-animate" data-aos="fade-down" data-aos-duration="3000" id="services">
+    <div class="row services-row" id="services-row">
+      <h1 class="text-center services-text" id="services-text">Services</h1>
+
+    </div>
+
+    <div class="row web-row" id="web-id">
+      <div class="col-12 web-col services-content aos-init aos-animate" data-aos="fade-down" data-aos-duration="3000">
+        <div class="ion-globe" id="services-1-1-1">
+          <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
+          </ion-icon>
+          <h3 id="web-text">Website Development</h3>
+          <h4 id="services-1-description">I provide web development service to deliver a product that is programmed
+            using
+            the latest technologies. This is to ensure the quality and security of your site.</h4>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row word-row">
+      <div class="col-2 word-col">
+        <div class="wordpress services-content description aos-init aos-animate" id="services-2-2" data-aos="fade-down"
+          data-aos-duration="3000" data-aos-delay="200">
+          <div class="ion-desktop">
+            <ion-icon name="logo-wordpress" id="ion-icon-desktop" role="img" class="md hydrated"
+              aria-label="logo wordpress"></ion-icon>
+            <h3 id="wordpress">WordPress Development</h3>
+            <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress site, please use
+              the "Contact" page to request a quote. </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row consulting-row">
+      <div class="col-1 consulting-col">
+        <div class="consulting services-content aos-init aos-animate" id="services-3" data-aos="fade-down"
+          data-aos-duration="3000" data-aos-delay="300">
+          <div class="ion-people">
+            <ion-icon name="people-circle-outline" id="ion-icon-people" role="img" class="md hydrated"
+              aria-label="people circle outline"></ion-icon>
+          </div>
+          <h3 class="consulting-title" id=" consulting-title-iphonex-landscape">Consulting Services</h3>
+          <h4 id="services-3-description">If you are in need of technical support for your site, need to modernize
+            your companys website, or need help to set up a domain for your site. I am available for consulting work,
+            providing quality product and customer service is my top priority. If interested please use the "Contact"
+            page.</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class=" about-chev">
+    <div class="row" id="about-chevron">
+      <h5 id="me">About Me</h5>
+      <a class="about-link" href="#about-row">
+        <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="me-chevron" aria-hidden="true"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="" id="about">
+    <div class="row about-row" id="about-row">
+      <div class="col-md-12 col-lg-12">
+        <h1 class="text-center">About Me</h1>
+        <div class="header-bar">
+          <div class="header-half-bar"></div>
+        </div>
+        <div class="row row-content">
+          <div class="col-sm-7 col-md-7 col-lg-7 descrip-col">
+            <div class="description">
+              <p class="about-description">My name is August Shah. I am a professional pilot by trade, and I also am a
+                full stack web developer. I am versed in the languages of HTML, CSS, javascript, PHP, and Node.js. If
+                you are looking for a site that best represents your company and brand, please use the "Contact" page
+                to reach out to me.</p>
             </div>
-        </div>
-    
-   
-      
-    </div>
-  </section>
 
-  <section id="spacing">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div id="chevron">
-            <h5 id="me">About Me</h5>
-            <a href="#about">
-            <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="me-chevron"></i> 
-          </a>
-        
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="about-chevron"></div>
- 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <h1 class="text-center">About Me</h1>
-          <div class="header-bar">
-            <div class="header-half-bar"></div>
           </div>
-          <div class="row row-content">
-            <div class="col-md-6 col-lg-6">
-              <div class="description">
-                <p class="about-description">My name is August Shah. I am a professional pilot by trade, and I also am a full stack web developer. I am versed in the languages of HTML, CSS, javascript, PHP, and Node.js. If you are looking for a site that best represents your company and brand, please use the "Contact" page to reach out to me.</p>
-              </div>
-             
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <img src="images/background.jpeg" id="about-image">
-            </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 img-col">
+            <img src="../images/background.jpeg" id="about-image">
           </div>
         </div>
       </div>
     </div>
-   
-  </section>
-  <section id="spacing">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
+  </div>
 
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="spacing">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
 
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="footer-content" id="footer-content">
-            <h5 class="text-center">Copyright &copy; 2020 02Pilot LLC.</h5>
-          </div>
-        </div>
+  <footer class="row ">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="footer-content" id="footer-content">
+        <h5 class="text-center footer-content">Copyright © 2020 02Pilot LLC</h5>
       </div>
     </div>
   </footer>
 
-                                    <!-- jQUERY -->
+
+
+
+
+  <!-- jQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                                    <!-- AOS-->
+  <!-- AOS-->
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-                                    <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-                                    <!-- Popper-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-                                    <!-- Bootstrap-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-                                    <!-- AOS-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- Popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">
     AOS.init({
       duration: 1500
     });
-  </script> 
-    <!-- Font Awesome Link-->
-    <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
-      <!-- Services Icon link-->
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </script>
+  <!-- Font Awesome Link-->
+  <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+  <!-- Services Icon link-->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+
+
 </body>
 
 </html>

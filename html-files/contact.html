@@ -5,129 +5,115 @@
   <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- Bootstrap Link -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- <!-- Services Icon link-->
- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Services Icon link-->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- AOS Link-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <!-- CSS Link-->
- <link rel="stylesheet" href="stylesheets/contact.css">
- <!-- Font Awesome Link-->
- <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
- <!-- Google Font Link-->
-<link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <!-- CSS Link-->
+  <link rel="stylesheet" href="stylesheets/contact.css">
+  <!-- Font Awesome Link-->
+  <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+  <!-- Google Font Link-->
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <!-- Logo Icon -->
   <link rel="icon" href="../images/logo-site.png">
 
 
 </head>
 
-<body>
+<body class="container">
   <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 logo-and-contact">
-          <div class="company-logo"><img src="" />August Shah</div>
-          <div class="company-contact">
-            <h5>443-681-9485 || augustshah@02pilot.com</h5>
-          </div>
-        </div>
+    <div class="row">
+      <div class="container company-col">
+        <h5 class="company-logo">August Shah</h5>
+        <h5 class="company-contact">443-681-9485 || augustshah@02pilot.com</h5>
       </div>
     </div>
-    <div class="dropdown" id="nav">
-      <i class="fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </h1>
+    <div class="row position-fixed dropdown">
+      <i class=" container fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
       </i>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown">
-      <a class="dropdown-item" href="/">Home</a>
+      <div class="dropdown-menu" id="dropdown-id" aria-labelledby="dropdownMenuButton" data-aos="fade-down"
+        id="dropdown">
+        <a class="dropdown-item" href="/">Home</a>
         <a class="dropdown-item" href="/portfolio">Web Development</a>
-      <a class="dropdown-item dropdown-submenu"  href="/time"> Aviation</a>
-      <a class="dropdown-item" href="/contact">Contact</a>
-      
+        <a class="dropdown-item dropdown-submenu" href="/time"> Aviation</a>
+        <a class="dropdown-item" href="/contact">Contact</a>
+        <a class="dropdown-item signin" href="/signin">Signin/Signup</a>
+      </div>
     </div>
-  </div>  
+
   </header>
 
 
+  <!-- To continue to make contact page responsive put each form group in their div with a row and col-->
 
-
-  <section id="contact">
-    <div class="container-fluid" id="test-1">
-      <div class="row test-1">
-        <div class="col-md-12 col-lg-12" id="test-2">
-          <div class="container" id="test-3">
-            <div class="row" id="test-4">
-              <div class="col-md-7 col-lg-7" class="contact">
-                <div class="form" data-aos="fade-right" data-aos-delay="600">
-                  <h1>Contact Us</h1>
-                <form method="POST" action="/contact"  id="contact">
-                  <div class="form-group">
-                    <label for="name">Name </label>
-                    <br>
-                    <input type="text" name="name" id="name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email"> Email </label>
-                    <br>
-                    <input type="email" name="email" id="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="message"> Messages </label> 
-                    <br>
-                    <textarea rows="3" name="message" id="message" required></textarea>
-                  </div>
-                  <input type="button" value="Send" class="btn"  id="submit">
-                </form>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm">
-                      <div id="half" data-aos="fade-right">
-                        <video autoplay loop muted id="video">
-                          <source src="../images/contact-video.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                    </div>
-                </div>
-             
-              </div>
+  <section id="contact-section">
+    <div class="row contact-row" id="contact-row-id">
+      <div class="container contact-container" id="contact-container-id">
+        <div class="form" data-aos="fade-right" data-aos-duration="2000">
+          <h1 class="contact-content">Contact Us</h1>
+          <form method="POST" action="/contact" id="contact">
+            <div class="form-group">
+              <label for="name">Name </label>
+              <br>
+              <input class="form-control" type="text" name="name" id="name" required>
             </div>
-          </div>
+            <div class="form-group">
+              <label for="email"> Email </label>
+              <br>
+              <input class="form-control" type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message"> Messages </label>
+              <br>
+              <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
+            </div>
+            <input class="form-control" type="button" value="Send" class="btn" id="submit">
+          </form>
         </div>
+
+        <video autoplay loop muted id="video">
+          <source src="../images/contact-video-2.mp4" type="video/mp4">
+        </video>
+
       </div>
     </div>
-    <br>
-    <br>
+    </div>
   </section>
-  <div class="container-fluid" id="test-5">
-  <div class="row align-self-center" id="questions">
-    <h4>You may contact us if you have questions or clarifications about our services.</h4>
+
+  <div class="row questions-row" id="questions-row-id">
+    <div class="container align-self-center questions-container" id="questions-container-id">
+      <h4 class="questions-content">You may contact us if you have questions or clarifications about our services.</h4>
+    </div>
   </div>
-  </div>
- 
-  <footer>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="footer-content" id="footer-content">
-            <h5 class="text-center">Copyright &copy; 2020 02Pilot LLC.</h5>
-          </div>
-        </div>
+
+  <footer class="row ">
+    <div class="container">
+      <div class="footer-content" id="footer-content">
+        <h5 class="text-center footer-content">Copyright © 2020 02Pilot LLC</h5>
       </div>
     </div>
   </footer>
 
-                                     <!-- jQUERY -->
+  <!-- jQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                                    <!-- AOS-->
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-                                    <!-- Popper-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-                                   <!-- Bootstrap-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- AOS-->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <!-- Popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <!-- AOS-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">
@@ -135,8 +121,8 @@
       duration: 1500
     });
   </script>
-                  <!-- AJAX POST LINK-->
-<script src="javascripts/ajax.js"></script>
+  <!-- AJAX POST LINK-->
+  <script src="javascripts/ajax.js"></script>
 </body>
 
 </html>
