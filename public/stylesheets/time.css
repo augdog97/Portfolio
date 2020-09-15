@@ -27,6 +27,9 @@ html{
 
 
   /* nav */
+   i.btn {
+     -webkit-appearance: none;
+ }
 
 .dropdown {
     right: 94%;

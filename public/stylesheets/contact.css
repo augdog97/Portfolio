@@ -59,14 +59,20 @@ html{
 
     .dropdown  {
       left: 5%;
+      zoom: 3.0 !important;
     }
 
+    #dropdown-id {
+      zoom: .48;
+    }
      .form {
-      width: 300px !important;
+      width: 100% !important;
     }
 
     .questions-row {
-      top: 150px;
+      position: absolute !important;
+      top: 85%;
+      width: 90%;
     }
 
     footer {
@@ -88,6 +94,10 @@ html{
 
 
 /* nav */
+
+ i.btn {
+     -webkit-appearance: none;
+ }
 
 
 .dropdown {
@@ -280,7 +290,11 @@ footer {
   right: 10%;
 }
 
-   
+   /* Hide signin page for user*/
+.signin {
+    display: none;
+}
+
    
      
   

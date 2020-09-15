@@ -47,13 +47,14 @@ body {
         width: 60%;
     }
 
-    .dropdown {
+      .dropdown {
         left: 10px;
+        zoom: 2.5 !important;
         z-index: 10;
     }
 
       #dropdown-id {
-        zoom: .42;
+        zoom: .34;
     }
 
     #port {
@@ -62,14 +63,14 @@ body {
    .portfolio-move {
         position: relative;
         left: 2%;
-        zoom: .42 !important; 
+        zoom: .3 !important; 
     }
-
-        footer {
+    
+    footer {
         position: absolute !important;
-        top: 160% !important;
+        top: 194% !important;
         left: 1% !important;
-        width: 160%!important;
+        width: 200%!important;
     }
     #footer-content {
         position: relative; 
@@ -78,6 +79,9 @@ body {
 } 
 
  /* Nav bar */
+  i.btn {
+     -webkit-appearance: none;
+ }
 
 .dropdown {
     right: 94%;

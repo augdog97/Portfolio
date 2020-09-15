@@ -12,17 +12,18 @@ html{
      .company-col {
        left: 5%;
    } 
-
-    .dropdown {
+  .dropdown {
         position: relative;
-        top: 10% !important;
+        top: 6% !important;
         left: 4%;
+        zoom: 2.5 !important;
         z-index: 10;
     }
 
       #dropdown-id {
-        zoom: .37;
+        zoom: .3;
     }
+
 
     .august-1 {
         left: 45% !important;
