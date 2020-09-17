@@ -55,24 +55,30 @@ html{
 
     .company-col {
         left: 5% !important;
+        zoom: .8 !important;
     }
 
     .dropdown  {
       left: 5%;
-      zoom: 3.0 !important;
+      zoom: 2.3 !important;
     }
 
     #dropdown-id {
-      zoom: .48;
+      zoom: .37;
     }
      .form {
-      width: 100% !important;
+       position: relative !important;
+       left: 25% !important;
+      width: 80% !important;
+      zoom: .7;
     }
 
     .questions-row {
       position: absolute !important;
-      top: 85%;
+      top: 60%;
+      left: 28% !important;
       width: 90%;
+      zoom: .8;
     }
 
     footer {
@@ -80,10 +86,6 @@ html{
         top: 200% !important;
         left: 1% !important;
         width: 200%!important;
-    }
-    #footer-content {
-        position: relative; 
-        left: 3%;
     }
 
 

@@ -8,7 +8,7 @@ html{
  
 /* Responsive Media Tags */
 
-@media only screen and (max-width: 414px){
+@media only screen and (min-width: 300px) and (max-width: 375px) {
      .company-col {
        left: 5%;
    } 
@@ -336,7 +336,7 @@ body {
 }
 #see-id {
     position: relative;
-    right: 44px;
+    right: 53%;
 }
 
 #august-2 {
@@ -424,8 +424,9 @@ h1.services-text {
 
 .services-text {
     position: relative;
-    right: 22%;
+    right: 33%;
 }
+
 
 .web-col {
      position: relative;
@@ -474,9 +475,9 @@ h1.services-text {
 .wordpress {
      position: relative;
      bottom: 270px;
-     left: 53%;
+     left: 8%;
      height: 300px !important;
-     width: 300%;
+     width: 40%;
      overflow: scroll;
 }
 
@@ -547,7 +548,7 @@ h1.services-text {
    zoom: .6;
 }
 /*ABOUT-----------------------*/
-#about .col-md-12, .web-col, .wordpress, .consulting{
+#about .about-container, .web-col, .wordpress, .consulting{
     height: inherit;
     box-shadow: 0px 3px 2px 1px lightgrey;
     border-radius: 5px;
@@ -607,8 +608,8 @@ h1 {
 .about-link {
     position: relative;
     top: 50px;
-    right: 14%;
-}
+    left: 6%;
+}   
 /*FOOTER-------------------*/
 
 footer h5 {

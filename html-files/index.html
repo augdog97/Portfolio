@@ -25,14 +25,14 @@
   <header>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm col-md col-lg company-col">
+        <div class="container company-col">
           <h5 class="company-logo">August Shah</h5>
           <h5 class="company-contact">443-681-9485 || augustshah@02pilot.com</h5>
         </div>
       </div>
       <div class="row position-fixed dropdown">
-        <i class=" col-sm col-md col-lg fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class=" container lg fas fa-bars btn  btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
         </i>
         <div class="dropdown-menu" id="dropdown-id" aria-labelledby="dropdownMenuButton" data-aos="fade-down"
           id="dropdown">
@@ -50,7 +50,7 @@
   <section id="home">
     <div class="title-container">
       <div class="row title-row">
-        <div class="col-md-12 col-lg-12 title-col">
+        <div class="container title-col">
           <div data-aos="fade-up" class="jumbotron text-center aos-init aos-animate">
             <div class="august-1">
               <h1 id="august-2">August Shah</h1>
@@ -59,8 +59,8 @@
               <h2 id="august-4">This site serves as a web based portfolio and resume.</h2>
             </div>
 
-            <div id="more-chevron" data-aos="fade-down" class="row aos-init aos-animate">
-              <div class="col-sm-6 col-md-6 col-lg-6  pr-sm-1 see-col">
+            <div class="row" id="more-chevron" data-aos="fade-down">
+              <div class="container  pr-sm-1 see-col">
                 <h5 id="see">See More</h5>
                 <a id="see-id" href="#services">
                   <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="chevron-color"
@@ -75,15 +75,15 @@
   </section>
 
 
-  <div class="aos-init aos-animate" data-aos="fade-down" data-aos-duration="3000" id="services">
+  <div data-aos="fade-down" data-aos-duration="3000" id="services">
     <div class="row services-row" id="services-row">
-      <h1 class="text-center services-text" id="services-text">Services</h1>
+      <h1 class=" container text-center services-text" id="services-text">Services</h1>
 
     </div>
 
     <div class="row web-row" id="web-id">
-      <div class="col-12 web-col services-content aos-init aos-animate" data-aos="fade-down" data-aos-duration="3000">
-        <div class="ion-globe" id="services-1-1-1">
+      <div class="container web-col services-content" data-aos="fade-down" data-aos-duration="3000">
+        <div class="ion-globe" id="globe-id">
           <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
           </ion-icon>
           <h3 id="web-text">Website Development</h3>
@@ -98,9 +98,9 @@
 
 
     <div class="row word-row">
-      <div class="col-2 word-col">
-        <div class="wordpress services-content description aos-init aos-animate" id="services-2-2" data-aos="fade-down"
-          data-aos-duration="3000" data-aos-delay="200">
+      <div class="container word-col">
+        <div class="wordpress services-content" id="word-id" data-aos="fade-down" data-aos-duration="3000"
+          data-aos-delay="200">
           <div class="ion-desktop">
             <ion-icon name="logo-wordpress" id="ion-icon-desktop" role="img" class="md hydrated"
               aria-label="logo wordpress"></ion-icon>
@@ -112,14 +112,14 @@
       </div>
     </div>
     <div class="row consulting-row">
-      <div class="col-1 consulting-col">
-        <div class="consulting services-content aos-init aos-animate" id="services-3" data-aos="fade-down"
-          data-aos-duration="3000" data-aos-delay="300">
+      <div class="container consulting-col">
+        <div class="consulting services-content" id="consulting-id" data-aos="fade-down" data-aos-duration="3000"
+          data-aos-delay="300">
           <div class="ion-people">
             <ion-icon name="people-circle-outline" id="ion-icon-people" role="img" class="md hydrated"
               aria-label="people circle outline"></ion-icon>
           </div>
-          <h3 class="consulting-title" id=" consulting-title-iphonex-landscape">Consulting Services</h3>
+          <h3 class="consulting-title" id="consulting-title-id">Consulting Services</h3>
           <h4 id="services-3-description">If you are in need of technical support for your site, need to modernize
             your companys website, or need help to set up a domain for your site. I am available for consulting work,
             providing quality product and customer service is my top priority. If interested please use the "Contact"
@@ -132,25 +132,26 @@
 
 
 
-  <div class=" about-chev">
+  <div class="about-chev">
     <div class="row" id="about-chevron">
-      <h5 id="me">About Me</h5>
-      <a class="about-link" href="#about-row">
-        <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="me-chevron" aria-hidden="true"></i>
-      </a>
-
+      <div class="container">
+        <h5 id="me">About Me</h5>
+        <a class="about-link" href="#about-row">
+          <i class="fas fa-chevron-down p-3 mb-2 bg-primary text-white" id="me-chevron" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="" id="about">
+  <div id="about">
     <div class="row about-row" id="about-row">
-      <div class="col-md-12 col-lg-12">
+      <div class="container about-container">
         <h1 class="text-center">About Me</h1>
         <div class="header-bar">
           <div class="header-half-bar"></div>
         </div>
         <div class="row row-content">
-          <div class="col-sm-7 col-md-7 col-lg-7 descrip-col">
+          <div class="container descrip-col">
             <div class="description">
               <p class="about-description">My name is August Shah. I am a professional pilot by trade, and I also am a
                 full stack web developer. I am versed in the languages of HTML, CSS, javascript, PHP, and Node.js. If
@@ -159,8 +160,10 @@
             </div>
 
           </div>
-          <div class="col-sm-3 col-md-3 col-lg-3 img-col">
-            <img src="../images/background.jpeg" id="about-image">
+          <div class="row">
+            <div class="container img-col">
+              <img src="../images/background.jpeg" id="about-image">
+            </div>
           </div>
         </div>
       </div>
@@ -170,7 +173,7 @@
 
 
   <footer class="row ">
-    <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="container">
       <div class="footer-content" id="footer-content">
         <h5 class="text-center footer-content">Copyright © 2020 02Pilot LLC</h5>
       </div>

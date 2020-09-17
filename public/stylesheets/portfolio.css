@@ -134,7 +134,7 @@ header {
 .company-col {
     position: relative;
     top: 30px;
-    left: 1%;
+    right: 5%;
     zoom: 1;
 }
 
@@ -148,7 +148,7 @@ header {
 #port {
     position: relative;
     bottom: 80%;
-    left: 50%;
+    left: 48.7%;
     font-family: 'Cinzel', serif;
     font-weight: bolder;
     color: whitesmoke;

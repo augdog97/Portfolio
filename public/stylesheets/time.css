@@ -23,6 +23,32 @@ html{
  
   }
   
+  
+  /* Responsive CSS */
+
+
+  @media only screen and (min-width: 300px) and (max-width: 375px) {
+    .company-col {
+      left: 3%;
+      zoom: .7 !important;
+    }
+    .title-content {
+      top: 40px;
+      zoom: .9;
+    }
+    #see {
+      position: relative;
+      right: 16%;
+      zoom: .9;
+    }
+    .table-link {
+      left: 7% !important;
+      zoom: .9;
+    }
+      .time-row {
+      zoom: .8;
+    }
+  }
 
 
 
