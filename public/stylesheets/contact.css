@@ -50,6 +50,29 @@ html{
 }
 
 
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    .company-col {
+        left: 3%;
+    }
+    i.btn {
+        position: relative;
+        top: 20px;
+        left: 20%;
+        zoom: 1.1;
+    }
+    #dropdown-id {
+        top: 35px !important;
+    }
+    .form {
+        left: 10% !important;
+        width: 85% !important;
+    }
+    .footer-content {
+        left: -4%;
+    }
+}
+
+
 
 @media only screen and (min-width: 300px) and (max-width: 375px) {
 
@@ -66,11 +89,11 @@ html{
     #dropdown-id {
       zoom: .37;
     }
-     .form {
-       position: relative !important;
-       left: 25% !important;
-      width: 80% !important;
-      zoom: .7;
+    .form {
+        position: relative !important;
+        left: 25% !important;
+        width: 80% !important;
+        zoom: .7;
     }
 
     .questions-row {

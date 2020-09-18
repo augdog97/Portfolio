@@ -8,144 +8,24 @@ html{
  
 /* Responsive Media Tags */
 
-@media only screen and (min-width: 300px) and (max-width: 375px) {
-     .company-col {
-       left: 5%;
-   } 
-  .dropdown {
-        position: relative;
-        top: 6% !important;
-        left: 4%;
-        zoom: 2.5 !important;
-        z-index: 10;
-    }
-
-      #dropdown-id {
-        zoom: .3;
-    }
-
-
-    .august-1 {
-        left: 45% !important;
-    }
-
-    .august-3 {
-        left: 0%;
-        width: 200%;
-    }
-
-    .see-col {
-        left: 50%;
-    }
-
-    #see-id {
-        right: 59% !important;
-    }
-    
-    #services {
-        left: 30% !important;
-        top: 700px !important;
-    }
-
-    #services-text {
-        top: 40px;
-    }
-
-    .web-row {
-        left: 22% !important;
-        width: 60% !important;
-    }
-
-    #ion-icon-globe {
-        left: 30% !important;
-    }
-    
-    #web-text {
-        left: -5% !important;
-        font-size: 22px !important;
-    }
-
-    
-    .wordpress {
-        left: 290% !important;
-        width: 150px !important;
-    }
-
-
-    #ion-icon-desktop {
-        left: 25% !important;
-    }
-
-    #wordpress {
-        left: -5% !important;
-        font-size: 22px !important;
-    }
-
-    .consulting-col {
-        left: 85% !important;
-    }
-
-    .consulting {
-        width: 150px !important;
-    }
-
-    #ion-icon-people {
-        left: 30% !important; 
-    }
-
-    .consulting-title {
-        left: -5% !important;
-        font-size: 22px !important;
-    }
-
-    #about-chevron {
-        top: 150px !important;
-        left: 60% !important; 
-    }
-    .about-link {
-        right: 40% !important; 
-    }
-
-    #about {
-        left: 40% !important;
-        top: 940px !important;
-    }
-       #about-image {
-        bottom: 150px !important;
-        left: 5% !important;
-    }
-
-
-       footer {
-        top: 870px !important;
-        right: 50px !important;
-        width: 190%!important;
-    }
-
-} 
-
-
-
-
-
 @media only screen and (width: 812px) and (height: 375px) {
-          .company-logo, .company-contact {
+    .company-logo, .company-contact {
         position: relative;
         left: 12%;
         zoom: .8 !important;
     }
 
-       .dropdown {
+    .dropdown {
         position: relative;
         top: 15% !important;
         left: 5%;
     }
         
-        #dropdown-id {
+    #dropdown-id {
           zoom: .5;
         }
 
-          .august-1 {
+    .august-1 {
         position: relative;
         bottom: 30px !important;
         left: 1% !important;
@@ -164,7 +44,7 @@ html{
         font-size: 33px;
     }
 
-      #see {
+    #see {
         zoom: .9;
     }
 
@@ -173,7 +53,7 @@ html{
         zoom: .8;
     }
 
-         #services-text {
+    #services-text {
         bottom: 30px;
         right: 25%;
     }
@@ -187,9 +67,9 @@ html{
         zoom: .8;
     }
 
-       .consulting-row {
-         position: relative;
-         right: 20px;
+    .consulting-row {
+        position: relative;
+        right: 20px;
         zoom: .8;
     }
     .consulting-col {
@@ -199,7 +79,7 @@ html{
         width: 280px !important;
     }
 
-      .consulting-title {
+    .consulting-title {
         left: 4% !important;
     }
 
@@ -210,7 +90,7 @@ html{
         right: 15% !important;
     }
 
-     .about-row {
+    .about-row {
      position: relative; 
      bottom: 290px;
      zoom: .7;
@@ -221,10 +101,248 @@ html{
         right: 50px !important;
         width: 126%!important;
     }
+}
 
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    .company-col {
+        left: 5%;
+    }
+    i.btn {
+        zoom: 1.1;
+    }
+    .dropdown {
+        top: 70px !important;
+        left: 7%;
+        z-index: 10;
+    }
+    #dropdown-id {
+        zoom: .4 !important;
+    }
+    
+    .see-col {
+        left: 6%;
+    }
+
+    #see-id {
+        right: 59% !important;
+    }
+     #services {
+        top: 600px !important;
+        left: 10% !important;
+        zoom: .8;
+    }
+     .web-row {
+        left: 25% !important;
+        width: 70% !important;
+    }
+    
+    .wordpress {
+        left: 26% !important;
+        width: 220px !important;
+    }
+    
+    .consulting-col {
+        top: -250px;
+        left: -6% !important;
+    }
+
+    .consulting {
+        width: 240px !important;
+    }
+
+     #about-chevron {
+        top: 150px !important;
+        left: 35% !important; 
+        width: 69%;
+        height: 170px !important;
+        zoom: .89;
+    }
+    #me {
+        position: relative;
+        top: 45px !important;
+        left: 14%;
+        zoom: .9;
+    }
+    .about-link {
+        top: 60px !important;
+        left: 32% !important; 
+        zoom: .7;
+    }
+    #about {
+        top: 950px !important;
+        left: 18% !important;
+        zoom: .5 !important;
+    }
+
+    #about-image {
+        bottom: 150px !important;
+        left: 53% !important;
+    }
+
+
+    footer {
+        top: 550px !important;
+        right: 50px !important;
+        width: 170%!important;
+    }
+    
+    .footer-content {
+        position: relative;
+        right: 5% !important;
+    }
 
 
 }
+
+@media only screen and (min-width: 300px) and (max-width: 375px) {
+    .company-col {
+       left: 8%;
+   } 
+  .dropdown {
+        position: relative;
+        top: 15% !important;
+        left: 10%;
+        zoom: 1.7 !important;
+        z-index: 10;
+    }
+
+    #dropdown-id {
+        top: 250px !important;
+        left: 170% !important;
+        zoom: .1;
+    }
+
+
+    .august-1 {
+        left: 5% !important;
+        zoom: .9;
+    }
+
+    .august-3 {
+        left: 5%;
+        width: 100%;
+        zoom: .8;
+    }
+
+    .see-col {
+        left: 10%;
+    }
+
+    #see-id {
+        right: 65% !important;
+    }
+    
+    #services {
+        top: 700px !important;
+        left: 30% !important;
+        zoom: .7;
+    }
+
+    #services-text {
+        top: 40px;
+        right: 50%;
+    }
+
+    .web-row {
+        left: 10% !important;
+        width: 60% !important;
+    }
+
+    #ion-icon-globe {
+        left: 30% !important;
+    }
+    
+    #web-text {
+        left: -5% !important;
+        font-size: 22px !important;
+    }
+
+    
+    .wordpress {
+        left: 10% !important;
+        width: 180px !important;
+    }
+
+
+    #ion-icon-desktop {
+        left: 25% !important;
+    }
+
+    #wordpress {
+        left: -5% !important;
+        font-size: 22px !important;
+    }
+
+    .consulting-col {
+        bottom: 250px !important;
+        left: -12% !important;
+    }
+
+    .consulting {
+        width: 190px !important;
+    }
+
+    #ion-icon-people {
+        left: 30% !important; 
+    }
+
+    .consulting-title {
+        left: 10% !important;
+        font-size: 22px !important;
+    }
+
+    #about-chevron {
+        top: -450px !important;
+        left: -20% !important; 
+        width: 65%;
+        height: 170px !important;
+        zoom: .89;
+    }
+    #me {
+        position: relative;
+        top: 45px !important;
+        left: 14%;
+        zoom: .9;
+    }
+    .about-link {
+        left: 25% !important; 
+        top: 60px !important;
+        zoom: .7;
+    }
+
+    #about {
+        left: 21% !important;
+        top: 950px !important;
+        zoom: .7 !important;
+    }
+
+    .about-me-content {
+        position: relative;
+        top: 10px;
+    }
+    #about-image {
+        bottom: 150px !important;
+        left: 18% !important;
+    }
+
+
+    footer {
+        top: 870px !important;
+        right: 50px !important;
+        width: 170%!important;
+    }
+    
+    .footer-content {
+        position: relative;
+        right: 4% !important;
+    }
+
+} 
+
+
+
+
+
 
 
  /* Nav bar */
@@ -548,7 +666,7 @@ h1.services-text {
    zoom: .6;
 }
 /*ABOUT-----------------------*/
-#about .about-container, .web-col, .wordpress, .consulting{
+#about .about-container, .web-col, .wordpress, .consulting, #about-chevron{
     height: inherit;
     box-shadow: 0px 3px 2px 1px lightgrey;
     border-radius: 5px;
@@ -635,6 +753,7 @@ footer {
 
    
     /* test CSS */ 
+
 
 
 

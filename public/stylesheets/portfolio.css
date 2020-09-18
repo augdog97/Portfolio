@@ -11,27 +11,27 @@ body {
 /* Responsive Media Tags */
 
 @media only screen and (width: 812px) and (height: 375px) {
-        .company-logo, .company-contact {
+    .company-logo, .company-contact {
         position: relative;
         left: 15%;
         zoom: .8 !important;
     }
 
-       .dropdown {
+    .dropdown {
         position: relative;
         top: 15% !important;
         left: 5%;
         z-index: 10;
     }
         
-        #dropdown-id {
+    #dropdown-id {
           zoom: .5;
         }
 
     .portfolio-move {
         zoom: .5 !important;
     }
-     footer {
+    footer {
         top: 425px !important;
         right: 50px !important;
         width: 126%!important;
@@ -39,31 +39,74 @@ body {
 
 }
 
-/* Iphones Responsive Portrait Mode*/
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 400px) and (max-width: 500px) {
     .company-col {
-        zoom: .6 !important;
-        left: -4%  !important;
-        width: 60%;
+        left: 3% !important;
+        width: 100%;
+        zoom: .5 !important;
     }
-
-      .dropdown {
+    i.btn {
+        zoom: 1.2;
+    }
+    .dropdown {
+        top: 70px !important;
         left: 10px;
-        zoom: 2.5 !important;
         z-index: 10;
     }
 
-      #dropdown-id {
+    #dropdown-id {
+        top: 47px !important;
+        zoom: .5;
+    }
+
+    #port {
+        top: 43px;
+        left: 53% !important;
+        zoom: .7;
+    }
+   .portfolio-move {
+        position: relative;
+        top: 80px;
+        left: 2%;
+        zoom: .5 !important; 
+    }
+    footer {
+        position: absolute !important;
+        top: 125% !important;
+        left: 1% !important;
+        width: 200%!important;
+    }
+    #footer-content {
+        position: relative; 
+        right: 20%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 375px) {
+    .company-col { 
+        left: -18%  !important;
+        width: 60%;
+        zoom: .6 !important;
+    }
+
+    .dropdown {
+        left: 10px;
+        zoom: 2.2 !important;
+        z-index: 10;
+    }
+
+    #dropdown-id {
         zoom: .34;
     }
 
     #port {
+        left: 54% !important;
         zoom: .7;
     }
    .portfolio-move {
         position: relative;
         left: 2%;
-        zoom: .3 !important; 
+        zoom: .5 !important; 
     }
     
     footer {
@@ -74,7 +117,7 @@ body {
     }
     #footer-content {
         position: relative; 
-        right: 10%;
+        right: 21%;
     }
 } 
 

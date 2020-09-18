@@ -26,6 +26,41 @@ html{
   
   /* Responsive CSS */
 
+   @media only screen and (min-width: 400px) and (max-width: 500px) {
+    .company-col {
+          left: 2%;
+      }
+    i.btn {
+          position: relative;
+          top: 20px;
+          left: 20%;
+          zoom: 1.1;
+      }
+    #dropdown-id {
+          top: 34px !important;
+          opacity: 1;
+      }
+   
+    .title-content {
+          top: 50px;
+      }
+    #see {
+        position: relative !important;
+        top: 40px;
+        right: 30% !important;
+      }
+    .table-link {
+          top: 60px !important;
+          left: 5% !important;
+      }
+    #table-section {
+          position: relative; 
+          z-index: -1;
+      }
+    .footer-content {
+          left: -6% !important;
+      }
+  }
 
   @media only screen and (min-width: 300px) and (max-width: 375px) {
     .company-col {
@@ -45,12 +80,16 @@ html{
       left: 7% !important;
       zoom: .9;
     }
-      .time-row {
+    .time-row {
       zoom: .8;
     }
+    .footer-content {
+      left: -7% !important;
+      }
   }
 
-
+   
+ 
 
   /* nav */
    i.btn {
