@@ -400,6 +400,11 @@ header .menu nav ul li a:hover {
         top: 13px;
         right: 16%;
         zoom: 1;
+      
+
+}
+.company-logo, .company-contact {
+    font-weight: bolder !important;
 }
 
 /*HOME-----------------------*/
@@ -458,7 +463,8 @@ header .menu nav ul li a:hover {
 #august-2 {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 .august-1 {
     position: relative;
@@ -474,6 +480,8 @@ header .menu nav ul li a:hover {
 #august-4 {
    font-family: 'Playfair Display', serif;
    color: black;
+   font-weight: bolder;
+
 }
 .title-col {
     position: relative;
@@ -695,7 +703,7 @@ h1 {
 #about-chevron {
     position: relative;
     bottom: 500px;
-    right: 20%;
+    right: 15%;
     width: 40%;
     height: 120px;
 }
@@ -719,11 +727,16 @@ h1 {
 .img-col {
     padding-top: 8%;
     padding-right: 10%;
+    position: relative; 
+    bottom: 200px;
+    left: 85%;
 }
 
 .descrip-col {
-    padding-top: 10%;
+    padding-top: 11%;
     padding-left: 5%;
+    position: relative;
+    top: 350px;
     font-size: 20px;
 }
 
@@ -735,7 +748,7 @@ h1 {
 .about-link {
     position: relative;
     top: 50px;
-    left: 6%;
+    left: 5%;
 }   
 /*FOOTER-------------------*/
 
