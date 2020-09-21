@@ -104,6 +104,9 @@ html{
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
+    body {
+        background: whitesmoke !important;
+    }
     .company-col {
         left: 5%;
     }
@@ -194,6 +197,9 @@ html{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 375px) {
+    body {
+        background: whitesmoke !important;
+    }
     .company-col {
        left: 8%;
    } 
@@ -403,13 +409,10 @@ header .menu nav ul li a:hover {
       
 
 }
-.company-logo, .company-contact {
-    font-weight: bolder !important;
-}
 
 /*HOME-----------------------*/
  body {
-    background: url('../images/landing-background-2.jpg') no-repeat center;
+    background: url('../images/landing-background.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed; 
 
@@ -463,8 +466,7 @@ header .menu nav ul li a:hover {
 #august-2 {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
-    color: white;
-    font-weight: bold;
+    color: black;
 }
 .august-1 {
     position: relative;
@@ -480,7 +482,6 @@ header .menu nav ul li a:hover {
 #august-4 {
    font-family: 'Playfair Display', serif;
    color: black;
-   font-weight: bolder;
 
 }
 .title-col {
