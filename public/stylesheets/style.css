@@ -136,7 +136,7 @@ html{
     }
      .web-row {
         left: 25% !important;
-        width: 70% !important;
+        width: 66% !important;
     }
     
     .wordpress {
@@ -146,18 +146,25 @@ html{
     
     .consulting-col {
         top: -250px;
-        left: -6% !important;
+        left: -3% !important;
     }
 
     .consulting {
-        width: 240px !important;
+        width: 220px !important;
+    }
+    #ion-icon-people {
+        left: 35% !important;
+    }
+    .consulting-title {
+        left: 4px !important;
     }
    #about-chevron {
-        top: -450px !important;
-        left: 15% !important; 
+        top: -200px !important;
+        left: -30% !important; 
         width: 69% !important;
         height: 170px !important;
         zoom: .89;
+   
     }
     #me {
         position: relative;
@@ -297,8 +304,8 @@ html{
     }
 
     #about-chevron {
-        top: -450px !important;
-        left: -20% !important; 
+        top: -220px !important;
+        left: -51% !important; 
         width: 65%;
         height: 170px !important;
         zoom: .89;
@@ -325,9 +332,10 @@ html{
         position: relative;
         top: 10px;
     }
-    #about-image {
-        bottom: 150px !important;
-        left: 18% !important;
+     #about-image {
+        bottom: 75% !important;
+        left: -65% !important;
+        zoom: .08 !important;
     }
 
 
@@ -669,11 +677,11 @@ h1.services-text {
    position: relative;
    top: 16%;
    right: 1.5%;
-   line-height: 146%;
+   line-height: 170%;
    zoom: .6;
 }
 /*ABOUT-----------------------*/
-#about .about-container, .web-col, .wordpress, .consulting, #about-chevron{
+#about .about-container, .web-col, .wordpress, .consulting{
     height: inherit;
     box-shadow: 0px 3px 2px 1px lightgrey;
     border-radius: 5px;
@@ -776,6 +784,7 @@ footer {
 
    
     /* test CSS */ 
+
 
 
 

@@ -62,7 +62,7 @@ html{
       }
   }
 
-  @media only screen and (min-width: 300px) and (max-width: 375px) {
+ @media only screen and (min-width: 300px) and (max-width: 375px) {
     .company-col {
       left: 3%;
       zoom: .7 !important;
@@ -71,6 +71,13 @@ html{
       top: 40px;
       zoom: .9;
     }
+      .dropdown {
+          left: 10%;
+          z-index: 1;
+      }
+      #dropdown-id {
+          z-index: 1;
+      }
     #see {
       position: relative;
       right: 16%;
@@ -81,13 +88,17 @@ html{
       zoom: .9;
     }
     .time-row {
+        position: relative ;
+        left: 14%;
       zoom: .8;
     }
+      .rating-row {
+          left: 17% !important;
+      }
     .footer-content {
       left: -7% !important;
       }
   }
-
    
  
 
