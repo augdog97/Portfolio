@@ -155,7 +155,7 @@ html{
    #about-chevron {
         top: -450px !important;
         left: 15% !important; 
-        width: 69%;
+        width: 69% !important;
         height: 170px !important;
         zoom: .89;
     }
@@ -176,11 +176,11 @@ html{
         zoom: .5 !important;
     }
 
-    #about-image {
-        bottom: 150px !important;
-        left: 53% !important;
-    }
 
+    #about-image {
+        bottom: 220% !important;
+        left: -40% !important;
+    }
 
     footer {
         top: 550px !important;
@@ -713,9 +713,9 @@ h1 {
     left: 18% !important;
     top: 10px;
 }
-.about-link {
-    top: 15px !important;
-    left: 35% !important;
+#about-link {
+    top: 15px;
+    left: 35%;
 }
 
     #about-image {
