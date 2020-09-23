@@ -112,12 +112,14 @@ html{
     top: 11%;
     zoom: 1.7;
     color: white;
+    z-index: 10;
 }
 
 .dropdown-menu {
     top: 35% !important; 
     left: 25% !important;
     zoom: .6;
+    z-index: 10;
 }
 
 header {
@@ -208,7 +210,7 @@ header .menu nav ul li a:hover {
 .rating-row {
   position: relative;
   top: 100px;
-  left: 5%;
+  left: 9%;
   width: 90%;
 }
 
@@ -340,7 +342,7 @@ footer {
 
 .footer-content {
   position: relative;
-  right: 10%;
+  right: 15%;
 }
 
 

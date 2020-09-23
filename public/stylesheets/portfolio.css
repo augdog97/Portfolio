@@ -139,6 +139,7 @@ body {
     top: 35% !important; 
     left: 25% !important;
     zoom: .6;
+    z-index: 10;
 }
 
 
