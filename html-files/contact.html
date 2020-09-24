@@ -52,18 +52,17 @@
   </header>
 
 
-  <!-- To continue to make contact page responsive put each form group in their div with a row and col-->
 
   <section id="contact-section">
     <div class="row contact-row" id="contact-row-id">
       <div class="container contact-container" id="contact-container-id">
         <div class="form" data-aos="fade-right" data-aos-duration="2000">
           <h1 class="contact-content">Contact Us</h1>
-          <form method="POST" action="/contact" id="contact">
+          <form method="POST" action="/contact"  id="contact">
             <div class="form-group">
               <label for="name">Name </label>
               <br>
-              <input class="form-control" type="text" name="name" id="name" required>
+              <input class="form-control" type="text" name="name" id="name" required> 
             </div>
             <div class="form-group">
               <label for="email"> Email </label>
@@ -75,12 +74,12 @@
               <br>
               <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
             </div>
-            <input class="form-control" type="button" value="Send" class="btn" id="submit">
+            <input class="form-control btn" type="submit" value="Send" id="submit">
           </form>
         </div>
 
-        <video autoplay loop muted id="video">
-          <source src="../images/contact-video-2.mp4" type="video/mp4">
+        <video autoplay  muted id="video">
+          <source src="../images/circuit.mp4" type="video/mp4">
         </video>
 
       </div>
@@ -126,3 +125,4 @@
 </body>
 
 </html>
+

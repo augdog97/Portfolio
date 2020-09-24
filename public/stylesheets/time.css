@@ -169,6 +169,13 @@ header .menu nav ul li a:hover {
   left: 5%;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
 
 /* chevron */
 

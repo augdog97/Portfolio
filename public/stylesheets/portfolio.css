@@ -187,7 +187,13 @@ header {
 }
 
 
+a {
+    color: white;
+}
 
+a:hover {
+    color: blue;
+}
 /*PORTFOLIO--------------------*/
 #port {
     position: relative;

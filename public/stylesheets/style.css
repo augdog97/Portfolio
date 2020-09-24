@@ -199,7 +199,7 @@ html{
 
 
     #about-image {
-        bottom: 90% !important;
+        bottom: 490% !important;
         left: -30% !important;
         zoom: .09 !important;
     }
@@ -387,6 +387,7 @@ html{
     right: 94%;
     zoom: 1.7;
     z-index: 10;
+    color: white;
 }
 
 .dropdown-menu {
@@ -434,16 +435,24 @@ header .menu nav ul li a:hover {
         top: 13px;
         right: 16%;
         zoom: 1;
-      
+        z-index: 10;
+        color: white;
+}
+a {
+    color: white;
+}
 
+a:hover {
+    color: blue;
 }
 
 /*HOME-----------------------*/
- body {
-    background: url('../images/landing-background.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed; 
-
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 #home .jumbotron {
     background: none;
@@ -494,7 +503,7 @@ header .menu nav ul li a:hover {
 #august-2 {
     font-family: 'Playfair Display', serif;
     font-size: 55px;
-    color: black;
+    color: white;
 }
 .august-1 {
     position: relative;
@@ -509,7 +518,7 @@ header .menu nav ul li a:hover {
 
 #august-4 {
    font-family: 'Playfair Display', serif;
-   color: black;
+   color: white;
 
 }
 .title-col {
@@ -550,6 +559,7 @@ header .menu nav ul li a:hover {
     left: 8%;
     width: 100%;
     font-family: 'Lora', serif;
+    z-index: 1;
 }
 
 #services-1-description, #services-2-description {
@@ -578,6 +588,7 @@ h1.services-text {
 .services-text {
     position: relative;
     right: 33%;
+    color: white;
 }
 
 
@@ -624,6 +635,7 @@ h1.services-text {
      left: 8%;
      height: 300px !important;
      width: 40%;
+    overflow-y: scroll;
 }
 
 .word-row {
@@ -703,10 +715,12 @@ h1.services-text {
 #about {
     position: relative;
     top: 500px;
-    left: 11%;
-    width: 78%;
+    left: 23%;
+    width: 60%;
+    height: 900px;
     zoom: .9;
     overflow-y: scroll;
+    z-index: 1;
 }
 
 h5#me {
@@ -741,8 +755,8 @@ h1 {
 
    #about-image {
     position: relative;
-    bottom: 50%;
-    left: 20%;
+    bottom: 60%;
+    right: 10%;
     zoom: .1;
 }
 
