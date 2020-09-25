@@ -32,6 +32,9 @@ html{
     .company-col {
         right: 1% !important;
     }
+      .form {
+      left: 60% !important; 
+    }
 
 }
 
@@ -62,6 +65,10 @@ html{
     }
     #dropdown-id {
         top: 35px !important;
+    }
+       .contact-content {
+        left: 11% !important;
+      
     }
     .form {
         left: 10% !important;
