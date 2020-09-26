@@ -27,6 +27,9 @@ html{
   /* Responsive CSS */
 
    @media only screen and (min-width: 400px) and (max-width: 500px) {
+    body {
+        background: black !important;
+    }
     .company-col {
           left: 2%;
       }
@@ -63,6 +66,9 @@ html{
   }
 
  @media only screen and (min-width: 300px) and (max-width: 375px) {
+    body {
+        background: black !important;
+    }
     .company-col {
       left: 3%;
       zoom: .7 !important;
@@ -168,6 +174,9 @@ header .menu nav ul li a:hover {
   position: relative;
   left: 5%;
 }
+ .title-content, .yellow {
+  color: white !important;
+}
 
 a {
     color: white;
@@ -205,10 +214,17 @@ a:hover {
   left: 9%;
 }
 
+.fa-chevron-down {
+  color: black;
+}
+
 /* Tables */
   /* Time Table */
 
-
+ 
+h1 {
+  color: white !important;
+}
 
 
 
@@ -217,7 +233,7 @@ a:hover {
 .rating-row {
   position: relative;
   top: 100px;
-  left: 9%;
+  left: 39%;
   width: 90%;
 }
 
@@ -306,7 +322,9 @@ h1#ratings {
        background-color: #1F2739;
  }
  
- .container td:first-child { color: white; }
+  td {
+    color: lightgray; 
+   }
  
  .container tr:hover {
     background-color: #464A52;
