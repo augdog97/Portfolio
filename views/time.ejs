@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<%- include('layouts/head'); -%>
+<%- include('layouts/time/time-style'); -%>  
+</head>
+
+<body class="container">
+
+  <%- include('layouts/header'); -%> 
+
+  <div class="row click-row">
+    <div class="container click-col" data-aos="fade-up" id="click-col-id">
+      <a class="table-link" href="#table-section">
+        <i class="fas fa-chevron-down p-3  bg-white" id="table-chevron-id"></i>
+      </a>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section id="table-section">
+    <div class="row time-row" id="time-row-id">
+      <table class="container table-responsive time-container" id="time-container-id">
+        <thead>
+          <tr>
+            <th>
+              <h1>Total Time </h1>
+            </th>
+            <th>
+              <h1>PIC</h1>
+            </th>
+            <th>
+              <h1>SIC</h1>
+            </th>
+            <th>
+              <h1>Duel Given</h1>
+            </th>
+            <th>
+              <h1>Solo</h1>
+            </th>
+            <th>
+              <h1>Instrument</h1>
+            </th>
+            <th>
+              <h1>CrossCountry</h1>
+            </th>
+            <th>
+              <h1>Night</h1>
+            </th>
+            <th>
+              <h1>Multiengine</h1>
+            </th>
+            <th>
+              <h1>Turbine</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1,219</td>
+            <td>1,012</td>
+            <td>81</td>
+            <td>660</td>
+            <td>152</td>
+            <td>165</td>
+            <td>387</td>
+            <td>171</td>
+            <td>168</td>
+            <td>84</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row rating-row" id="rating-row-id">
+      <table class="container table-responsive rating-containter" id="rating-container-id">
+        <thead>
+          <tr>
+            <th>
+              <h1 id="ratings">Ratings </h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CE-525 PIC Type Rating</td>
+          </tr>
+          <tr>
+            <td>CE-500 SIC Type Rating</td>
+          </tr>
+          <tr>
+            <td>Multiengine Instructor</td>
+          </tr>
+          <tr>
+            <td>Certified Flight Instructor Instrument</td>
+          </tr>
+          <tr>
+            <td>Certified Flight Instructor</td>
+          </tr>
+          <tr>
+            <td>Commercial Multiengine</td>
+          </tr>
+          <tr>
+            <td>Commercial Single Engine </td>
+          </tr>
+          <tr>
+            <td>Instrument</td>
+          </tr>
+          <tr>
+            <td>Private Pilot</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </section>
+
+<%- include('layouts/footer'); -%> 
+<%- include('layouts/scripts'); -%> 
+
+</body>
+
+</html>

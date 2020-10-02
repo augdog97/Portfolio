@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<%- include('layouts/head');  -%>
+<%- include('layouts/index/index-style'); -%>  
+</head>
+
+<body class="container" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+  
+  <%- include('layouts/header'); -%>
+   
+
+
+  <section id="home">
+    <div class="title-container">
+      <div class="row title-row">
+        <div class="container title-col">
+          <div data-aos="fade-up" class="jumbotron text-center aos-init aos-animate">
+            <div class="august-1">
+              <h1 id="august-2">August Shah</h1>
+            </div>
+            <div class="august-3">
+              <h2 id="august-4">Welcome to my web based portfolio.</h2>
+            </div>
+
+            <div class="row" id="more-chevron" data-aos="fade-down">
+              <div class="container  pr-sm-1 see-col">
+                <a id="see-id" href="#services">
+                  <i class="fas fa-chevron-down p-3 bg-white" id="chevron-color"
+                    aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div data-aos="fade-down" data-aos-duration="3000" id="services">
+    <div class="row services-row" id="services-row">
+      <h1 class=" container text-center services-text" id="services-text">Services</h1>
+
+    </div>
+    <div class="row web-row" id="web-id">
+      <div class="container web-col services-content">
+        <div class="ion-globe" id="globe-id">
+          <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
+          </ion-icon>
+          <h3 id="web-text">Website Development</h3>
+          <h4 id="services-1-description">I provide a web development service to deliver a product that is created
+            using the latest technologies, to ensure the quality, functionality, and security of your site.  Sites will be responsive across all devices. </h4>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row word-row">
+      <div class="container word-col">
+        <div class="wordpress services-content" id="word-id">
+          <div class="ion-desktop">
+            <ion-icon name="server" id="ion-icon-desktop" role="img" class="md hydrated"
+              aria-label="logo wordpress"></ion-icon>
+            <h3 id="wordpress">CMS Development</h3>
+            <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress or Squarespace site, please use
+              the "Contact" page to request a quote. </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row consulting-row">
+      <div class="container consulting-col">
+        <div class="consulting services-content" id="consulting-id">
+          <div class="ion-people">
+            <ion-icon name="people-circle-outline" id="ion-icon-people" role="img" class="md hydrated"
+              aria-label="people circle outline"></ion-icon>
+          </div>
+          <h3 class="consulting-title" id="consulting-title-id">Consulting Services</h3>
+          <h4 id="services-3-description"> If you are in need of technical support for your site, need to modernize your site, or need help setting up a domain for your site I am available for consulting. I will provide a quality product with customer service as my top priority. If interested, please use the "Contact" page.”</h4>
+        </div>
+      </div>
+    </div>
+      <div class="about-chev">
+        <div class="row" id="about-chevron">
+          <div class="container">
+            <a class="about-link" id="about-link" href="#about-row">
+              <i class="fas fa-chevron-down p-3 bg-white text-white" id="me-chevron" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+  <div  id="about">
+    <div class="row about-row" id="about-row">
+      <div class="container about-container">
+        <h1 class="text-center about-me-content">About Me</h1>
+        <div class="row row-content">
+          <div class="container descrip-col">
+            <div class="description">
+              <p class="about-description">
+                I’m August Shah. While a professional pilot by trade, I also work as a full stack web developer. Through working with
+                various languages, I’ve developed a love of bringing abstract concepts and ideas to life. With each project I produce, I
+                seek to push the bounds of creativity. I am a flexible and versatile developer who is dedicated to you, as the client. I
+                seek to provide a seamless experience that will allow me to be as involved in the project as you may need. I use the
+                latest technologies to ensure quality, functionality, and security.
+                <br>
+                  I specialize in HTML, CSS, JavaScript, PHP, and SQL, with some experience with Node.js, and Bootstrap. I can create
+                custom web design, WordPress, and Squarespace sites.
+                <br>
+                  If you are ready to take this journey with me, then please send me a message. I look forward to hearing from you.
+              </p>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="container img-col">
+              <img src="../images/bio-pic.jpg" id="about-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <%- include('layouts/index/index-video');  -%> 
+   <%- include('layouts/footer');  -%>
+   <%- include('layouts/scripts'); -%>  
+
+
+</body>
+
+</html>

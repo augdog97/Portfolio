@@ -7,10 +7,9 @@ const nodemailerSendgrid = require('nodemailer-sendgrid');
 require('dotenv').config();
 
 /* 1. using the body parser to get JSOn
-   2. I am getting the absolute path to the web app portfolio and serving the static files
    */ 
 contact.use(bodyParser.json() );
-contact.use(express.static(__dirname + 'portfolio'));
+
 
 /* 
 1. Making a GET request and sending the Contact HTMl file
@@ -18,9 +17,8 @@ contact.use(express.static(__dirname + 'portfolio'));
 */
 
 contact.get('/contact',  (req,res,next) => {
-  res.sendFile(path.join(__dirname, '../html-files', 'contact.html'));
-
-});
+  res.render('contact');
+})
 
 
 /*

@@ -26,9 +26,13 @@ const userRouter         =               require('./routes/logged-in');
 
 
 
-var app = express();
+const app = express();
 
-app.use(express.static( 'public'));
+app.use(express.static('public'));
+
+/* View Engine */
+const ejs = require('ejs');
+app.set('view engine', 'ejs');
 
 
 /* Main App router uses */
