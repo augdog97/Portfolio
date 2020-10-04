@@ -16,7 +16,6 @@ const successRouter      =                require('./routes/success');
 const broadwayRouter     =               require('./routes/broadway');
 const coffeeRouter       =               require('./routes/coffee');
 const davieRouter        =               require('./routes/davie');
-const teaRouter          =               require('./routes/tea');
 const travelRouter       =               require('./routes/travel');
 /* User Account Routers */
 const signinRouter       =               require('./routes/signin');
@@ -46,7 +45,6 @@ app.use('/', successRouter);
 app.use('/', broadwayRouter);
 app.use('/', coffeeRouter);
 app.use('/', davieRouter); 
-app.use('/', teaRouter);
 app.use('/', travelRouter);
 
 /*User Account Router Uses */ 
