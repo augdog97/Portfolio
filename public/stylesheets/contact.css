@@ -71,11 +71,11 @@ html{
       
     }
     .form {
-        left: 10% !important;
+        left: 15% !important;
         width: 85% !important;
     }
     .footer-content {
-        left: -4%;
+        zoom: .8 !important;
     }
 }
 
@@ -98,24 +98,18 @@ html{
     }
     .form {
         position: relative !important;
-        left: 25% !important;
+        left: 20% !important;
         width: 80% !important;
         zoom: .7;
     }
 
     .questions-row {
-      position: absolute !important;
-      top: 80%;
-      left: 28% !important;
-      width: 90%;
-      zoom: .8;
+     display: none;
     }
+    
 
-    footer {
-        position: absolute !important;
-        top: 200% !important;
-        left: 1% !important;
-        width: 200%!important;
+    .footer-content {
+        zoom: .8 !important;
     }
 
 
@@ -294,3 +288,4 @@ footer {
    
      
   
+

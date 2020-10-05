@@ -217,7 +217,7 @@ html{
 
       #about-image {
         bottom: 270% !important;
-        left: -34% !important;
+        left: 25% !important;
         zoom: .1 !important;
     }
     .about-description {
@@ -227,14 +227,15 @@ html{
 
 
     footer {
-        top: 650px !important;
+        top: 350% !important;
         right: 50px !important;
         width: 170%!important;
     }
     
     .footer-content {
         position: relative;
-        right: 5% !important;
+        left: -20% !important;
+        zoom: .8 !important;
     }
 
 
@@ -377,10 +378,11 @@ html{
     .about-me-content {
         position: relative;
         top: 10px;
+        left: 30% !important;
     }
     #about-image {
         bottom: 120% !important;
-        left: -40% !important;
+        left: 23% !important;
         zoom: .08 !important;
     }
 
@@ -388,14 +390,14 @@ html{
 
 
     footer {
-        top: 870px !important;
-        right: 50px !important;
+        top: 380% !important;
         width: 170%!important;
     }
     
     .footer-content {
         position: relative;
-        right: 4% !important;
+        left: -20% !important;
+        zoom: .8 !important;
     }
 
 } 
@@ -834,6 +836,8 @@ html {
 
    
     /* test CSS */ 
+
+
 
 
 

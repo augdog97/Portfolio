@@ -56,6 +56,7 @@ body {
         top: 70px !important;
         left: 10px;
         z-index: 10;
+        zoom: 1.7 !important;
     }
 
     #dropdown-id {
@@ -64,26 +65,29 @@ body {
     }
 
     #port {
-        top: 43px;
-        left: 53% !important;
+        top: 60% !important;
+        left: 40% !important;
         zoom: .7;
     }
    .portfolio-move {
         position: relative;
-        top: 80px;
-        left: 2%;
+        top: 40% !important;
+        left: -14%;
         zoom: .5 !important; 
     }
+    
+      #portfolio-one-image {
+        width: 100%;
+    }
+    
     footer {
-        position: absolute !important;
-        top: 125% !important;
-        left: 1% !important;
-        width: 200%!important;
+        position: relative;
+        top: 140% !important;
+        left: -60% !important;
+        width: 200% !important;
+        zoom: .6;
     }
-    #footer-content {
-        position: relative; 
-        right: 20%;
-    }
+ 
 }
 
 @media only screen and (min-width: 300px) and (max-width: 375px) {
@@ -98,7 +102,7 @@ body {
 
     .dropdown {
         left: 10px;
-        zoom: 2.2 !important;
+        zoom: 1.7 !important;
         z-index: 10;
     }
 
@@ -107,25 +111,27 @@ body {
     }
 
     #port {
-        left: 54% !important;
+        left: 35% !important;
         zoom: .7;
     }
    .portfolio-move {
         position: relative;
-        left: 2%;
+        left: -20%;
         zoom: .5 !important; 
+    }
+    
+    #portfolio-one-image {
+        width: 100%;
     }
     
     footer {
         position: absolute !important;
         top: 194% !important;
-        left: 1% !important;
+        left: -60% !important;
         width: 200%!important;
+        zoom: .8 !important;
     }
-    #footer-content {
-        position: relative; 
-        right: 21%;
-    }
+  
 } 
 
  /* Nav bar */
@@ -254,3 +260,6 @@ footer {
 .signin {
     display: none;
 }
+
+
+

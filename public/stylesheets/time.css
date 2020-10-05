@@ -44,24 +44,20 @@ html{
           opacity: 1;
       }
    
-    .title-content {
-          top: 50px;
-      }
-    #see {
-        position: relative !important;
-        top: 40px;
-        right: 30% !important;
+    .title {
+          top: 40px !important;
       }
     .table-link {
-          top: 60px !important;
+          top: 20px !important;
           left: 5% !important;
       }
     #table-section {
           position: relative; 
+            left: 10%;
           z-index: -1;
       }
     .footer-content {
-          left: -6% !important;
+          zoom: .8!important;
       }
   }
 
@@ -73,9 +69,8 @@ html{
       left: 3%;
       zoom: .7 !important;
     }
-    .title-content {
+    .title {
       top: 40px;
-      zoom: .9;
     }
       .dropdown {
           left: 10%;
@@ -99,10 +94,10 @@ html{
       zoom: .8;
     }
       .rating-row {
-          left: 17% !important;
+          left: 23% !important;
       }
     .footer-content {
-      left: -7% !important;
+        zoom: .8 !important;
       }
   }
    
@@ -388,3 +383,5 @@ footer {
   
    
    
+
+
