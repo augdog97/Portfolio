@@ -161,7 +161,7 @@ header .menu nav ul li a:hover {
 .company-col {
         position: relative;
         top: 13px;
-        right: 15%;
+        right: 60%;
         zoom: 1;
 }
 
@@ -184,6 +184,10 @@ a {
 
 a:hover {
     color: blue;
+}
+.title {
+  position: relative;
+  left: 5%;
 }
 
 /* chevron */
@@ -233,12 +237,14 @@ h1 {
 .rating-row {
   position: relative;
   top: 100px;
-  left: 39%;
+  left: 21%;
   width: 90%;
 }
 
 
 h1#ratings {
+    position: relative;
+    left: 29%;
     font-size: 25px; 
 }
 
@@ -368,6 +374,7 @@ footer {
 .footer-content {
   position: relative;
   right: 15%;
+  zoom: 1.4;
 }
 
 

@@ -24,19 +24,32 @@
         </div>
       </div>
 
-      <div id="svg">
-        <svg viewBox="-10 -10 500 500" id="svg-image">
-            <path class="circle" d="M877.28,335.72a203.17,203.17,0,0,1,37.86,118.1C915.14,565.26,823.44,657,712,657s-203.14-91.7-203.14-203.14S600.56,250.68,712,250.68a203.21,203.21,0,0,1,144.67,60.53" transform="translate(-508.86 -250.68)"/><polyline class="check" points="78.54 229.94 179.32 300.74 347.98 60.67"/></svg>
-    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <div id="svg">
+              <svg viewBox="-10 -10 500 500" id="svg-image">
+                <path class="circle"
+                  d="M877.28,335.72a203.17,203.17,0,0,1,37.86,118.1C915.14,565.26,823.44,657,712,657s-203.14-91.7-203.14-203.14S600.56,250.68,712,250.68a203.21,203.21,0,0,1,144.67,60.53"
+                  transform="translate(-508.86 -250.68)" />
+                <polyline class="check" points="78.54 229.94 179.32 300.74 347.98 60.67" /></svg>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <div data-aos="" data-aos-duration="1000" id="success">
+              <p class="sucess" data-aos=""> Thank you! Your Email has been sent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
    
     <br>    
     <br>
 
-    <div data-aos="fade-right"   data-aos-duration="1000" id="success">
-       <p> Thank you! Your Email has been sent.</p> 
-    </div>
     
-  <%- include('layouts/footer'); -%> 
+    
+
 
 </body>
 </html>

@@ -6,55 +6,59 @@
  <%- include('layouts/contact/contact-style'); -%>  
 </head>
 
-<body class="container">
+<body>
 
-  <%- include('layouts/header'); -%> 
-
-
-
-  <section id="contact-section">
-    <div class="row contact-row" id="contact-row-id">
-      <div class="container contact-container" id="contact-container-id">
-        <div class="form" data-aos="fade-right" data-aos-duration="2000">
-          <h1 class="contact-content">Contact Us</h1>
-          <form method="POST" action="/contact"  id="contact">
-            <div class="form-group">
-              <label for="name">Name </label>
-              <br>
-              <input class="form-control" type="text" name="name" id="name" required> 
-            </div>
-            <div class="form-group">
-              <label for="email"> Email </label>
-              <br>
-              <input class="form-control" type="email" name="email" id="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message"> Messages </label>
-              <br>
-              <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
-            </div>
-            <input class="form-control btn" type="submit" value="Send" id="submit">
-          </form>
+  <div class="container">
+    <%- include('layouts/header'); -%>
+    
+    
+    
+    <section id="contact-section">
+      <div class="row contact-row" id="contact-row-id">
+        <div class="container contact-container" id="contact-container-id">
+          <div class="form" data-aos="fade-right" data-aos-duration="2000">
+            <h1 class="contact-content">Contact Us</h1>
+            <form method="POST" action="/contact" id="contact">
+              <div class="form-group">
+                <label for="name">Name </label>
+                <br>
+                <input class="form-control" type="text" name="name" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email"> Email </label>
+                <br>
+                <input class="form-control" type="email" name="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message"> Messages </label>
+                <br>
+                <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
+              </div>
+              <input class="form-control btn" type="submit" value="Send" id="submit">
+            </form>
+          </div>
+    
+          <video autoplay muted id="video">
+            <source src="../images/circuit.mp4" type="video/mp4">
+          </video>
+    
         </div>
-
-        <video autoplay  muted id="video">
-          <source src="../images/circuit.mp4" type="video/mp4">
-        </video>
-
+      </div>
+      </div>
+    </section>
+    
+    <div class="row questions-row" id="questions-row-id">
+      <div class="container align-self-center questions-container" id="questions-container-id">
+        <h4 class="questions-content">You may contact us if you have questions or clarifications about our services.</h4>
       </div>
     </div>
-    </div>
-  </section>
-
-  <div class="row questions-row" id="questions-row-id">
-    <div class="container align-self-center questions-container" id="questions-container-id">
-      <h4 class="questions-content">You may contact us if you have questions or clarifications about our services.</h4>
-    </div>
+    
+    <%- include('layouts/footer'); -%>
+    <%- include('layouts/scripts'); -%>
+    <%- include('layouts/contact/contact-scripts'); %>
   </div>
 
-<%- include('layouts/footer'); -%> 
-<%- include('layouts/scripts'); -%>
-<%- include('layouts/contact/contact-scripts'); %>  
+  
 
 </body>
 

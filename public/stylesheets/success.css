@@ -2,88 +2,6 @@
 html{
     scroll-behavior: smooth;
 }
-@media only screen and (min-width: 500px) and (max-width: 720px) {
-    header .menu {
-          height: 100px !important;
-    }
-    header .menu nav ul li a {
-          padding: 1px !important;
-          font-size: 17px !important;
-          background: none !important;
-          border-bottom: none !important;
-          text-decoration: none;
-          width: 100%;
-          height: 10px !important;
-    }
-    header .menu nav ul li a:hover {
-          background: none !important;
-          transition: 0.4s ease-in;
-          color: none !important;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 400px) {
-    header .menu nav ul li {
-          display: block !important;
-    }
-    header .menu nav ul li a {
-          text-decoration: none;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 500px) {
-    .services .header-bar,
-    #featured-work .fwheader-bar,
-    #about .header-bar,
-    #testimonials .header-bar {
-          width: 280px !important;
-    }
-    .services .header-half-bar,
-    #featured-work .fwheader-half-bar,
-    #about .header-half-bar,
-    #testimonials .header-half-bar {
-          height: 10px;
-          width: 50px;
-          background: #1a2d4e;
-    }
-    #about .row-content p {
-          font-size: 18px !important;
-    }
-    #about .row-content .description {
-          width: inherit !important;
-    }
-    #home .jumbotron {
-          padding: 0px
-    }
-    #home .jumbotron h1,
-    #home .jumbotron h2 {
-          font-size: 25px;
-          overflow: hidden;
-    }
-    header .menu {
-          height: 150px !important;
-    }
-    header .menu nav ul li a {
-          padding: 1px !important;
-          font-size: 17px !important;
-          background: none !important;
-          border-bottom: none !important;
-          text-decoration: none;
-          width: 100%;
-          height: 10px !important;
-    }
-    header .menu nav ul li a:hover {
-          background: none !important;
-          transition: 0.4s ease-in;
-          color: none !important;
-    }
-    header .logo-and-contact {
-          overflow: hidden;
-    }
-    #testimonials .row-content .col-md-4 .content {
-          margin-top: 50px;
-    }
-}
 
 /* Nav bar */
 
@@ -166,9 +84,10 @@ body{
     text-align: center;
   }
   svg{
-    position: absolute;
-    top: 50%;
-    width: 10%;
+    position: relative;
+    top: 400px;
+    left: 10%;
+    width: 20%;
     transform: translate(-50%, -50%);
   }
   
@@ -210,14 +129,9 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
   }
-  #success {
-    position: fixed;
-    top: 60%;
-    left: 33%;
-
-  }
-  #svg {
+  .sucess {
     position: relative;
-    top: 450px;
-    left: 53%;
+    top: 350px;
+    right: 0%;
   }
+

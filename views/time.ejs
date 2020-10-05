@@ -6,10 +6,20 @@
 <%- include('layouts/time/time-style'); -%>  
 </head>
 
-<body class="container">
+<body>
 
-  <%- include('layouts/header'); -%> 
-
+<div class="container">
+  <%- include('layouts/header'); -%>
+  
+  <h1 class="title">
+    <span>
+      Time
+    </span>
+    <span>
+      Table
+    </span>
+  </h1>
+  
   <div class="row click-row">
     <div class="container click-col" data-aos="fade-up" id="click-col-id">
       <a class="table-link" href="#table-section">
@@ -19,7 +29,7 @@
   </div>
   </div>
   </section>
-
+  
   <section id="table-section">
     <div class="row time-row" id="time-row-id">
       <table class="container table-responsive time-container" id="time-container-id">
@@ -73,7 +83,7 @@
         </tbody>
       </table>
     </div>
-
+  
     <div class="row rating-row" id="rating-row-id">
       <table class="container table-responsive rating-containter" id="rating-container-id">
         <thead>
@@ -113,13 +123,15 @@
           </tr>
         </tbody>
       </table>
-
+  
     </div>
-
+  
   </section>
-
-<%- include('layouts/footer'); -%> 
-<%- include('layouts/scripts'); -%> 
+  
+  <%- include('layouts/footer'); -%>
+  <%- include('layouts/scripts'); -%>
+</div>
+  
 
 </body>
 
