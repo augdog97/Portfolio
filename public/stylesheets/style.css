@@ -133,21 +133,29 @@ html{
         zoom: 1.1;
     }
     .dropdown {
-        top: 70px !important;
+        top: 90px !important;
         left: 7%;
         z-index: 10;
+        zoom: 1.6 !important;
     }
     #dropdown-id {
         zoom: .4 !important;
     }
-        
-    
+    .august-1 {
+        top: 100px !important;
+        left: 1% !important; 
+    } 
+    .august-3 {
+        top: 120px !important;
+        left: -1%;
+    }
+ 
     .see-col {
-        left: 6%;
+        left: 4%;
     }
 
     #see-id {
-        right: 59% !important;
+        right: 69% !important;
     }
      #services {
         top: 600px !important;
@@ -156,36 +164,72 @@ html{
     }
     
      .web-row {
-        left: 25% !important;
-        width: 66% !important;
+        left: 60% !important;
+        width: 80% !important;
+   
     }
+    #web-text {
+     right: -33% !important;
+      top: -150px;
+      width: 40%;
+    }
+    #services-1-description {
+        bottom: 65% !important;
+        left: 20% !Important;
+        font-size: 15px !important;
+        width: 70% !important;
+   
+    }
+  
+    
     
     .wordpress {
-        left: 26% !important;
-        width: 220px !important;
+        top: 380px !important;
+        left: 32% !important;
+        width: 230px !important;
+
+    }
+    #word-id {
+        height: 230px !important;
+    }
+      #ion-icon-desktop {
+        left: 160% !important;
     }
     
     #wordpress {
-        left: 4% !important;
+        top: 5px;
+        left: -1% !important;
     }
     
-   .consulting-col {
-        top: -250px;
-        left: 22% !important;
+    #services-2-description {
+        top: 10px;
+        left: -3% !important;
+        font-size: 14px !important;
     }
-
+    
     .consulting {
-        width: 220px !important;
+        top: 400px;
+        left: 32% !important;
+        width: 230px !important;
+ 
+    }
+    #consulting-id {
+        height: 230px !important;
     }
     #ion-icon-people {
-        left: 35% !important;
+        left: 150% !important;
     }
   .consulting-title {
-        left: 10px !important;
+        top: 20px;
+        left: -6% !important;
+        width: 200% !important;
+    }
+    #services-3-description {
+        top: 50px !Important;
     }
    #about-chevron {
-        top: -200px !important;
-        left: -30% !important; 
+        top: 450px !important;
+        left: 30% !important; 
         width: 69% !important;
         height: 170px !important;
         zoom: .89;
@@ -203,20 +247,24 @@ html{
         zoom: .7;
     }
       #about {
-        top: 1220px !important;
+        top: 2200px !important;
         left: 9% !important;
-         width: 90% !important;
-        zoom: .5 !important;
-        box-shadow: 0px 3px 2px 1px lightgrey;
+        width: 70% !important;
+        height: 1700px !Important;
+        zoom: .3 !important;
+        box-shadow: 0px 3px 2px 1px rgb(74, 72, 72) !important;
         border-radius: 5px;
-        background: #f8f8f8;
+        background: #ffffff !important;
+    }
+    .about-me-content {
+        top: 90px;
+        left: 22% !important;
     }
 
-
       #about-image {
-        bottom: 270% !important;
-        left: 25% !important;
-        zoom: .1 !important;
+        top: 15% !important;
+        left: 20% !important;
+        zoom: .2 !important;
     }
     .about-description {
         line-height: 1.6!important;
@@ -225,14 +273,14 @@ html{
 
 
     footer {
-        top: 350% !important;
+        top: 700px !important;
         right: 50px !important;
         width: 170%!important;
     }
     
     .footer-content {
         position: relative;
-        left: -20% !important;
+        left: -12% !important;
         zoom: .8 !important;
     }
 
@@ -548,13 +596,13 @@ a:hover {
 }
 .august-1 {
     position: relative;
-     bottom: -60px;
+     bottom: -90px;
      left: 24%;
 }
 
 .august-3 {
     position: relative;
-    bottom: -200px;
+    bottom: -220px;
     right: 25%;
 }
 
@@ -573,7 +621,7 @@ a:hover {
 .see-col {
    padding-left: 52%;
    position: relative;
-   top: 170px;
+   top: 190px;
 
 }
 
@@ -667,8 +715,8 @@ h1.services-text {
 
 .wordpress {
      position: relative;
-     top: 153px;
-     left: 45%;
+     top: -395px;
+     left: 35%;
      height: 290px !important;
      width: 33%;
      overflow-x: hidden;
@@ -711,8 +759,8 @@ h1.services-text {
 
 .consulting {
   position: relative;
-  left: 87.4%;
-  bottom: 135px;
+  left: 75.5%;
+  bottom: 690px;
   width: 33%;
   height: 290px !important;
   overflow-x: hidden;
@@ -757,8 +805,8 @@ h1.services-text {
     position: relative;
     top: 440px;
     left: 5%;
-    width: 27%;
-    height: 470px;
+    width: 35%;
+    height: 500px;
     zoom: 1.1;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -784,8 +832,8 @@ h1 {
 
 .about-link {
     position: relative;
-    top: 50px;
-    left: 50%;
+    top: -400%;
+    left: 34%;
 }  
 
 .about-me-content {
@@ -795,8 +843,8 @@ h1 {
    #about-image {
     position: relative;
     top: 2%;
-    left: 33%;
-    zoom: .06;
+    left: 30%;
+    zoom: .07;
 }
 
 
@@ -812,6 +860,7 @@ h1 {
 .about-chev {
     padding-left: 45%;
 }
+
 
 
  
@@ -850,6 +899,8 @@ html {
 
    
     /* test CSS */ 
+
+
 
 
 

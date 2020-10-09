@@ -4,6 +4,7 @@
 <head>
 <%- include('layouts/head');  -%>
 <%- include('layouts/index/index-style'); -%>  
+<%- include('layouts/index/google-analytics'); -%>
 </head>
 
 <body  data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
@@ -37,12 +38,13 @@
         
 
     <!-- New Services Section-->
-    <div data-aos="fade-down" data-aos-duration="3000" id="services">
+    <div  data-aos="fade-down" data-aos-duration="3000" id="services">
       <div class="row services-row" id="services-row">
         <div class="col-xs col-sm col-md col-lg col-xl">
             <h1 class="  text-center services-text" id="services-text">Services</h1>
         </div>
       </div>
+
       <div class="row web-row" id="web-id">
         <div class="col-xs col-sm col-md col-lg col-xl  web-col services-content">
             <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
@@ -50,14 +52,14 @@
             </div>
               </div>
             <div class="row">
-              <div class="col-xs col-sm col-md col-lg col-xl">
+              <div class="col-xs col-sm col-md col-lg col-xl content-col">
                 <h3 id="web-text">Website Development</h3>
                 <h4 id="services-1-description">I provide a web development service to deliver a product that is created
                   using the latest technologies, to ensure the quality, functionality, and security of your site. Sites will be
                   responsive across all devices. </h4>
               </div>
             </div>
-        </div>
+        
       
         <div class="row wordpress services-content" id="word-id">
               <div class="row">
@@ -102,7 +104,7 @@
           </div>
         </div>
       </div>
-
+    </div>
     <!---->
 
 
@@ -149,17 +151,6 @@
     <%- include('layouts/index/index-video');  -%>
     <%- include('layouts/scripts'); -%>
     <%- include('layouts/index/index-java-video');  -%> 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162829624-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-162829624-2');
-    </script>
-
-
   </div>
   
 
