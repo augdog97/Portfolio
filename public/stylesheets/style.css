@@ -159,73 +159,78 @@ html{
     }
      #services {
         top: 600px !important;
-        left: 10% !important;
+        left: 1% !important;
         zoom: .8;
     }
     
      .web-row {
-        left: 60% !important;
+        left: 63% !important;
         width: 80% !important;
    
     }
+    #ion-icon-globe {
+        left: 39% !important;
+    }
     #web-text {
-     right: -33% !important;
-      top: -150px;
-      width: 40%;
+     right: -21% !important;
+     top: -120px;
+     width: 100%;
+      zoom: 1.2 !important;
     }
     #services-1-description {
-        bottom: 65% !important;
-        left: 20% !Important;
-        font-size: 15px !important;
-        width: 70% !important;
+        bottom: 75% !important;
+        left: 25% !Important;
+        font-size: 12px !important;
+        width: 50% !important;
    
     }
   
     
     
     .wordpress {
-        top: 380px !important;
-        left: 32% !important;
-        width: 230px !important;
+        top: -110px !important;
+        left: 24% !important;
+        width: 290px !important;
 
     }
     #word-id {
-        height: 230px !important;
+        height: 260px !important;
     }
       #ion-icon-desktop {
-        left: 160% !important;
+        left: 220% !important;
     }
     
     #wordpress {
-        top: 5px;
+        top: -20px;
         left: -1% !important;
     }
     
     #services-2-description {
-        top: 10px;
+        top: -10px;
         left: -3% !important;
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
     
     .consulting {
-        top: 400px;
-        left: 32% !important;
-        width: 230px !important;
+        top: -90px;
+        left: 24% !important;
+        width: 290px !important;
  
     }
     #consulting-id {
-        height: 230px !important;
+        height: 270px !important;
     }
     #ion-icon-people {
-        left: 150% !important;
+        left: 217% !important;
     }
   .consulting-title {
-        top: 20px;
+        top: 10px;
         left: -6% !important;
         width: 200% !important;
     }
     #services-3-description {
-        top: 50px !Important;
+        top: 29px !Important;
+        font-size: 22px !important;
     }
    #about-chevron {
         top: 450px !important;
@@ -258,12 +263,12 @@ html{
     }
     .about-me-content {
         top: 90px;
-        left: 22% !important;
+        left: 20% !important;
     }
 
       #about-image {
         top: 15% !important;
-        left: 20% !important;
+        left: 15% !important;
         zoom: .2 !important;
     }
     .about-description {
@@ -668,7 +673,7 @@ h1.services-text {
 
 .services-text {
     position: relative;
-    right: 30%;
+    right: 33%;
     color: white;
 }
 
@@ -676,7 +681,7 @@ h1.services-text {
 .web-col {
      position: relative;
      top: 64px;
-     right: 98%;
+     right: 97%;
      height: 290px !important;
      overflow-x: hidden;
      overflow-y: scroll;
@@ -716,7 +721,7 @@ h1.services-text {
 .wordpress {
      position: relative;
      top: -395px;
-     left: 35%;
+     left: 32%;
      height: 290px !important;
      width: 33%;
      overflow-x: hidden;
@@ -759,8 +764,8 @@ h1.services-text {
 
 .consulting {
   position: relative;
-  left: 75.5%;
-  bottom: 690px;
+  left: 68%;
+  bottom: 686px;
   width: 33%;
   height: 290px !important;
   overflow-x: hidden;
@@ -793,6 +798,7 @@ h1.services-text {
    zoom: .6;
    font-size: 22px;
 }
+
 /*ABOUT-----------------------*/
 #about, .web-col, .wordpress, .consulting{
     height: inherit;
@@ -838,12 +844,12 @@ h1 {
 
 .about-me-content {
     position: relative;
-    left: 32%;
+    left: 29%;
 }
    #about-image {
     position: relative;
     top: 2%;
-    left: 30%;
+    left: 25%;
     zoom: .07;
 }
 
@@ -860,6 +866,7 @@ h1 {
 .about-chev {
     padding-left: 45%;
 }
+
 
 
 
@@ -899,6 +906,7 @@ html {
 
    
     /* test CSS */ 
+
 
 
 

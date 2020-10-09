@@ -206,20 +206,19 @@ a:hover {
   left: 20%;
 }
 
-
 .form {
     padding: 30px;
     padding-bottom: 10%;
     position: relative;
     top: 200px;
-    left: 40%;
+    left: 30%;
     width: 50%;
     background: white;
     border-radius: 20px;
     border: 2px solid rgb(242, 243, 245);
     opacity: .8 !important;
     z-index: 9;
-    zoom: 1.3;
+    zoom: 1.1;
 }
 
 
