@@ -12,9 +12,7 @@ html{
     scroll-behavior: smooth;
 }
  body {
-  background: url('../images/aviation-background.jpg') no-repeat center;
-  background-size: cover;
-   background-attachment: fixed;
+  background: black;
    position: relative;
    top: 2px;
     font-family: 'Open Sans', sans-serif;
@@ -122,7 +120,9 @@ html{
     zoom: .6;
     z-index: 10;
 }
-
+#dropdownMenuButton {
+  color: white;
+}
 header {
     font-family: 'Lora', serif;
 }
@@ -155,8 +155,8 @@ header .menu nav ul li a:hover {
 
 .company-col {
         position: relative;
-        top: 13px;
-        right: 60%;
+        top: 5%;
+        right: 70%;
         zoom: 1;
 }
 
@@ -165,10 +165,7 @@ header .menu nav ul li a:hover {
   color: white;
 }
 
-.title-content {
-  position: relative;
-  left: 5%;
-}
+
  .title-content, .yellow {
   color: white !important;
 }
@@ -182,14 +179,16 @@ a:hover {
 }
 .title {
   position: relative;
+  top: 150px;
   left: 5%;
+  font-family: 'Playfair Display', serif;
 }
 
 /* chevron */
 
 .click-row {
   position: relative;
-  top: 60px;
+  top: 170px;
   left: 40%;
 }
 
@@ -224,7 +223,11 @@ a:hover {
 h1 {
   color: white !important;
 }
-
+#time-title {
+  position: relative;
+  left: 10%;
+    font-size: 25px; 
+}
 
 
   /* Ratings Table */
@@ -232,8 +235,9 @@ h1 {
 .rating-row {
   position: relative;
   top: 100px;
-  left: 21%;
+  left: 41%;
   width: 90%;
+  zoom: 1.3;
 }
 
 
@@ -249,6 +253,7 @@ h1#ratings {
 #table-section {
   position: relative;
   top: 900px;
+  left: 4%;
 }
 
  h1 {
@@ -332,6 +337,7 @@ h1#ratings {
  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
         -moz-box-shadow: 0 6px 6px -6px #0E1119;
              box-shadow: 0 6px 6px -6px #0E1119;
+
  }
  
  .container td:hover {
@@ -353,7 +359,7 @@ h1#ratings {
  .container th:nth-child(4) { display: none; }
  }
 
- 
+
 /*FOOTER-------------------*/
 footer h5 {
     color: white;
@@ -368,7 +374,7 @@ footer {
 
 .footer-content {
   position: relative;
-  right: 15%;
+  right: 12%;
   zoom: 1.4;
 }
 

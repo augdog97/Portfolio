@@ -2,137 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body {
-    background: url('../images/portfolio-background.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: black;
 }
 
 
-/* Responsive Media Tags */
 
-@media only screen and (width: 812px) and (height: 375px) {
-    .company-logo, .company-contact {
-        position: relative;
-        left: 15%;
-        zoom: .8 !important;
-    }
 
-    .dropdown {
-        position: relative;
-        top: 15% !important;
-        left: 5%;
-        z-index: 10;
-    }
-        
-    #dropdown-id {
-          zoom: .5;
-        }
-
-    .portfolio-move {
-        zoom: .5 !important;
-    }
-    footer {
-        top: 425px !important;
-        right: 50px !important;
-        width: 126%!important;
-    }
-
-}
-
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-    body {
-        background: black !important;
-    }
-    .company-col {
-        left: 3% !important;
-        width: 100%;
-        zoom: .5 !important;
-    }
-    i.btn {
-        zoom: 1.2;
-    }
-    .dropdown {
-        top: 70px !important;
-        left: 10px;
-        z-index: 10;
-        zoom: 1.7 !important;
-    }
-
-    #dropdown-id {
-        top: 47px !important;
-        zoom: .5;
-    }
-
-    #port {
-        top: 60% !important;
-        left: 40% !important;
-        zoom: .7;
-    }
-   .portfolio-move {
-        position: relative;
-        top: 40% !important;
-        left: -14%;
-        zoom: .5 !important; 
-    }
-    
-      #portfolio-one-image {
-        width: 100%;
-    }
-    
-    footer {
-        position: relative;
-        top: 140% !important;
-        left: -60% !important;
-        width: 200% !important;
-        zoom: .6;
-    }
- 
-}
-
-@media only screen and (min-width: 300px) and (max-width: 375px) {
-    body {
-        background: black !important;
-    }
-    .company-col { 
-        left: -18%  !important;
-        width: 60%;
-        zoom: .6 !important;
-    }
-
-    .dropdown {
-        left: 10px;
-        zoom: 1.7 !important;
-        z-index: 10;
-    }
-
-    #dropdown-id {
-        zoom: .34;
-    }
-
-    #port {
-        left: 35% !important;
-        zoom: .7;
-    }
-   .portfolio-move {
-        position: relative;
-        left: -20%;
-        zoom: .5 !important; 
-    }
-    
-    #portfolio-one-image {
-        width: 100%;
-    }
-    
-    footer {
-        position: absolute !important;
-        top: 194% !important;
-        left: -60% !important;
-        width: 200%!important;
-        zoom: .8 !important;
-    }
-  
-} 
 
  /* Nav bar */
   i.btn {
@@ -140,11 +17,13 @@ body {
  }
 
 .dropdown {
-    right: 94%;
-    top: 11%;
-    zoom: 3;
-    color: white;
+    right: 89%;
+    top: 20%;
+    zoom: 2;
     z-index: 10;
+}
+#dropdownMenuButton {
+    color: white !important;
 }
 
 
@@ -190,9 +69,9 @@ header {
 
 .company-col {
     position: relative;
-    top: 30px;
-    right: 25%;
-    zoom: 1;
+    top: 50px;
+    left: 12%;
+    zoom: 1.8;
 }
 
 .company-logo, .company-contact {
@@ -210,12 +89,13 @@ a:hover {
 /*PORTFOLIO--------------------*/
 #port {
     position: relative;
-    top: 50%;
-    left: 55%;
+    top: 300%;
+    left: 40%;
     font-family: 'Cinzel', serif;
     font-weight: bolder;
+    font-size: 80px;
     color: whitesmoke;
-    z-index: -1;
+    z-index: 1;
 }
 
 .round{
@@ -226,8 +106,9 @@ a:hover {
     padding-bottom: 20px;
     padding-left: 50%;
     position: relative;
-    top: 40%;
-     zoom: .9;
+    top: 300px;
+    right: 13%;
+     zoom: 1.3;
 }
 
 #portfolio-one-image,#portfolio-two-image,  #portfolio-three-image,  #portfolio-four-image,  #portfolio-five-image, #portfolio-six-image,  #portfolio-seven-image {
@@ -243,16 +124,15 @@ footer h5 {
 
 footer {
     background: #1a2d4e;
-    position: absolute; 
-    top: 130%; 
-    left: 0; 	
-	width: 100%;
+    position: relative; 
+    top: 650px;  	
+	width: 110%;
 	margin:auto;
 
 }
 .footer-content {
   position: relative;
-  left: 5.8%;
+  left: .5%;
   zoom: 1.4;
 }
      
@@ -263,3 +143,4 @@ footer {
 
 
 
+    

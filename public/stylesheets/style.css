@@ -20,9 +20,7 @@ html{
 
 
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
-    .company-col {
-        right: 1% !important;
-    }
+
 
      
 
@@ -403,6 +401,18 @@ html{
 } 
  
 
+/* Site Maintenance Toast*/
+.toast-div {
+    position: relative;
+    min-height: 200px;
+}
+.toast {
+    position: absolute; 
+    top: 0; 
+    left: 110%;
+    width: 100%;
+    z-index: 1;
+}
 
  /* Nav bar */
 
@@ -411,10 +421,12 @@ html{
  }
 
 .dropdown {
-    top: 11%;
-    right: 94%;
-    zoom: 1.7;
+    top: 15%;
+    right: 92%;
+    zoom: 2;
     z-index: 10;
+}
+#dropdownMenuButton {
     color: white;
 }
 
@@ -428,10 +440,7 @@ html{
 header {
     font-family: 'Lora', serif;
 }
-#home {
-    position: relative;
-    z-index: 9;
-}
+
 
 /*HEADER-----------------*/
 
@@ -459,12 +468,12 @@ header .menu nav ul li a:hover {
 
 
 .company-col {
-        position: relative;
-        top: 13px;
-        right: 50%;
-        zoom: 1;
+        top: 40px;
+        right: 46%;
+        zoom: 1.4;
         z-index: 10;
         color: white;
+        width: 50%;
 }
 a {
     color: white;
@@ -539,13 +548,14 @@ a:hover {
 }
 .august-1 {
     position: relative;
-     bottom: -90px;
-     left: 0%;
+     bottom: -60px;
+     left: 24%;
 }
 
 .august-3 {
     position: relative;
-    bottom: -110px;
+    bottom: -200px;
+    right: 25%;
 }
 
 #august-4 {
@@ -556,13 +566,14 @@ a:hover {
 .title-col {
     position: relative;
     left: 4%;
+    z-index: 1;
 }
 
 
 .see-col {
-   padding-left: 50%;
+   padding-left: 52%;
    position: relative;
-   top: 150px;
+   top: 170px;
 
 }
 
@@ -609,16 +620,16 @@ h1.services-text {
 
 .services-text {
     position: relative;
-    right: 33%;
+    right: 30%;
     color: white;
 }
 
 
 .web-col {
      position: relative;
-     top: 30px;
+     top: 64px;
      right: 98%;
-     height: 300px !important;
+     height: 290px !important;
      overflow-x: hidden;
      overflow-y: scroll;
  }
@@ -626,70 +637,69 @@ h1.services-text {
     position: relative;
     left: 7%;
     padding-left: 20%;
-    width: 50%;
+    width: 53%;
 }
 
 #ion-icon-globe {
     position: relative;
     top: 31px;
-    left: 37%;
-    zoom: .6;
+    left: 40%;
+    zoom: .7;
 }
 
   #web-text {
      position: relative;
-     top: 40px;
-     left: 3%;
+     bottom: 89%;
+     right: 2%;
      font-size: 24px;
      font-family: 'Abril Fatface', cursive;
  }
 
 #services-1-description {
     position: relative;
-    top: 50px;
-    width: 100%;
+    bottom: 78%;
+    right: 5%;
+    width: 30%;
     line-height: 157%;
+    font-size: 16px;
 }
 
 
 .wordpress {
      position: relative;
-     bottom: 270px;
-     left: 8%;
-     height: 300px !important;
-     width: 40%;
+     top: 153px;
+     left: 45%;
+     height: 290px !important;
+     width: 33%;
      overflow-x: hidden;
      overflow-y: scroll;
+     z-index: 1
 }
 
-.word-row {
-    position: relative;
-    left: 5%;
-    padding-left: 20%;
-    width: auto;
-}
+
 #ion-icon-desktop {
     position: relative;
     top: 24px;
-    left: 37%;
-    zoom: .6;
+    left: 295%;
+    zoom: .7;
 }
 
 #wordpress {
     position: relative;
-    top: 38px;
-    left: 15%;
+    bottom: 20%;
+    left: 18%;
     font-family: 'Abril Fatface', cursive;
     font-size: 24px;
 }
 
 #services-2-description {
     position: relative;
-    top: 47px;
-    left: -1px;
+    bottom: 20px;
+    left: 2%;
     width: 100%;
     zoom: 1;
     line-height: 150%;
+    font-size: 15px;
 }
 
 
@@ -700,23 +710,28 @@ h1.services-text {
 }
 
 .consulting {
-  width: 350px;
-  height: 300px !important;
+  position: relative;
+  left: 87.4%;
+  bottom: 135px;
+  width: 33%;
+  height: 290px !important;
   overflow-x: hidden;
   overflow-y: scroll;
+  z-index: 1;
+
 }
 
 
 #ion-icon-people {
     position: relative;
-    top: 24px;
-    left: 39%;
-    zoom: .6;
+    top: 30px;
+    left: 280%;
+    zoom: .7;
 }
 
 .consulting-title {
     position: relative;
-    top: 11%;
+    bottom: 1%;
     left: 15%;
     font-family: 'Abril Fatface', cursive;
     font-size: 24px;
@@ -724,10 +739,11 @@ h1.services-text {
 
 #services-3-description {
    position: relative;
-   top: 16%;
+   top: 4%;
    right: 1.5%;
    line-height: 170%;
    zoom: .6;
+   font-size: 22px;
 }
 /*ABOUT-----------------------*/
 #about, .web-col, .wordpress, .consulting{
@@ -740,9 +756,9 @@ h1.services-text {
 #about {
     position: relative;
     top: 440px;
-    left: 7%;
-    width: 70%;
-    height: 900px;
+    left: 5%;
+    width: 27%;
+    height: 470px;
     zoom: 1.1;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -758,10 +774,11 @@ h1 {
 
 #about-chevron {
     position: relative;
-    bottom: 500px;
-    right: 15%;
+    bottom: 100px;
+    left: 37%;
     width: 40%;
     height: 120px;
+    z-index: 1;
 }
 
 
@@ -773,25 +790,23 @@ h1 {
 
 .about-me-content {
     position: relative;
-    left: 35%;
+    left: 32%;
 }
    #about-image {
     position: relative;
     top: 2%;
     left: 33%;
-    zoom: .08;
+    zoom: .06;
 }
-
-
 
 
 .about-description {
     position: relative; 
-    top: 15%;
-    padding-left: 3%;
+    top: 9%;
+    padding-left: 5%;
     line-height: 1.6;
     font-family: 'Peddana', serif;
-    font-size: 20.5px;
+    font-size: 16px;
 }
 
 .about-chev {
@@ -808,9 +823,8 @@ footer h5 {
 
 footer {
     background: #1a2d4e;
-    position: absolute; 
-    top: 185%; 
-    left: 0; 	
+    position: relative; 
+    top: 600px; 	
 	width: 100%;
 	margin:auto;
 
