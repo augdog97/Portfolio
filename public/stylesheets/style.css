@@ -674,7 +674,7 @@ h1.services-text {
 
 .services-text {
     position: relative;
-    right: 33%;
+    right: 34.5%;
     color: white;
 }
 
@@ -722,7 +722,7 @@ h1.services-text {
 .wordpress {
      position: relative;
      top: -395px;
-     left: 32%;
+     left: 31%;
      height: 290px !important;
      width: 33%;
      overflow-x: hidden;
@@ -765,7 +765,7 @@ h1.services-text {
 
 .consulting {
   position: relative;
-  left: 68%;
+  left: 67%;
   bottom: 686px;
   width: 33%;
   height: 290px !important;
@@ -840,7 +840,7 @@ h1 {
 .about-link {
     position: relative;
     top: -400%;
-    left: 34%;
+    left: 19.5%;
 }  
 
 .about-me-content {
@@ -864,7 +864,9 @@ h1 {
     line-height: 1.6;
     font-family: 'Peddana', serif;
     font-size: 16px;
+    margin: 0px 5% 0px 5%;
 }
+
 
 .about-chev {
     padding-left: 45%;
