@@ -267,9 +267,15 @@ html{
     }
 
       #about-image {
+<<<<<<< HEAD
         top: 3% !important;
         left: 15% !important;
         zoom: .2 !important;
+=======
+        bottom: 330% !important;
+        left: -34% !important;
+        zoom: .1 !important;
+>>>>>>> parent of 4dd05d7... Site V3.2.1
     }
     .about-description {
         top: 60px !important;
