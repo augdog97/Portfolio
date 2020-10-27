@@ -172,6 +172,10 @@ lesshat-selector {
 p {
     color: white;
 }
+#loader {
+
+  z-index: 1;
+}
 
  /* Nav bar */
   i.btn {
@@ -182,7 +186,7 @@ p {
     right: 89%;
     top: 20%;
     zoom: 2;
-    z-index: 10;
+    z-index: -10;
 }
 #dropdownMenuButton {
     color: white !important;
@@ -257,7 +261,7 @@ a:hover {
     font-weight: bolder;
     font-size: 80px;
     color: whitesmoke;
-    z-index: 1;
+    z-index: -2;
 }
 
 .round{

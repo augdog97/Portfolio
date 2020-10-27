@@ -227,7 +227,9 @@ lesshat-selector {
 p {
     color: white;
 }
-
+#loader {
+  z-index: 5;
+}
 
 /* nav */
 
@@ -338,10 +340,9 @@ a:hover {
     border-radius: 20px;
     border: 2px solid rgb(242, 243, 245);
     opacity: .8 !important;
-    z-index: 9;
+  z-index: -4;
     zoom: 1.1;
 }
-
 
 
 #name, #email, #message, #submit {
@@ -372,6 +373,7 @@ input[value=Send] {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -5;
 }
 
 

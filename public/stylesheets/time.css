@@ -230,7 +230,9 @@ lesshat-selector {
 p {
     color: white;
 }
-
+#loader {
+  z-index: 100;
+}
   /* nav */
    i.btn {
      -webkit-appearance: none;
@@ -312,6 +314,7 @@ a:hover {
   top: 150px;
   left: 5%;
   font-family: 'Playfair Display', serif;
+  z-index: -10;
 }
 
 /* chevron */
