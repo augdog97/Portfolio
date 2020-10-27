@@ -1,7 +1,7 @@
 
 const express = require('express');
 const user = express();
-const stripe = require('stripe')('sk_test_kEtLGPIUVPh7dxdFK9zBQhuu00aoh4gQRm');
+const stripe = require('stripe')();
 
 
 
@@ -22,8 +22,8 @@ user.post('/create-session', async (req, res) => {
             },
         ],
         mode: 'payment',
-        success_url: `http://localhost:3000/paymentConfirmed`,
-        cancel_url: `http://localhost:3000/Payment:denied`,
+        success_url: `https://02designstudio.com/paymentConfirmed`,
+        cancel_url: `https://02designstudio.com/Payment:denied`,
     });
     res.json({ id: session.id });
 });
