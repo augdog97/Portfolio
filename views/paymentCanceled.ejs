@@ -1,0 +1,34 @@
+
+<html>
+
+<head>
+    <title>Checkout canceled</title>
+    <%- include('layouts/payment/paymentCanceled-style'); -%>
+</head>
+
+<body>
+    <div id="loader">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+    
+        <div class="vertical-centered-box">
+            <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask">
+                <div class="loader-line"></div>
+            </div>
+            <%- include('layouts/payment/paymentCanceled-svg'); -%>
+
+        </div>
+    </div>
+    </div>
+    
+    <section id="pagecontent">
+        <p>Forgot to add something to your cart? Shop around then come back to pay!</p>
+    </section>
+</body>
+<!-- jQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/javascripts/paymentCanceled.js"></script>
+
+</html>

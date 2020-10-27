@@ -5,109 +5,128 @@
 <%- include('layouts/head');  -%>
 <%- include('layouts/index/index-style'); -%>  
 <%- include('layouts/index/google-analytics'); -%>
+
 </head>
 
-<body  data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
-  
-  <div class="container">
-    
-    <%- include('layouts/header'); -%>
-    
-     <%# include('layouts/index/index-toast'); -%> 
-
-
-    <!-- New Home Section-->
-                <div data-aos="fade-up" class=" title-col  text-center">
-                  <div class="row">
-                      <div class=" col-xs col-sm-10 col-md col-lg col-xl august-1">
-                        <h1 id="august-2">August Shah</h1>
-                      </div>
-                      <div class="col-xs col-sm-10 col-md col-lg col-xl august-3">
-                        <h2 id="august-4">Welcome to my web based portfolio.</h2>
-                      </div>
-                  </div>
-                  <div class="row" id="more-chevron" data-aos="fade-down">
-                    <div class="col-xs col-sm col-md col-lg col-xl  pr-sm-1 see-col">
-                      <a id="see-id" href="#services">
-                        <i class="fas fa-chevron-down p-3 bg-white" id="chevron-color" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-    
-        
-
-    <!-- New Services Section-->
-    <div  data-aos="fade-down" data-aos-duration="3000" id="services">
-      <div class="row services-row" id="services-row">
-        <div class="col-xs col-sm col-md col-lg col-xl">
-            <h1 class="  text-center services-text" id="services-text">Services</h1>
+<body>
+      <div id="loader">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+      
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask">
+              <div class="loader-line"></div>
+            </div>
+            <%- include('layouts/payment/paymentCanceled-svg'); -%>
+      
+          </div>
         </div>
       </div>
 
-      <div class="row web-row" id="web-id">
-        <div class="col-xs col-sm col-md col-lg col-xl  web-col services-content">
-            <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
-            </ion-icon>
-            </div>
-              </div>
-            <div class="row">
-              <div class="col-xs col-sm col-md col-lg col-xl content-col">
-                <h3 id="web-text">Website Development</h3>
-                <h4 id="services-1-description">I provide a web development service to deliver a product that is created
-                  using the latest technologies, to ensure the quality, functionality, and security of your site. Sites will be
-                  responsive across all devices. </h4>
-              </div>
-            </div>
-        
-      
-        <div class="row wordpress services-content" id="word-id">
-              <div class="row">
-                <div class="col-xs col-sm col-md col-lg col-xl">
-                  <ion-icon name="server" id="ion-icon-desktop" role="img" class="md hydrated" aria-label="logo wordpress">
-                  </ion-icon>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs col-sm col-md col-lg col-xl">
-                    <h3 id="wordpress">CMS Development</h3>
-                    <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress or Squarespace site,
-                      please use
-                      the "Contact" page to request a quote. </h4>
-                </div>
-              </div>
-          </div>
-      
-      <div class="row consulting services-content">
-        <div class="row">
-          <div class="col-xs col-sm col-md col-lg col-xl">
-              <ion-icon name="people-circle-outline" id="ion-icon-people" role="img" class="md hydrated"
-                aria-label="people circle outline"></ion-icon>
-          </div>
+  <div class="container">  
+    <%- include('layouts/header'); -%>
+    
+    <%# include('layouts/index/index-toast'); -%>
+    
+    
+    <!-- New Home Section-->
+    <div data-aos="fade-up" class=" title-col  text-center">
+      <div class="row">
+        <div class=" col-xs col-sm-10 col-md col-lg col-xl august-1">
+          <h1 id="august-2" class="ml7">
+            <span class="text-wrapper">
+              <span class="letters">August Shah</span>
+            </span>
+          </h1>
         </div>
-           <div class="row">
-             <div class="col-xs col-sm col-md col-lg col-xl">
-              <h3 class="consulting-title" id="consulting-title-id">Consulting Services</h3>
-              <h4 id="services-3-description"> If you are in need of technical support for your site, need to modernize your
-                site, or need help setting up a domain for your site I am available for consulting. I will provide a quality
-                product with customer service as my top priority. If interested, please use the "Contact page.”</h4>
-             </div>
-           </div>
-          </div>
-
-     
-        <div class="row" id="about-chevron">
-          <div class="col-xs col-sm col-md col-lg col-xl">
-            <a class="about-link" id="about-link" href="#about">
-              <i class="fas fa-chevron-down p-3 bg-white text-white" id="me-chevron" aria-hidden="true"></i>
-            </a>
-          </div>
+        <div class="col-xs col-sm-10 col-md col-lg col-xl august-3">
+          <h2 id="august-4">Welcome to my web based portfolio.</h2>
+        </div>
+      </div>
+      <div class="row" id="more-chevron" data-aos="fade-down">
+        <div class="col-xs col-sm col-md col-lg col-xl  pr-sm-1 see-col">
+          <a id="see-id" href="#services">
+            <i class="fas fa-chevron-down p-3 bg-white" id="chevron-color" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
+    
+    
+    
+    <!-- New Services Section-->
+    <div data-aos="fade-down" data-aos-duration="3000" id="services">
+      <div class="row services-row" id="services-row">
+        <div class="col-xs col-sm col-md col-lg col-xl">
+          <h1 class="  text-center services-text" id="services-text">Services</h1>
+        </div>
+      </div>
+    
+      <div class="row web-row" id="web-id">
+        <div class="col-xs col-sm col-md col-lg col-xl  web-col services-content">
+          <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
+          </ion-icon>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs col-sm col-md col-lg col-xl content-col">
+          <h3 id="web-text">Website Development</h3>
+          <h4 id="services-1-description">I provide a web development service to deliver a product that is created
+            using the latest technologies, to ensure the quality, functionality, and security of your site. Sites will be
+            responsive across all devices. </h4>
+        </div>
+      </div>
+    
+    
+      <div class="row wordpress services-content" id="word-id">
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <ion-icon name="server" id="ion-icon-desktop" role="img" class="md hydrated" aria-label="logo wordpress">
+            </ion-icon>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <h3 id="wordpress">CMS Development</h3>
+            <h4 id="services-2-description">If you are in need of a reliable and scaleable Wordpress or Squarespace site,
+              please use
+              the "Contact" page to request a quote. </h4>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row consulting services-content">
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <ion-icon name="people-circle-outline" id="ion-icon-people" role="img" class="md hydrated"
+              aria-label="people circle outline"></ion-icon>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <h3 class="consulting-title" id="consulting-title-id">Consulting Services</h3>
+            <h4 id="services-3-description"> If you are in need of technical support for your site, need to modernize your
+              site, or need help setting up a domain for your site I am available for consulting. I will provide a quality
+              product with customer service as my top priority. If interested, please use the "Contact page.”</h4>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="row" id="about-chevron">
+        <div class="col-xs col-sm col-md col-lg col-xl">
+          <a class="about-link" id="about-link" href="#about">
+            <i class="fas fa-chevron-down p-3 bg-white text-white" id="me-chevron" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
     <!---->
-
-
+    
+    
     
     <div class="container" id="about">
       <div class="row about-container">
@@ -131,7 +150,7 @@
             I use the
             latest technologies to ensure quality, functionality, and security.
             <br>
-            I specialize in HTML, CSS, JavaScript, PHP, SQL, and MongoDB, with  experience with Node.js, and Bootstrap. I
+            I specialize in HTML, CSS, JavaScript, PHP, SQL, and MongoDB, with experience with Node.js, and Bootstrap. I
             can create
             custom web design, WordPress, and Squarespace sites.
             <br>
@@ -142,19 +161,15 @@
       </div>
     </div>
     
-    
-    
-    
-    
-    
-    
     <%- include('layouts/index/index-video');  -%>
-    <%- include('layouts/scripts'); -%>
-    <%- include('layouts/index/index-java-video');  -%> 
   </div>
-  
+ 
 
-    <%- include('layouts/footer');  -%>
+    
+      <%- include('layouts/footer');  -%>
+      <%- include('layouts/scripts'); -%>
+      <%- include('layouts/index/index-java-video');  -%>
+      <%- include('layouts/index/index-text-animation');  -%>
 </body>
 
 </html>

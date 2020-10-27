@@ -7,8 +7,24 @@
 </head>
 
 <body>
-
+      <div id="loader">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+      
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask">
+              <div class="loader-line"></div>
+            </div>
+            <%- include('layouts/payment/paymentCanceled-svg'); -%>
+      
+          </div>
+        </div>
+      </div>
+      
   <div class="container">
+
     <%- include('layouts/header'); -%>
     
     
@@ -51,14 +67,16 @@
     </div>
     
     <%- include('layouts/footer'); -%>
-    <%- include('layouts/scripts'); -%>
-    <%- include('layouts/contact/contact-scripts'); %>
+   
   </div>
 
   
 <video autoplay muted id="video">
   <source src="../images/video.mp4" type="video/mp4">
 </video>
+<%- include('layouts/scripts'); -%>
+<%- include('layouts/contact/contact-scripts'); %>
+
 </body>
 
 </html>

@@ -1,62 +1,10 @@
-html{
-    scroll-behavior: smooth;
-}
 
-
-body {
-    background: black;
-}
-
-
-
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-    .company-col {
-        top: 20px !important;
-        left: 7% !important;
-        width: 160%;
-        display: inline-block !Important;
-    }
-    i.btn {
-        left: 50% !important;
-        zoom: 1.1;
-    }
-    .dropdown {
-        left: 25%;
-    }
-    .dropdown-menu {
-        zoom: .1 !important;
-    }
-    #port {
-        top: 300px !Important;
-        left: 25% !important;
-        font-size: 50px !important;
-    }
-    .portfolio-move {
-        top: 470px !Important;
-        left:  -15% !Important;
-        zoom:  .7 !important;
-    }
-    #portfolio-one-image {
-      width: 100% !Important;
-    }
-    footer {
-        top: 400px !important;
-    }
-    .footer-content {
-        left: 3% !important;
-        font-size: 12px !important;
-    }
-}
-
-
-
-/* Loading Animation Styling */
-body {
+ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "proxima-nova-soft", sans-serif;
   -webkit-user-select: none;
-  
+  overflow: hidden;
 }
 body .vertical-centered-box {
   position: absolute;
@@ -86,7 +34,9 @@ body .vertical-centered-box .content {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
+body {
+  background: #2c2d44;
+}
 .loader-circle {
   position: absolute;
   left: 50%;
@@ -172,140 +122,3 @@ lesshat-selector {
 p {
     color: white;
 }
-
- /* Nav bar */
-  i.btn {
-     -webkit-appearance: none;
- }
-
-.dropdown {
-    right: 89%;
-    top: 20%;
-    zoom: 2;
-    z-index: 10;
-}
-#dropdownMenuButton {
-    color: white !important;
-}
-
-
-.dropdown-menu {
-    top: 35% !important; 
-    left: 25% !important;
-    zoom: .6;
-    z-index: 10;
-}
-
-
-#home {
-    position: relative;
-    z-index: 9;
-}
-
-/*HEADER-----------------*/
-
-header .logo-and-contact .company-logo {
-    float: left;
-    margin-top: 13px;
-}
-header .logo-and-contact .company-contact {
-    float: right;
-    margin-top: 8px;
-}
-
-header .menu nav ul li a:hover {
-    background: #1a2d4e;
-    transition: 0.4s ease-in;
-    color: #00a4b8;
-}
-
-header {
-    font-family: 'Lora', serif;
-}
-
-.company-logo, h5 {
-    font-family: 'Merriweather', serif;
-    font-size: 17px;
-}
-
-
-.company-col {
-    position: relative;
-    top: 50px;
-    left: 12%;
-    zoom: 1.8;
-}
-
-.company-logo, .company-contact {
-    color: white;
-}
-
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: blue;
-}
-/*PORTFOLIO--------------------*/
-#port {
-    position: relative;
-    top: 300%;
-    left: 40%;
-    font-family: 'Cinzel', serif;
-    font-weight: bolder;
-    font-size: 80px;
-    color: whitesmoke;
-    z-index: 1;
-}
-
-.round{
-        border-radius: 20px;
-    }
-
- .portfolio-move {
-    padding-bottom: 20px;
-    padding-left: 50%;
-    position: relative;
-    top: 300px;
-    right: 13%;
-     zoom: 1.3;
-}
-
-#portfolio-one-image,#portfolio-two-image,  #portfolio-three-image,  #portfolio-four-image,  #portfolio-five-image, #portfolio-six-image,  #portfolio-seven-image {
-    height: 260px;
-}
- 
- 
-/*FOOTER-------------------*/
-
-footer h5 {
-    color: white;
-}
-
-footer {
-    background: #1a2d4e;
-    position: relative; 
-    top: 650px;  	
-	width: 110%;
-	margin:auto;
-
-}
-.footer-content {
-  position: relative;
-  left: .5%;
-  zoom: 1.4;
-}
-     
-/* Hide signin page for user*/
-.signin {
-    display: none;
-}
-
-
-
-
-
-
-    
