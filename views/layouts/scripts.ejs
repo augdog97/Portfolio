@@ -42,5 +42,27 @@
         prevScrollpos = currentScrollPos;
     }
 </script>
+<div id="scripts">
+    <script type="text/javascript">
+    /* 
+    1. Creating a function that includes all mobile devices
+    2. if the user is NOT on a mobile device then the scripts are added to a div thats at the end of scripts.ejs
+    3. if the user is on a mobile device then the scripts div will be removed and the loader div will be removed */
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
 
+        if (!isMobile()) {
+            $('#scripts').append('<script src="/javascripts/loading-animation.js"><\script>');
+            $('#scripts').append('<script src="/javascripts/text-animation.js"><\script>');
+
+        } else {
+            var scripts = document.getElementById("scripts");
+            var loader = document.getElementById("loader")
+            scripts.remove();
+            loader.remove();
+        }
+
+    </script>
+</div>
 
