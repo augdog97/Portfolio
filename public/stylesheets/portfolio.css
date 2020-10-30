@@ -5,11 +5,16 @@ html{
 
 body {
     background: black;
+    overflow-x: hidden;
 }
 
 
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
+    body {
+        overflow-x: hidden  !Important;
+    }
+    
     .company-col {
         top: 20px !important;
         left: 7% !important;
@@ -27,7 +32,7 @@ body {
         zoom: .1 !important;
     }
     #port {
-        top: 300px !Important;
+        top: 250px !Important;
         left: 25% !important;
         font-size: 50px !important;
     }

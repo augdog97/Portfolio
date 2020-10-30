@@ -121,6 +121,7 @@ html{
    
     body {
         background: black !important;
+        overflow-x: hidden !important;
     }
     #video {
         display: none;
@@ -163,6 +164,9 @@ html{
         left: 1% !important;
         zoom: .8;
     }
+     #services-text {
+        left: -30% !important;
+    }
     
      .web-row {
         left: 63% !important;
@@ -172,27 +176,26 @@ html{
     #ion-icon-globe {
         left: 39% !important;
     }
-    #web-text {
-     right: -21% !important;
-     top: -120px;
+ #web-text {
+     right: -24% !important;
+     top: -133px;
      width: 100%;
-      zoom: 1.2 !important;
+      zoom: 1.1 !important;
     }
     #services-1-description {
         bottom: 75% !important;
         left: 25% !Important;
         font-size: 12px !important;
-        width: 50% !important;
-   
+        width: 55% !important;
+        padding-left: 1%;
     }
   
     
     
-    .wordpress {
-        top: -110px !important;
+     .wordpress {
+        top: -80px !important;
         left: 24% !important;
         width: 290px !important;
-
     }
     #word-id {
         height: 260px !important;
@@ -202,8 +205,9 @@ html{
     }
     
     #wordpress {
-        top: -20px;
-        left: -1% !important;
+        top: -19px;
+        left: 5% !important;
+        zoom: 1.1;
     }
     
     #services-2-description {
@@ -212,8 +216,8 @@ html{
         font-size: 12px !important;
     }
     
-    .consulting {
-        top: -90px;
+     .consulting {
+        top: -55px;
         left: 24% !important;
         width: 290px !important;
  
@@ -225,17 +229,18 @@ html{
         left: 217% !important;
     }
   .consulting-title {
-        top: 10px;
-        left: -6% !important;
+        top: 4px;
+        left: 5% !important;
         width: 200% !important;
+      zoom: 1.1;
     }
     #services-3-description {
         top: 29px !Important;
         font-size: 22px !important;
     }
-   #about-chevron {
-        top: 450px !important;
-        left: 30% !important; 
+    #about-chevron {
+        top: -40px !important;
+        left: 25% !important; 
         width: 69% !important;
         height: 170px !important;
         zoom: .89;
@@ -252,11 +257,11 @@ html{
         left: 32% !important; 
         zoom: .7;
     }
-     #about {
+    #about {
         top: 2200px !important;
-        left: 9% !important;
+        left: 4% !important;
         width: 70% !important;
-        height: 1000px !Important;
+        height: 1200px !Important;
         zoom: .3 !important;
         box-shadow: 0px 3px 2px 1px rgb(74, 72, 72) !important;
         border-radius: 5px;
@@ -463,6 +468,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "proxima-nova-soft", sans-serif;
   -webkit-user-select: none;
+  overflow-x: hidden;
   
 }
 body .vertical-centered-box {
@@ -952,6 +958,7 @@ h1.services-text {
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 1;
+    background: #F0F0F0;
 }
 
 
@@ -978,12 +985,12 @@ h1 {
 
 .about-me-content {
     position: relative;
-    left: 29.3%;
+    left: 34%;
 }
    #about-image {
     position: relative;
     top: 2%;
-    left: 27%;
+    left: 33%;
     zoom: .07;
 }
 

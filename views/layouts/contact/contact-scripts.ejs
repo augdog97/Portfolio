@@ -1,5 +1,53 @@
 
 
+<!-- jQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- AOS-->
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<!-- Popper-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<!-- Bootstrap-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<!-- AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        duration: 1500
+    });
+</script>
+<!-- Font Awesome Link-->
+<script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+<!-- Services Icon link-->
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+<!--Animation JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<!-- Script to remove the header when the scroll position is changed-->
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("test").style.display = "";
+        } else {
+            document.getElementById("test").style.display = "none";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+<!-- Had to remove the loading animaiton because it wouldnt allow the form buttons to be clicked. FIND A SOLUTION to z-index-->
+<script> 
+var loader = document.getElementById("loader");
+loader.remove();
+</script>
 
 <!-- AJAX POST LINK-->
 <script src="javascripts/ajax.js"></script>
