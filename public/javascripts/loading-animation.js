@@ -1,23 +1,17 @@
 
-/* 1 
+/* 
+1. When the page is loading the loader will show and then the page will show
+2. loader animation code */
 
-$(document).ready(function () {
-    $(window).on('load', function () {
-        setTimeout(function () {
-            $("#loader").hide();
-        }, 3000);
-        $('#pagecontent').show();
-    });
-});
-*/
-
+/* 1.  */
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
         document.querySelector("#loader").style.visibility = "visible";
+        document.querySelector(".container").style.visibility = "hidden";
+        
     } else {
-        document.querySelector("#loader").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
+        document.querySelector("#loader").remove();
+        document.querySelector(".container").style.visibility = "visible";   
     }
 }; 
 

@@ -303,9 +303,9 @@ html{
         top: 700px !important;
         right: 50px !important;
     }
-     .copyright {
-        position: relative;
-        left: 28% !important;
+    
+     .copyright-text {
+        padding-left: 33% !important;
     }
 }
 
@@ -1032,17 +1032,14 @@ footer {
    top: 550px;
   background: #1a2d4e;
   color: #aaa;
-  padding-top: 0px;
+  padding: 1% 0 1% 0;
   width: 175% !important; 
 }
 
 
-footer .copyright {
-  padding: 15px 0;
-  background:  #1a2d4e;
-  margin-top: 20px;
-  font-size: 15px;
-  padding-right: 36%;
+.copyright-text {
+    color: white;
+    padding: 0% 0 0% 27%;
 }
 
 footer .copyright span, .copyright {

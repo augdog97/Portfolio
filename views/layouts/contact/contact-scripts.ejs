@@ -2,8 +2,9 @@
 
 <!-- jQUERY -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
+<!--
+<script src="javascripts/loading-animation.js"></script>
+-->
 <!-- AOS-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <!-- Popper-->
@@ -23,8 +24,6 @@
 </script>
 <!-- Font Awesome Link-->
 <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
-<!-- Services Icon link-->
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
 <!--Animation JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -36,8 +35,10 @@
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("test").style.display = "";
+            document.getElementById("dropdown-hide").style.visibility = "visible";
         } else {
             document.getElementById("test").style.display = "none";
+            document.getElementById("dropdown-hide").style.visibility = "hidden";
         }
         prevScrollpos = currentScrollPos;
     }

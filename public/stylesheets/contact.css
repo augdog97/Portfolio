@@ -68,9 +68,9 @@ html{
         top: 200px;
        right: 75% !important;
     }
-     .copyright {
-        position: relative; 
-        left: 45%;
+
+      .copyright-text{
+        padding-left: 55% !important;
     }
 }
 
@@ -387,19 +387,17 @@ input[value=Send] {
 /*FOOTER-------------------*/
 footer {
    position: relative;
-   top: 300px;
+   top: 550px;
   background: #1a2d4e;
   color: #aaa;
-  padding-top: 0px;
-  width: 175% !important;
+  padding: 1% 0 1% 0;
+  width: 175% !important; 
 }
 
-footer .copyright {
-  padding: 15px 0;
-  background:  #1a2d4e;
-  margin-top: 20px;
-  font-size: 15px;
-    padding-right: 39%;
+
+.copyright-text {
+    color: white;
+    padding: 0% 0 0% 26%;
 }
 
 footer .copyright span, .copyright {
