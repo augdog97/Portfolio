@@ -1,5 +1,11 @@
 
 
+ body {
+    overflow-x: hidden;
+}
+
+
+
 
 html{
     scroll-behavior: smooth;
@@ -118,10 +124,13 @@ html{
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
+      html, body {
+        width: 80% !important;
+    }
+   
    
     body {
         background: black !important;
-        overflow-x: hidden !important;
     }
     #video {
         display: none;
@@ -143,17 +152,18 @@ html{
     #dropdown-id {
         zoom: .4 !important;
     }
-    .august-1 {
-        top: 100px !important;
-        left: 1% !important; 
+         .august-1 {
+        top: 70px !important;
+        left: 23% !important; 
     } 
     .august-3 {
-        top: 120px !important;
-        left: -1%;
+        top: 70px !important;
+        left: 30%;
     }
  
     .see-col {
-        left: 4%;
+        top: 100px !important;
+        left: 38%;
     }
 
     #see-id {
@@ -164,39 +174,42 @@ html{
         left: 1% !important;
         zoom: .8;
     }
-     #services-text {
-        left: -30% !important;
+      #services-text {
+        left: -7% !important;
+         top: -130px;
     }
-    
-     .web-row {
-        left: 63% !important;
-        width: 80% !important;
-   
-    }
-    #ion-icon-globe {
-        left: 39% !important;
-    }
- #web-text {
-     right: -24% !important;
-     top: -133px;
-     width: 100%;
-      zoom: 1.1 !important;
-    }
-    #services-1-description {
-        bottom: 75% !important;
-        left: 25% !Important;
-        font-size: 12px !important;
-        width: 55% !important;
-        padding-left: 1%;
-    }
-  
-    
-    
-     .wordpress {
-        top: -80px !important;
-        left: 24% !important;
+
+      .web-row-contain {
+         top: -130px !important;
+        left: 45% !important;
         width: 290px !important;
     }
+    #web-id {
+        height: 260px !important;
+    }
+    
+    #ion-icon-globe {
+        left: 220% !important;
+    }
+
+     #web-text {
+        top: -10px;
+        left: -1% !important;
+        zoom: 1.1;
+    }
+
+    #services-1-description {
+          top: -10px;
+        left: -3% !important;
+        font-size: 12px !important;
+    }
+    
+      .wordpress {
+          top: -110px !important;
+        left: 45% !important;
+        width: 290px !important;
+    }
+
     #word-id {
         height: 260px !important;
     }
@@ -216,9 +229,9 @@ html{
         font-size: 12px !important;
     }
     
-     .consulting {
-        top: -55px;
-        left: 24% !important;
+    .consulting {
+        top: -89px;
+        left: 45% !important;
         width: 290px !important;
  
     }
@@ -238,14 +251,16 @@ html{
         top: 29px !Important;
         font-size: 22px !important;
     }
-    #about-chevron {
-        top: -40px !important;
-        left: 25% !important; 
+
+     #about-chevron {
+        top: -90px !important;
+        left: 58% !important; 
         width: 69% !important;
         height: 170px !important;
         zoom: .89;
    
     }
+
     #me {
         position: relative;
         top: 45px !important;
@@ -257,19 +272,18 @@ html{
         left: 32% !important; 
         zoom: .7;
     }
-    #about {
+      #about {
         top: 2200px !important;
-        left: 4% !important;
-        width: 70% !important;
+        left: 37% !important;
+        width: 100% !important;
         height: 1200px !Important;
         zoom: .3 !important;
         box-shadow: 0px 3px 2px 1px rgb(74, 72, 72) !important;
         border-radius: 5px;
         background: #ffffff !important;
     }
-    .about-me-content {
-        top: 20px;
-        left: 17% !important;
+      .about-me-content {
+        left: 18% !important;
     }
 
       #about-image {
@@ -281,22 +295,18 @@ html{
         top: 60px !important;
         line-height: 1.5!important;
         font-size: 14px !important;
+        width: 95%;
     }
 
 
-    footer {
+      footer {
         top: 700px !important;
         right: 50px !important;
-        width: 170%!important;
     }
-    
-    .footer-content {
+     .copyright {
         position: relative;
-        left: -12% !important;
-        zoom: .8 !important;
+        left: 28% !important;
     }
-
-
 }
 
 @media only screen and (min-width: 300px) and (max-width: 375px) {
@@ -468,7 +478,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "proxima-nova-soft", sans-serif;
   -webkit-user-select: none;
-  overflow-x: hidden;
+  
   
 }
 body .vertical-centered-box {
@@ -819,44 +829,44 @@ h1.services-text {
 }
 
 
-.web-col {
+
+.web-row-contain {
      position: relative;
-     top: 64px;
-     right: 97%;
+     top: -105.1px;
+     left: -5%;
      height: 290px !important;
+     width: 33%;
      overflow-x: hidden;
      overflow-y: scroll;
- }
- .web-row {
-    position: relative;
-    left: 7%;
-    padding-left: 20%;
-    width: 53%;
+     z-index: 1
 }
 
+
+
 #ion-icon-globe {
-    position: relative;
-    top: 31px;
-    left: 40%;
+     position: relative;
+    top: 25px;
+    left: 295%;
     zoom: .7;
 }
 
-  #web-text {
-     position: relative;
-     bottom: 89%;
-     right: 2%;
-     font-size: 24px;
-     font-family: 'Abril Fatface', cursive;
- }
+#web-text {
+    position: relative;
+    bottom: 15%;
+    left: 13%;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+}
 
 #services-1-description {
     position: relative;
-    bottom: 78%;
-    right: 5%;
-    width: 30%;
-    line-height: 157%;
-    font-size: 16px;
+    bottom: 10px;
+    width: 100%;
+    zoom: 1;
+    line-height: 150%;
+    font-size: 15px;
 }
+
 
 
 .wordpress {
@@ -925,7 +935,7 @@ h1.services-text {
 
 .consulting-title {
     position: relative;
-    bottom: 1%;
+    bottom: 7%;
     left: 15%;
     font-family: 'Abril Fatface', cursive;
     font-size: 24px;
@@ -933,7 +943,6 @@ h1.services-text {
 
 #services-3-description {
    position: relative;
-   top: 4%;
    right: 1.5%;
    line-height: 170%;
    zoom: .6;
@@ -941,7 +950,7 @@ h1.services-text {
 }
 
 /*ABOUT-----------------------*/
-#about, .web-col, .wordpress, .consulting{
+#about, .web-col, .wordpress, .web-row-contain,.consulting{
     height: inherit;
     box-shadow: 0px 3px 2px 1px lightgrey;
     border-radius: 5px;
@@ -1018,31 +1027,28 @@ h1 {
  
 /*FOOTER-------------------*/
 
-footer h5 {
-    color: white;
-}
-
 footer {
-    background: #1a2d4e;
-    position: relative; 
-    top: 600px; 	
-	width: 100%;
-	margin:auto;
-
-}
-  
-
-.footer-content {
-  position: relative;
-  left: 3%;
-  zoom: 1.4;
+   position: relative;
+   top: 550px;
+  background: #1a2d4e;
+  color: #aaa;
+  padding-top: 0px;
+  width: 175% !important; 
 }
 
 
-html {
-    min-height: 100%;
+footer .copyright {
+  padding: 15px 0;
+  background:  #1a2d4e;
+  margin-top: 20px;
+  font-size: 15px;
+  padding-right: 36%;
 }
-   
+
+footer .copyright span, .copyright {
+  color: #ffffff;
+}
+
 
 /* Hide signin page for user*/
 .signin {
@@ -1051,9 +1057,9 @@ html {
 
    
     /* test CSS */ 
+    
 
-
-
+ 
 
 
 

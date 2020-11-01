@@ -6,7 +6,7 @@ var path = require('path');
 
 /* GET Portfolio Page. */
 travel.get('/travel', function(req, res, next) {
-    res.render('travel');
+    res.render('travels');
 })
 
 module.exports = travel;

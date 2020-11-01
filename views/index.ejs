@@ -63,22 +63,23 @@
           <h1 class="text-center services-text" id="services-text">Services</h1>
         </div>
       </div>
-    
-      <div class="row web-row" id="web-id">
-        <div class="col-xs col-sm col-md col-lg col-xl  web-col services-content">
-          <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
-          </ion-icon>
+   
+      <div class="row web-row-contain services-content" id="web-id">
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <ion-icon name="globe-outline" id="ion-icon-globe" role="img" class="md hydrated" aria-label="globe outline">
+            </ion-icon>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs col-sm col-md col-lg col-xl content-col">
-          <h3 id="web-text">Website Development</h3>
-          <h4 id="services-1-description">I provide a web development service to deliver a product that is created
+        <div class="row">
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <h3 id="web-text">Website development</h3>
+            <h4 id="services-1-description">I provide a web development service to deliver a product that is created
             using the latest technologies, to ensure the quality, functionality, and security of your site. Sites will be
             responsive across all devices. </h4>
+          </div>
         </div>
       </div>
-    
     
       <div class="row wordpress services-content" id="word-id">
         <div class="row">
@@ -163,13 +164,13 @@
     
     <%- include('layouts/index/index-video');  -%>
   </div>
- 
+      <%- include('layouts/footer');  -%>
 
 
 
       <%- include('layouts/scripts'); -%>
       <%- include('layouts/index/index-java-video');  -%>
-      <%- include('layouts/footer');  -%>
+
      
      
     

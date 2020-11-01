@@ -11,8 +11,8 @@ body {
 
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-    body {
-        overflow-x: hidden  !Important;
+    html, body {
+        width: 80%; 
     }
     
     .company-col {
@@ -42,14 +42,23 @@ body {
         zoom:  .7 !important;
     }
     #portfolio-one-image {
-      width: 100% !Important;
+      width: 200% !Important;
     }
+    
+    .new-row, .tea-row, .broadway-row, .coffee-row, .davie-row, .travel-row {
+        position: relative;
+        right: 30%;
+        width: 205%;
+    }
+    
     footer {
+        right: 19%;
         top: 400px !important;
     }
-    .footer-content {
-        left: 3% !important;
-        font-size: 12px !important;
+    
+    .copyright {
+        position: relative;
+        left: 25%;
     }
 }
 
@@ -289,24 +298,26 @@ a:hover {
  
 /*FOOTER-------------------*/
 
-footer h5 {
-    color: white;
-}
-
 footer {
-    background: #1a2d4e;
-    position: relative; 
-    top: 650px;  	
-	width: 110%;
-	margin:auto;
+   position: relative;
+   top: 400px;
+  background: #1a2d4e;
+  color: #aaa;
+  padding-top: 0px;
+  width: 175% !important;
+}
 
+footer .copyright {
+  padding: 15px 0;
+  background:  #1a2d4e;
+  margin-top: 20px;
+  font-size: 15px;
+    padding-right: 35%;
 }
-.footer-content {
-  position: relative;
-  left: .5%;
-  zoom: 1.4;
-}
-     
+
+footer .copyright span, .copyright {
+  color: #ffffff;
+}   
 /* Hide signin page for user*/
 .signin {
     display: none;

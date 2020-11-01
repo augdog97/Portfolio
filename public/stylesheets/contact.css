@@ -63,8 +63,14 @@ html{
         width: 85% !important;
         zoom: .6 !Important;
     }
-    .footer-content {
-        zoom: .8 !important;
+    
+    footer {
+        top: 200px;
+       right: 75% !important;
+    }
+     .copyright {
+        position: relative; 
+        left: 45%;
     }
 }
 
@@ -111,6 +117,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "proxima-nova-soft", sans-serif;
   -webkit-user-select: none;
+  overflow-x: hidden;
   
 }
 body .vertical-centered-box {
@@ -378,22 +385,25 @@ input[value=Send] {
 
 
 /*FOOTER-------------------*/
-footer h5 {
-    color: white;
-}
 footer {
-    background: #1a2d4e;
-    position: relative;
-    top: 900px;
-    right: 20%;
-    width: 130%;
-    z-index: 1;
+   position: relative;
+   top: 300px;
+  background: #1a2d4e;
+  color: #aaa;
+  padding-top: 0px;
+  width: 175% !important;
 }
 
-.footer-content {
-  position: relative;
-  left: 5%;
-  zoom: 1.4;
+footer .copyright {
+  padding: 15px 0;
+  background:  #1a2d4e;
+  margin-top: 20px;
+  font-size: 15px;
+    padding-right: 39%;
+}
+
+footer .copyright span, .copyright {
+  color: #ffffff;
 }
 
    /* Hide signin page for user*/
@@ -404,5 +414,6 @@ footer {
    
      
   
+
 
 
