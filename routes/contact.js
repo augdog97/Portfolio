@@ -32,13 +32,7 @@ contact.get('/contact',  (req,res,next) => {
 
 contact.post('/contact', (req,res,next) => {
 
-   /* var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'augustshah@02pilot.com',
-      pass: ''
-    }
-  }); */
+  
   const transporter = nodemailer.createTransport(
     nodemailerSendgrid({
       apiKey: process.env.sengrid_api

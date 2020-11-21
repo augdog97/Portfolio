@@ -34,15 +34,20 @@ const paymentSuccessRouter      = require('./routes/paymentSuccess');
 const paymentCanceledRouter     = require('./routes/paymentCanceled');
 const paymentSession            = require('./routes/session');
 
+/* Twilio Router Import */
+const twilioRouter = require('./routes/twilio-router');
+
 
 const app = express();
 
-app.use(express.static('public'));
+  app.use(express.static('public'));
 
 /* View Engine */
 const ejs = require('ejs');
 app.set('view engine', 'ejs');
 
+app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 /* Main App router uses */
 app.use('/', indexRouter);
@@ -69,8 +74,8 @@ app.use('/', paymentSuccessRouter);
 app.use('/', paymentCanceledRouter);
 app.use('/', paymentSession);
 
-app.use(express.urlencoded({extended: true}));
-app.use(bodyParser.json());
+/* Twilio Router */
+app.use('/', twilioRouter);
 
 
 app.get('*',(req,res) => { 

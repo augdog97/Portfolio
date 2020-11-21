@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta tag reloads page every second, need easier way to do it. 
+    <meta http-equiv="refresh" content="1; url=/" /> -->
+    <title>Twilio SMS Chat app</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/stylesheets/twilio.css">
+
+    <!-- Font awesome-->
+    <script src="https://kit.fontawesome.com/595056b4d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="modal" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">App Disclaimer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a proof of concept SMS chat app. The app is fully functional. The UI/UX is very simple.
+                        This project was built using Agile methodology. This app does have a feature roadmap, but due to
+                        other projects future feature updates may not be put into place. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Fixed navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container main-content">
+
+
+
+        <div class="row contact-row" id="contact-row-id">
+            <div class="col-xs col-sm col-md col-lg col-xl contact-container" id="contact-container-id">
+                <div class="form">
+                    <p id="intro"> Use this app to send a message using the Twilio API. As of now in order to receive a
+                        message sent back to
+                        the Twilip API the page has to be refreshed. THE APP WILL NOT REFRESH AUTOMATICALLY. Use this
+                        app responsibly!!</p>
+                    <form method="POST" action="/" id="text" class="text">
+                        <div class="form-group">
+                            <h1>Have a conversation with anyone! </h1>
+                            <label class="text-title" id="text-title" for="number">Phone Number </label>
+                            <br>
+                            <input class="form-control" type="text" name="number" id="number" required>
+                            <br>
+                            <div class="form-control conversation " id="conversation">
+                                <!-- including the message.ejs partial file so we can dynmially reload that part of the page-->
+                                <%-  include('twilio-message.ejs') -%>
+                                <!-- The div where the senders message goes after message is sent-->
+                                <div class="sentId" id="sentId">
+
+                                </div>
+
+                            </div>
+
+                            <input class="form-control" type="text" name="message" id="message" required>
+                        </div>
+                        <input class="form-control btn" type="submit" value="Send" id="submit" onclick="test()">
+
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="/javascripts/Twilio-ajax.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

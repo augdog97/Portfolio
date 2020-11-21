@@ -1,0 +1,243 @@
+
+/* Changes!
+1. Got rid of the .background styling and put it on the body tag
+2. Added bootstrap to the HTML and made  the content wrapper a container and the cirlces and SVG are their own rows
+3. Added media queries to keep the logo in the center on the desktop
+*/
+
+body {
+width: 100%;
+ background: #0066ff;
+}
+
+/* Responsive breakpoints for desktop*/
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {
+  svg {
+    left: 54% !important;
+  }
+
+}
+
+@media only screen and (min-width: 774px) and (max-width: 989px) {
+  svg {
+    left: 59% !important;
+  }
+
+}
+
+@media only screen and (min-width: 580px) and (max-width: 773px) {
+  svg {
+    left: 64% !important;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  svg {
+    left: 55% !important;
+  }
+
+}
+
+svg {
+  position: relative; 
+  top: 400px;
+  left: 52.5%;
+  zoom: .98;
+}
+
+@keyframes ldio-ukc1i0uaofd {
+  0% { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
+}
+.ldio-ukc1i0uaofd div { box-sizing: border-box!important }
+.ldio-ukc1i0uaofd > div {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  top: 80px;
+  left: 80px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  border-color: #ffffff transparent #ffffff transparent;
+  animation: ldio-ukc1i0uaofd 2s ease infinite;
+}
+
+.ldio-ukc1i0uaofd > div:nth-child(2), .ldio-ukc1i0uaofd > div:nth-child(4) {
+  width: 180px;
+  height: 180px;
+  top: 86px;
+  left: 86px;
+  animation: ldio-ukc1i0uaofd 2s EASE infinite reverse;
+}
+
+.ldio-ukc1i0uaofd {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 200px;
+  left: 34%;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+.svg-elem-1 {
+  -webkit-animation: animate-svg-fill-1 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+          animation: animate-svg-fill-1 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+
+@-webkit-keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+@keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+.svg-elem-2 {
+  -webkit-animation: animate-svg-fill-2 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s both;
+          animation: animate-svg-fill-2 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s both;
+}
+
+@-webkit-keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+@keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+.svg-elem-3 {
+  -webkit-animation: animate-svg-fill-3 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s both;
+          animation: animate-svg-fill-3 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s both;
+}
+
+@-webkit-keyframes animate-svg-fill-4 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+@keyframes animate-svg-fill-4 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+.svg-elem-4 {
+  -webkit-animation: animate-svg-fill-4 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.30000000000000004s both;
+          animation: animate-svg-fill-4 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.30000000000000004s both;
+}
+
+@-webkit-keyframes animate-svg-fill-5 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+@keyframes animate-svg-fill-5 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+.svg-elem-5 {
+  -webkit-animation: animate-svg-fill-5 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s both;
+          animation: animate-svg-fill-5 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s both;
+}
+
+@-webkit-keyframes animate-svg-fill-6 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+@keyframes animate-svg-fill-6 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(241, 242, 242);
+  }
+}
+
+.svg-elem-6 {
+  -webkit-animation: animate-svg-fill-6 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s both;
+          animation: animate-svg-fill-6 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s both;
+}
