@@ -28,4 +28,5 @@ Site Roadmap:
 1. Create animation for name on home page (COMPLETED)
 2. add user creation and account pages (IN PROGRESS)
 3. Change portfolio page to include a technologies used and project difficulties
-4. Rework responsivness with site when it comes to Bootstrap (IN PROGRESS)
+4. Rework responsivness with site when it comes to Bootstrap (COMPLETED)
+5. Replace all media on site with CDN link (IN PROGRESS)

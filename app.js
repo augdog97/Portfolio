@@ -19,9 +19,7 @@ const successRouter      =                require('./routes/success');
 const testRouter         =                require('./routes/test');
 
 /* Portfolio Router */
-const broadwayRouter     =               require('./routes/broadway');
-const coffeeRouter       =               require('./routes/coffee');
-const davieRouter        =               require('./routes/davie');
+
 const travelRouter       =               require('./routes/travel');
 /* User Account Routers */
 const signinRouter       =               require('./routes/signin');
@@ -58,9 +56,6 @@ app.use('/', successRouter);
 app.use('/', testRouter);
 
 /* Portfolio router uses */
-app.use('/', broadwayRouter);
-app.use('/', coffeeRouter);
-app.use('/', davieRouter); 
 app.use('/', travelRouter);
 
 /*User Account Router Uses */ 
