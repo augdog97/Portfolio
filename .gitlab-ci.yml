@@ -30,7 +30,7 @@ build-App:
     - docker push $TAG_COMMIT
     - docker push $TAG_LATEST
 
-deploy-Main:
+deploy-1:
   image: ubuntu:latest
   stage: deploy
   tags:
@@ -59,11 +59,11 @@ deploy-Main:
   only:
     - master
 
-deploy-Backup:
+deploy-2:
   image: ubuntu:latest
   stage: deploy
   tags:
-    - deployment
+    - deployment-backup
   before_script:
   - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
   - eval $(ssh-agent -s)
@@ -83,7 +83,7 @@ deploy-Backup:
     - ssh  -o StrictHostKeyChecking=no $SERVER_USER_BACKUP@$SERVER_IP_BACKUP "docker container rm -f my-app || true"
     - ssh  -o StrictHostKeyChecking=no $SERVER_USER_BACKUP@$SERVER_IP_BACKUP "docker run -d -p 3000:3000 --name my-app $TAG_COMMIT"
   environment:
-    name: production
+    name: production-backup
     url: http://161.35.123.72
   only:
     - master
