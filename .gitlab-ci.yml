@@ -30,7 +30,7 @@ build-App:
     - docker push $TAG_COMMIT
     - docker push $TAG_LATEST
 
-deploy:
+deploy-Main:
   image: ubuntu:latest
   stage: deploy
   tags:
@@ -56,5 +56,34 @@ deploy:
   environment:
     name: production
     url: http://134.122.23.185
+  only:
+    - master
+
+deploy-Backup:
+  image: ubuntu:latest
+  stage: deploy
+  tags:
+    - deployment
+  before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+  - eval $(ssh-agent -s)
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo "$SSH_PRIVATE_KEY_BACKUP" | tr -d '\r' > ~/.ssh/id_rsa
+  - echo "$SSH_PUBLIC_KEY_BACKUP" | tr -d '\r' > ~/.ssh/id_rsa.pub
+  - chmod 600 ~/.ssh/*
+  - chmod 644 ~/.ssh/*.pub
+  - ssh-add
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - ls -ld ~/.ssh/*
+  script:
+    - ssh   -o StrictHostKeyChecking=no $SERVER_USER_BACKUP@$SERVER_IP_BACKUP "docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY"
+    - ssh  -o StrictHostKeyChecking=no $SERVER_USER_BACKUP@$SERVER_IP_BACKUP "docker pull $TAG_COMMIT"
+    - ssh  -o StrictHostKeyChecking=no $SERVER_USER_BACKUP@$SERVER_IP_BACKUP "docker container rm -f my-app || true"
+    - ssh  -o StrictHostKeyChecking=no $SERVER_USER_BACKUP@$SERVER_IP_BACKUP "docker run -d -p 3000:3000 --name my-app $TAG_COMMIT"
+  environment:
+    name: production
+    url: http://161.35.123.72
   only:
     - master
