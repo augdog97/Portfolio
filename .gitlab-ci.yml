@@ -1,6 +1,6 @@
 
 # ssh-keyscan gitlab.com >> authorized_keys: use this command to add gitlab ssh keys to sever. Run on server terminal
-# cat ~/.ssh/id_rsa.pub>> authorized_keys : Run this command on the sever on the terminal. 
+# cat ~/.ssh/id_rsa.pub >> authorized_keys : Run this command on the sever on the terminal. 
 # Both COMMANDS ABOVE ARE necessary.
 # Have to put .env echo statments in Docker build stage because documents dont persist. Artifacts could be used.
 
