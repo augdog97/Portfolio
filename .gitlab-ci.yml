@@ -25,6 +25,7 @@ build-App:
     - echo   "API_SECRET=$API_SECRET" >> .env
     - echo   "PHONE_NUMBER=$PHONE_NUMBER" >> .env
     - echo   "sengrid_api=$sengrid_api" >> .env
+    - cat .env
     - docker build . -t $TAG_COMMIT -t $TAG_LATEST 
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
     - docker push $TAG_COMMIT
